@@ -18,10 +18,20 @@ Just open `docs/index.html` in a browser. No build, no server, no dependencies.
 | -------------------- | ----------------------------------------------------------------- |
 | `docs/`              | The website (GitHub Pages serves this folder)                     |
 | `docs/data.js`       | Extracted game data — **generated, don't hand-edit**              |
+| `docs/sprites/`      | Real game sprites, copied from the SS14 textures — **generated**  |
 | `docs/tips.js`       | Cletus's curated field wisdom — **hand-edited, never overwritten** |
-| `tools/extract.py`   | Reads a local SS14 checkout → `data.js` + `data/snapshot.json`    |
+| `docs/specials.js`   | Weekly Specials walkthroughs — **hand-edited, never overwritten** |
+| `docs/cletus.png`    | Drop your character sprite here to replace the "UC" monogram      |
+| `tools/extract.py`   | Reads a local SS14 checkout → `data.js` + sprites + `data/snapshot.json` |
 | `tools/update.py`    | Re-extracts and writes `UPDATE_REPORT.md` describing upstream changes |
 | `data/snapshot.json` | Canonical last-known data state, used for diffing                 |
+
+Beyond chemicals, the site covers **gear**: machines (with their circuit board +
+lathe print costs), hand-craftable improvised items (rag, spear, paper
+centrifuge), mixer items and what reactions they unlock (Bibles do "Holy"
+mixing, spoons "Stir"), random loot odds (strange pills), exotic mob blood, a
+**Cook-Off Calculator** (enter what you have, see everything you can make), and
+a weekly-rotating **Discoveries** feed that data-mines obscure sources.
 
 ## Keeping it up to date
 

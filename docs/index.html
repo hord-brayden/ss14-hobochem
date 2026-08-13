@@ -3,27 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Uncle Cletus's HoboChem Compendium — SS14 Maints Chemistry</title>
-  <meta name="description" content="Every way to cook, grind, drain, or bleed any reagent in Space Station 14. Maints Chemistry by Cletus Cooper.">
+  <title>The HoboChem Compendium — SS14 Maints Chemistry by Cletus Cooper</title>
+  <meta name="description" content="Every way to cook, grind, drain, gamble, or bleed any chemical in Space Station 14 — plus the gear to do it with. Maints Chemistry by Cletus Cooper.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e8a824'/><text x='50' y='68' font-size='48' font-family='monospace' font-weight='800' text-anchor='middle' fill='%231a1508'>UC</text></svg>">
 </head>
 <body>
+  <header class="topbar">
+    <div class="logo" id="logo" title="back to the compendium">
+      <div class="monogram">UC</div>
+      <div><b>HoboChem Compendium</b><small>Maints Chemistry · Cletus Cooper</small></div>
+    </div>
+    <nav>
+      <a href="#/cook">Cook-Off Calculator</a>
+      <a href="#/specials">Weekly Specials</a>
+    </nav>
+  </header>
   <div class="layout">
     <nav class="sidebar">
-      <div class="brand" id="home-link" title="back to the compendium">
-        <span class="face">🥫</span>
-        <h1>HoboChem Compendium</h1>
-        <small>Maints Chemistry · by Cletus Cooper</small>
+      <div class="tabs">
+        <button data-tab="chems" class="active">Chemicals</button>
+        <button data-tab="gear">Gear &amp; Machines</button>
       </div>
-      <input id="search" type="search" placeholder="find a chemical…" autocomplete="off">
-      <div id="reagent-list"></div>
+      <input id="search" type="search" placeholder="search…" autocomplete="off">
+      <div id="side-list"></div>
     </nav>
     <main class="main" id="main"></main>
   </div>
   <footer><span id="footer-meta"></span></footer>
   <script src="data.js"></script>
   <script src="tips.js"></script>
+  <script src="specials.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

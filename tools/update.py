@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from extract import PROJECT, extract  # noqa: E402
+from extract import PROJECT, extract, write_outputs  # noqa: E402
 
 
 def diff_dicts(old, new):
@@ -72,7 +72,9 @@ def main():
     section("Reactions", old["reactions"], new["reactions"],
             lambda v: " + ".join(v["reactants"]) + " → " + " + ".join(v["products"]))
     section("Scavengeable entities", ents_old, ents_new,
-            lambda v: f"{v['name']} carries " + ", ".join(v["reagents"]))
+            lambda v: f"{v['name']} carries " + ", ".join(v.get("reagents", {})))
+    section("Gear & machines", old.get("gear", {}), new.get("gear", {}),
+            lambda v: v["name"])
 
     report = PROJECT / "UPDATE_REPORT.md"
     if total == 0:
@@ -83,14 +85,10 @@ def main():
     report.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     # commit the new state for the site
-    snap_path.write_text(json.dumps(new, indent=1, sort_keys=True), encoding="utf-8")
-    (PROJECT / "docs" / "data.js").write_text(
-        "window.CHEMDATA = " + json.dumps(new, separators=(",", ":")) + ";\n",
-        encoding="utf-8",
-    )
+    write_outputs(new)
     print(f"data refreshed @ {new['repoCommit']}: "
           f"{len(new['reagents'])} reagents, {len(new['reactions'])} reactions, "
-          f"{len(new['entities'])} entities")
+          f"{len(new['entities'])} entities, {len(new.get('gear', {}))} gear")
 
 
 if __name__ == "__main__":
