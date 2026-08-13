@@ -40,6 +40,7 @@ img.spr { image-rendering: pixelated; vertical-align: -6px; }
   background: var(--accent); color: #1a1508;
   font: 800 15px var(--mono); display: flex; align-items: center; justify-content: center;
 }
+.cletus-logo { height: 40px; width: auto; image-rendering: pixelated; }
 .topbar .logo b { font: 700 16px var(--mono); color: var(--accent); letter-spacing: .3px; }
 .topbar .logo small { display: block; color: var(--dim); font-size: 11px; margin-top: -3px; }
 .topbar nav { display: flex; gap: 4px; margin-left: auto; }
@@ -171,7 +172,7 @@ table.list img { width: 26px; height: 26px; object-fit: contain; margin-right: 8
   background: var(--accent); color: #1a1508;
   font: 800 28px var(--mono); display: flex; align-items: center; justify-content: center;
 }
-.hero img { width: 72px; height: 72px; border-radius: 16px; image-rendering: pixelated; }
+.hero img { height: 130px; width: auto; image-rendering: pixelated; }
 .stats { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
 .stat {
   background: var(--panel); border: 1px solid var(--line);
