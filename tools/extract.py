@@ -37,6 +37,9 @@ CURATED_GEAR = {
     "Spear", "RagItem", "Dropper", "Syringe", "Beaker", "LargeBeaker",
     "DrinkGlass", "GlassBeakerMetamorphic", "MetamorphicGlass",
     "DrinkMetamorphicGlass", "Bucket", "MopBucket",
+    # gas containers referenced by the Max Caps page
+    "OxygenTank", "PlasmaTank", "EmergencyOxygenTank", "GasCanister",
+    "OxygenCanister", "PlasmaCanister", "TritiumCanister", "StorageCanister",
 }
 
 
@@ -271,15 +274,19 @@ def extract(repo, copy_sprites=True):
                         random_fill = str(comp["weightedRandomId"])
                     if ct == "Icon" and comp.get("sprite"):
                         icon = (str(comp["sprite"]), str(comp.get("state", "icon")), 1)
-                    if ct == "Sprite" and comp.get("sprite") and icon is None:
+                    if ct == "Sprite" and icon is None:
                         state = comp.get("state")
                         if not state:
                             for layer in comp.get("layers") or []:
                                 if isinstance(layer, dict) and layer.get("state"):
                                     state = layer["state"]
                                     break
-                        if state:
-                            icon = (str(comp["sprite"]), str(state), 0)
+                        # children often set only the rsi path OR only the state
+                        # and inherit the other half from a parent — capture both
+                        # halves and pair them up at resolution time
+                        if comp.get("sprite") or state:
+                            icon = (str(comp["sprite"]) if comp.get("sprite") else None,
+                                    str(state) if state else None, 0)
                 raw_entities[eid] = {
                     "name": doc.get("name"),
                     "desc": doc.get("description"),
@@ -368,20 +375,26 @@ def extract(repo, copy_sprites=True):
     sprite_jobs = {}  # (sprite, state) -> filename
 
     def icon_file(chain):
+        # nearest ancestor wins so children keep their distinct look; a child
+        # that only sets the rsi path borrows a state from deeper in the chain
         cands = [raw_entities[a]["icon"] for a in chain if raw_entities[a]["icon"]]
         if not cands:
             return None
-        cands.sort(key=lambda c: -c[2])  # prefer Icon component over Sprite
-        sprite, state, _ = cands[0]
-        src = tex_dir / sprite / f"{state}.png"
-        if not src.is_file():
-            src = tex_dir / sprite / "icon.png"
-            if not src.is_file():
-                return None
-            state = "icon"
-        fname = re.sub(r"[^A-Za-z0-9_.-]", "_", f"{sprite}_{state}") + ".png"
-        sprite_jobs[fname] = src
-        return fname
+        paths, states = [], []
+        for sprite, state, _ in cands:
+            if sprite and sprite not in paths:
+                paths.append(sprite)
+            if state and state not in states:
+                states.append(state)
+        states.append("icon")
+        for sprite in paths:
+            for state in states:
+                src = tex_dir / sprite / f"{state}.png"
+                if src.is_file():
+                    fname = re.sub(r"[^A-Za-z0-9_.-]", "_", f"{sprite}_{state}") + ".png"
+                    sprite_jobs[fname] = src
+                    return fname
+        return None
 
     for eid, e in raw_entities.items():
         if e["abstract"]:

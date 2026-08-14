@@ -390,7 +390,7 @@
       if (b.src) return `<div class="meta" style="margin:-4px 0 14px">source: <a target="_blank" rel="noopener" href="${GH}${esc(b.src)}">${esc(b.src)}</a></div>`;
       if (b.table) return `<div class="card" style="max-width:780px;overflow-x:auto"><table class="list">
         <tr>${b.table.head.map((c) => `<td style="font:700 11px var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:1px">${esc(c)}</td>`).join("")}</tr>
-        ${b.table.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</table></div>`;
+        ${b.table.rows.map((r) => `<tr>${r.map((c) => `<td>${tokenize(c)}</td>`).join("")}</tr>`).join("")}</table></div>`;
       return "";
     }).join("");
     main.innerHTML = `<div class="page"><h2 class="title">Max Caps</h2>

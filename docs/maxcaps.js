@@ -13,9 +13,9 @@ window.CLETUS_MAXCAPS = [
   { table: {
     head: ["Container", "Volume", "Pressure rating", "Bursts at (fresh)", "Notes"],
     rows: [
-      ["Emergency oxygen tank", "0.66 L", "~15 atm", "~60 atm", "“Poorly manufactured” per the code comments — pocket-sized pop"],
-      ["Standard gas tank (oxygen, plasma…)", "5 L", "~20 atm", "~80 atm", "The classic carry-around boom"],
-      ["Gas canister", "~1000 L", "~200 atm", "~800 atm", "Rating is huge because “cans react really f***ing fast” — direct quote from the YAML"],
+      ["{{g:EmergencyOxygenTank|Emergency oxygen tank}}", "0.66 L", "~15 atm", "~60 atm", "“Poorly manufactured” per the code comments — pocket-sized pop"],
+      ["{{g:OxygenTank|Standard gas tank}} ({{g:PlasmaTank|plasma}}, oxygen…)", "5 L", "~20 atm", "~80 atm", "The classic carry-around boom"],
+      ["{{g:StorageCanister|Gas canister}} ({{g:OxygenCanister|oxygen}}, {{g:TritiumCanister|tritium}}…)", "~1000 L", "~200 atm", "~800 atm", "Rating is huge because “cans react really f***ing fast” — direct quote from the YAML"],
     ],
   } },
   { src: "Resources/Prototypes/Entities/Objects/Tools/gas_tanks.yml" },
