@@ -74,6 +74,28 @@
       ? `<a class="chip mixer" href="#/g/${esc(prov)}" title="done with: ${esc((mixerProviders[m] || []).map((p) => G[p].name).join(", "))}">${label}</a>`
       : `<span class="chip mixer">${label}</span>`;
   }
+  // Body-effect chips: damage/healing per unit metabolized, from reagent metabolisms.
+  function metabChips(r) {
+    const mb = r.metab;
+    if (!mb) return "";
+    const per = (v) => fmt(Math.abs(v) / (mb.rate || 0.5));
+    let chips = "";
+    for (const [k, v] of Object.entries(mb.dmg || {}))
+      chips += v > 0
+        ? `<span class="chip dmg">${esc(k)} ${per(v)}/u</span>`
+        : `<span class="chip heal">heals ${esc(k)} ${per(v)}/u</span>`;
+    for (const [k, v] of Object.entries(mb.cond || {}))
+      chips += `<span class="chip ${v > 0 ? "dmg" : "heal"}" style="border-style:dashed" title="conditional — usually an overdose threshold">${v > 0 ? "" : "heals "}${esc(k)} ${per(v)}/u †</span>`;
+    for (const f of mb.fx || [])
+      chips += `<span class="chip grp">${esc(pretty(f))}</span>`;
+    return chips;
+  }
+  function dmgTotal(rid) {
+    const mb = (D.reagents[rid] || {}).metab;
+    if (!mb || !mb.dmg) return 0;
+    return Object.values(mb.dmg).filter((v) => v > 0).reduce((s, v) => s + v, 0) / (mb.rate || 0.5);
+  }
+
   function reactionChips(rx) {
     let h = rx.mixers.map(mixerChip).join("");
     if (rx.minTemp > 0)
@@ -154,6 +176,9 @@
         <span class="chip grp">${esc(r.group)}</span></h2>
       ${r.desc ? `<p class="desc">${esc(r.desc)}</p>` : ""}
       <div class="meta">${esc(rid)} · <a target="_blank" rel="noopener" href="${GH}${esc(r.file)}">${esc(r.file)}</a></div>`;
+    const mchips = metabChips(r);
+    if (mchips) h += `<div style="margin-top:10px">${mchips}
+      <div class="meta">what it does to a body, per unit metabolized · † only past a threshold (usually overdose)</div></div>`;
 
     for (const t of tipsFor[rid] || [])
       h += `<div class="tip" style="margin-top:14px"><b>${esc(t.title)}</b><p>${esc(t.body)}</p></div>`;
@@ -192,6 +217,12 @@
       <h2 class="title">${spr(rec, 44)}${esc(cap(rec.name))}</h2>
       ${g && g.desc ? `<p class="desc">${esc(g.desc)}</p>` : ""}
       <div class="meta">${esc(id)} · <a target="_blank" rel="noopener" href="${GH}${esc(rec.file)}">${esc(rec.file)}</a></div>`;
+    if (g && (g.melee || g.thrown)) {
+      h += `<div style="margin-top:10px">` +
+        Object.entries(g.melee || {}).map(([k, v]) => `<span class="chip dmg">swing: ${esc(k)} ${fmt(v)}</span>`).join("") +
+        Object.entries(g.thrown || {}).map(([k, v]) => `<span class="chip dmg">thrown: ${esc(k)} ${fmt(v)}</span>`).join("") +
+        `</div>`;
+    }
 
     const contents = (e && e.reagents) || (g && g.reagents);
     if (contents && Object.keys(contents).length) {
@@ -427,7 +458,10 @@
   function poisonPickerHTML() {
     return `<h3 class="sec">Pick your poison</h3>
       <select class="poison" id="poison-sel"><option value="">— choose based on what you can get —</option>` +
-      poisonList().map(([id, r]) => `<option value="${esc(id)}">${esc(cap(r.name))}${store.inv.includes(id) ? " (you have this)" : ""}</option>`).join("") +
+      poisonList().map(([id, r]) => {
+        const dmg = dmgTotal(id);
+        return `<option value="${esc(id)}">${esc(cap(r.name))}${dmg ? ` · ${fmt(dmg)} dmg/u` : ""}${store.inv.includes(id) ? " · you have this" : ""}</option>`;
+      }).join("") +
       `</select><div id="poison-out" style="margin-top:12px"></div>`;
   }
   function poisonSourcesHTML(rid) {
@@ -488,6 +522,9 @@
   const renderSpaceLaw = () => renderArticlePage("Space Law",
     "Know your rights. Annotated by Cletus Cooper, Esq. — Attorney at Space Law.",
     window.CLETUS_SPACELAW || []);
+  const renderMunitions = () => renderArticlePage("Tider Munitions",
+    "The homemade armory: everything a passenger can build from trash to defend themselves.",
+    window.CLETUS_MUNITIONS || []);
 
   // ---------------- discoveries ----------------
   function mulberry(seed) {
@@ -664,6 +701,7 @@
     else if (hash === "#/specials") renderSpecials();
     else if (hash === "#/maxcaps") renderMaxcaps();
     else if (hash === "#/spacelaw") renderSpaceLaw();
+    else if (hash === "#/munitions") renderMunitions();
     else renderHome();
   }
   window.addEventListener("hashchange", () => {

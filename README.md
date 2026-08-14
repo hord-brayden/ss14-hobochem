@@ -21,6 +21,9 @@ Just open `docs/index.html` in a browser. No build, no server, no dependencies.
 | `docs/sprites/`      | Real game sprites, copied from the SS14 textures — **generated**  |
 | `docs/tips.js`       | Cletus's curated field wisdom — **hand-edited, never overwritten** |
 | `docs/specials.js`   | Weekly Specials walkthroughs — **hand-edited, never overwritten** |
+| `docs/maxcaps.js`    | Max Caps atmospherics guide — **hand-edited** (quotes atmos C# constants) |
+| `docs/spacelaw.js`   | Annotated Space Law — **hand-edited** (quotes guidebook XMLs)     |
+| `docs/munitions.js`  | Tider Munitions armory guide — **hand-edited**                    |
 | `docs/cletus.png`    | Drop your character sprite here to replace the "UC" monogram      |
 | `tools/extract.py`   | Reads a local SS14 checkout → `data.js` + sprites + `data/snapshot.json` |
 | `tools/update.py`    | Re-extracts and writes `UPDATE_REPORT.md` describing upstream changes |

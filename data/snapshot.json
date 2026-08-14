@@ -32686,6 +32686,119 @@
    },
    "name": "experimental anomaly vessel machine board"
   },
+  "ArrowImprovised": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "MetalRod"
+    },
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    },
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a glass shard"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
+   "desc": "The greyshirt's preferred projectile.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
+   "id": "ArrowImprovised",
+   "name": "glass shard arrow",
+   "thrown": {
+    "Piercing": 25.0
+   }
+  },
+  "ArrowImprovisedCarp": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "MetalRod"
+    },
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    },
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "SpaceCarpTooth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
+   "desc": "The salvager's preferred arrow. Kill your enemies with the teeth of their families.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
+   "id": "ArrowImprovisedCarp",
+   "name": "carp tooth arrow",
+   "thrown": {
+    "Piercing": 30.0
+   }
+  },
+  "ArrowImprovisedPlasma": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "MetalRod"
+    },
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    },
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a plasma glass shard"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
+   "desc": "The greyshirt's preferred projectile. Now with extra lethality!",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
+   "id": "ArrowImprovisedPlasma",
+   "name": "plasma glass shard arrow",
+   "thrown": {
+    "Piercing": 30.0
+   }
+  },
+  "ArrowImprovisedUranium": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "MetalRod"
+    },
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    },
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a uranium glass shard"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
+   "desc": "The greyshirt's preferred projectile. Now with added radiation!",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
+   "id": "ArrowImprovisedUranium",
+   "name": "uranium glass shard arrow",
+   "thrown": {
+    "Piercing": 25.0,
+    "Radiation": 5.0
+   }
+  },
   "ArtifactAnalyzerMachineCircuitboard": {
    "boardFor": "MachineArtifactAnalyzer",
    "boardReqs": {
@@ -32779,6 +32892,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Misc/utensils.yml",
    "icon": "Objects_Misc_utensils.rsi_bar_spoon.png",
    "id": "BarSpoon",
+   "melee": {
+    "Blunt": 2.0
+   },
    "mixerTypes": [
     "Stir"
    ],
@@ -32801,6 +32917,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/baseball_bat.yml",
    "icon": "Objects_Weapons_Melee_baseball_bat.rsi_icon.png",
    "id": "BaseBallBat",
+   "melee": {
+    "Blunt": 10.0,
+    "Structural": 5.0
+   },
    "name": "baseball bat"
   },
   "BaseGasCondenser": {
@@ -32819,13 +32939,23 @@
    "lathe": {
     "Glass": 200
    },
-   "name": "beaker"
+   "melee": {
+    "Blunt": 0.0
+   },
+   "name": "beaker",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "Bible": {
    "desc": "New Interstellar Version 2340.",
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_bible.rsi_icon.png",
    "id": "Bible",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32836,6 +32966,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_communistmanifesto.rsi_icon.png",
    "id": "BibleCommunistManifesto",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32846,6 +32980,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_mysteryofthedruids.rsi_icon.png",
    "id": "BibleDruid",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32856,6 +32994,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_honk.rsi_icon.png",
    "id": "BibleHonk",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32866,6 +33008,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_codexnanotrasimus.rsi_icon.png",
    "id": "BibleNanoTrasen",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32876,6 +33022,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_tomeofnarsie.rsi_icon.png",
    "id": "BibleNarsie",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32886,6 +33036,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_necronomicon.rsi_icon.png",
    "id": "BibleNecronomicon",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32896,6 +33050,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Chapel/bibles.yml",
    "icon": "Objects_Specific_Chapel_ratvartablet.rsi_icon.png",
    "id": "BibleRatvar",
+   "melee": {
+    "Blunt": 1.0,
+    "Holy": 25.0
+   },
    "mixerTypes": [
     "Holy"
    ],
@@ -32998,6 +33156,70 @@
    },
    "name": "biomass reclaimer machine board"
   },
+  "BladedFlatcapBrown": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a glass shard"
+    },
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a brown flatcap"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/bladed_hats.yml",
+   "desc": "\"Stupid clown! You made me look bad!\" It has glass shards hidden in the brim.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Clothing_Head_Hats_brownflatcap.rsi_icon.png",
+   "id": "BladedFlatcapBrown",
+   "melee": {
+    "Slash": 5.0
+   },
+   "methods": [
+    "eat"
+   ],
+   "name": "brown flatcap",
+   "reagents": {
+    "Fiber": 15.0
+   },
+   "thrown": {
+    "Slash": 10.0
+   }
+  },
+  "BladedFlatcapGrey": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a glass shard"
+    },
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "a grey flatcap"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/bladed_hats.yml",
+   "desc": "Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Clothing_Head_Hats_greyflatcap.rsi_icon.png",
+   "id": "BladedFlatcapGrey",
+   "melee": {
+    "Slash": 5.0
+   },
+   "methods": [
+    "eat"
+   ],
+   "name": "grey flatcap",
+   "reagents": {
+    "Fiber": 15.0
+   },
+   "thrown": {
+    "Slash": 10.0
+   }
+  },
   "Blunt": {
    "craft": [
     {
@@ -33053,6 +33275,26 @@
     "Psicodine": 3.67,
     "SpaceDrugs": 10.0
    }
+  },
+  "Bola": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "item",
+     "name": "cuffs"
+    },
+    {
+     "amount": 6,
+     "kind": "material",
+     "name": "Steel"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/bola.yml",
+   "desc": "A makeshift bola, cobbled together with some spare cuffs and metal. It doesn't look like it's going to stay together for very long.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Throwable/bola.yml",
+   "icon": "Objects_Weapons_Throwable_bola.rsi_icon.png",
+   "id": "Bola",
+   "name": "makeshift bola"
   },
   "Bonfire": {
    "craft": [
@@ -33140,6 +33382,26 @@
    },
    "name": "cyborg recharging station machine board"
   },
+  "BowImprovised": {
+   "craft": [
+    {
+     "amount": 10,
+     "kind": "material",
+     "name": "WoodPlank"
+    },
+    {
+     "amount": 5,
+     "kind": "material",
+     "name": "Cloth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_bow.yml",
+   "desc": "The original rooty tooty point and shooty.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Bow/bow.yml",
+   "icon": "Objects_Weapons_Guns_Bow_bow.rsi_unwielded.png",
+   "id": "BowImprovised",
+   "name": "improvised shortbow"
+  },
   "BoxCardboard": {
    "craft": [
     {
@@ -33178,7 +33440,13 @@
    "lathe": {
     "Plastic": 100
    },
-   "name": "bucket"
+   "melee": {
+    "Blunt": 0.0
+   },
+   "name": "bucket",
+   "thrown": {
+    "Blunt": 2.0
+   }
   },
   "Cablecuffs": {
    "craft": [
@@ -33193,6 +33461,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Misc/handcuffs.yml",
    "icon": "Objects_Misc_cablecuffs.rsi_cuff.png",
    "id": "Cablecuffs",
+   "melee": {
+    "Blunt": 0.0
+   },
    "name": "makeshift handcuffs"
   },
   "CargoMailTeleporter": {
@@ -34116,27 +34387,45 @@
    "lathe": {
     "Glass": 200
    },
-   "name": "metamorphic glass"
+   "melee": {
+    "Blunt": 0.0
+   },
+   "name": "metamorphic glass",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "DrinkShaker": {
    "desc": "The trusty mixing buddy of the bartender.",
    "file": "Resources/Prototypes/Entities/Objects/Consumable/Drinks/drinks_special.yml",
    "icon": "Objects_Consumable_Drinks_shaker.rsi_icon.png",
    "id": "DrinkShaker",
+   "melee": {
+    "Blunt": 0.0
+   },
    "mixerTypes": [
     "Shake"
    ],
-   "name": "shaker"
+   "name": "shaker",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "DrinkShakerGold": {
    "desc": "A gold-plated shaker given as a token of appreciation for years of service. It doesn't make the drinks taste any different.",
    "file": "Resources/Prototypes/Entities/Objects/Consumable/Drinks/drinks_special.yml",
    "icon": "Objects_Consumable_Drinks_shaker_gold.rsi_icon.png",
    "id": "DrinkShakerGold",
+   "melee": {
+    "Blunt": 0.0
+   },
    "mixerTypes": [
     "Shake"
    ],
-   "name": "golden shaker"
+   "name": "golden shaker",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "Dropper": {
    "desc": "Used to transfer small amounts of chemical solution between containers.",
@@ -34187,6 +34476,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Tools/gas_tanks.yml",
    "icon": "Objects_Tanks_emergency.rsi_icon.png",
    "id": "EmergencyOxygenTank",
+   "melee": {
+    "Blunt": 5.0
+   },
    "name": "emergency oxygen tank"
   },
   "Emitter": {
@@ -34313,7 +34605,13 @@
    "file": "Resources/Prototypes/Entities/Objects/Weapons/Bombs/firebomb.yml",
    "icon": "Objects_Weapons_Bombs_ied.rsi_base.png",
    "id": "FireBombEmpty",
-   "name": "fire bomb"
+   "melee": {
+    "Blunt": 0.0
+   },
+   "name": "fire bomb",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FireBombFuel": {
    "craft": [
@@ -34337,6 +34635,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Weapons/Bombs/firebomb.yml",
    "icon": "Objects_Weapons_Bombs_ied.rsi_base.png",
    "id": "FireBombFuel",
+   "melee": {
+    "Blunt": 0.0
+   },
    "methods": [
     "eat",
     "grind",
@@ -34346,6 +34647,9 @@
    "name": "fire bomb",
    "reagents": {
     "WeldingFuel": 40.0
+   },
+   "thrown": {
+    "Blunt": 5.0
    }
   },
   "FlatpackerMachineCircuitboard": {
@@ -34381,7 +34685,10 @@
    "lathe": {
     "Steel": 25
    },
-   "name": "dark tile"
+   "name": "dark tile",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemFlesh": {
    "craft": [
@@ -34396,7 +34703,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Tiles/tiles.yml",
    "icon": "Objects_Tiles_tile.rsi_meat.png",
    "id": "FloorTileItemFlesh",
-   "name": "flesh floor"
+   "name": "flesh floor",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemSteel": {
    "craft": [
@@ -34414,7 +34724,10 @@
    "lathe": {
     "Steel": 25
    },
-   "name": "steel tile"
+   "name": "steel tile",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemWeb": {
    "craft": [
@@ -34429,7 +34742,10 @@
    "file": "Resources/Prototypes/Entities/Objects/Tiles/tiles.yml",
    "icon": "Objects_Tiles_web.rsi_icon.png",
    "id": "FloorTileItemWeb",
-   "name": "web tile"
+   "name": "web tile",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemWhite": {
    "craft": [
@@ -34447,7 +34763,10 @@
    "lathe": {
     "Steel": 25
    },
-   "name": "white tile"
+   "name": "white tile",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemWood": {
    "craft": [
@@ -34465,7 +34784,10 @@
    "lathe": {
     "Wood": 25
    },
-   "name": "wood floor"
+   "name": "wood floor",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FloorTileItemWoodLarge": {
    "craft": [
@@ -34483,7 +34805,10 @@
    "lathe": {
     "Wood": 25
    },
-   "name": "large wood floor"
+   "name": "large wood floor",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "FoodBoxPizza": {
    "craft": [
@@ -35002,7 +35327,13 @@
    "file": "Resources/Prototypes/Entities/Structures/Machines/microwave.yml",
    "icon": "Structures_Machines_microwave.rsi_mw0.png",
    "id": "KitchenMicrowave",
-   "name": "microwave"
+   "melee": {
+    "Blunt": 25.0
+   },
+   "name": "microwave",
+   "thrown": {
+    "Blunt": 10.0
+   }
   },
   "KitchenReagentGrinder": {
    "board": "ReagentGrinderMachineCircuitboard",
@@ -35020,7 +35351,13 @@
    "lathe": {
     "Glass": 400
    },
-   "name": "large beaker"
+   "melee": {
+    "Blunt": 0.0
+   },
+   "name": "large beaker",
+   "thrown": {
+    "Blunt": 5.0
+   }
   },
   "LockerFreezerBase": {
    "craft": [
@@ -35475,6 +35812,9 @@
    "file": "Resources/Prototypes/Entities/Mobs/NPCs/silicon.yml",
    "icon": "Mobs_Silicon_Bots_hugbot.rsi_hugbot.png",
    "id": "MobHugBot",
+   "melee": {
+    "Blunt": 2.0
+   },
    "name": "hugbot"
   },
   "MobJonkBot": {
@@ -35733,6 +36073,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Tools/gas_tanks.yml",
    "icon": "Objects_Tanks_oxygen.rsi_icon.png",
    "id": "OxygenTank",
+   "melee": {
+    "Blunt": 10.0
+   },
    "name": "oxygen tank"
   },
   "ParticleAcceleratorEmitterForeUnfinished": {
@@ -35963,11 +36306,32 @@
    "id": "PlasmaCanister",
    "name": "plasma canister"
   },
+  "PlasmaShiv": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/shiv.yml",
+   "desc": "A crude weapon fashioned from a piece of cloth and a plasma glass shard.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Objects_Weapons_Melee_plasma_shiv.rsi_icon.png",
+   "id": "PlasmaShiv",
+   "melee": {
+    "Slash": 9.0
+   },
+   "name": "plasma shiv"
+  },
   "PlasmaTank": {
    "desc": "Contains dangerous plasma. Do not inhale. Extremely flammable. It can hold 5 L of gas.",
    "file": "Resources/Prototypes/Entities/Objects/Tools/gas_tanks.yml",
    "icon": "Objects_Tanks_plasma.rsi_icon.png",
    "id": "PlasmaTank",
+   "melee": {
+    "Blunt": 10.0
+   },
    "name": "plasma tank"
   },
   "PlushieGhostRevenant": {
@@ -35988,6 +36352,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Fun/Plushies/plushies.yml",
    "icon": "Mobs_Ghosts_revenant.rsi_icon.png",
    "id": "PlushieGhostRevenant",
+   "melee": {
+    "Blunt": 0.0
+   },
    "methods": [
     "eat"
    ],
@@ -36281,6 +36648,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/janitor.yml",
    "icon": "Objects_Specific_Janitorial_rag.rsi_rag.png",
    "id": "RagItem",
+   "melee": {
+    "Blunt": 0.0
+   },
    "name": "damp rag"
   },
   "ReagentGrinderIndustrial": {
@@ -36326,6 +36696,24 @@
     "Steel": 100
    },
    "name": "reagent grinder machine board"
+  },
+  "ReinforcedShiv": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/shiv.yml",
+   "desc": "A crude weapon fashioned from a piece of cloth and a reinforced glass shard.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Objects_Weapons_Melee_reinforced_shiv.rsi_icon.png",
+   "id": "ReinforcedShiv",
+   "melee": {
+    "Slash": 7.0
+   },
+   "name": "reinforced shiv"
   },
   "ResearchAndDevelopmentServer": {
    "board": "ResearchAndDevelopmentServerMachineCircuitboard",
@@ -36379,6 +36767,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Tools/tools.yml",
    "icon": "Objects_Tools_rolling_pin.rsi_icon.png",
    "id": "RollingPin",
+   "melee": {
+    "Blunt": 7.0
+   },
    "name": "rolling pin"
   },
   "SMESAdvancedEmpty": {
@@ -36605,6 +36996,24 @@
    "icon": "Objects_Weapons_Guns_Ammunition_Casings_shotgun_shell.rsi_improvised.png",
    "id": "ShellShotgunImprovised",
    "name": "improvised shotgun shell"
+  },
+  "Shiv": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/shiv.yml",
+   "desc": "A crude weapon fashioned from a piece of cloth and a glass shard.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Objects_Weapons_Melee_shiv.rsi_icon.png",
+   "id": "Shiv",
+   "melee": {
+    "Slash": 5.5
+   },
+   "name": "shiv"
   },
   "ShuttleGunDuster": {
    "board": "ShuttleGunDusterCircuitboard",
@@ -36862,13 +37271,22 @@
    "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/spear.yml",
    "icon": "Objects_Weapons_Melee_spear.rsi_spear.png",
    "id": "Spear",
-   "name": "spear"
+   "melee": {
+    "Piercing": 12.0
+   },
+   "name": "spear",
+   "thrown": {
+    "Piercing": 15.0
+   }
   },
   "Spoon": {
    "desc": "There is no spoon.",
    "file": "Resources/Prototypes/Entities/Objects/Misc/utensils.yml",
    "icon": "Objects_Misc_utensils.rsi_spoon.png",
    "id": "Spoon",
+   "melee": {
+    "Blunt": 1.0
+   },
    "mixerTypes": [
     "Stir"
    ],
@@ -36879,6 +37297,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Misc/utensils.yml",
    "icon": "Objects_Misc_utensils.rsi_plastic_spoon.png",
    "id": "SpoonPlastic",
+   "melee": {
+    "Blunt": 0.0
+   },
    "mixerTypes": [
     "Stir"
    ],
@@ -37052,6 +37473,9 @@
    "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/stunprod.yml",
    "icon": "Objects_Weapons_Melee_stunprod.rsi_stunprod_off.png",
    "id": "Stunprod",
+   "melee": {
+    "Blunt": 9.0
+   },
    "name": "stun prod"
   },
   "SubstationBasicEmpty": {
@@ -37204,7 +37628,14 @@
    "file": "Resources/Prototypes/Entities/Structures/Machines/microwave.yml",
    "icon": "Structures_Machines_microwave_syndie.rsi_mw0.png",
    "id": "SyndicateMicrowave",
-   "name": "donk co. microwave"
+   "melee": {
+    "Blunt": 30.0,
+    "Shock": 5.0
+   },
+   "name": "donk co. microwave",
+   "thrown": {
+    "Blunt": 15.0
+   }
   },
   "SyndicateMicrowaveMachineCircuitboard": {
    "boardFor": "SyndicateMicrowave",
@@ -37334,6 +37765,16 @@
    "id": "ToteBase",
    "name": "circuit tote"
   },
+  "TrashBag": {
+   "desc": "",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/trashbag.yml",
+   "icon": "Objects_Specific_Janitorial_trashbag.rsi_icon-0.png",
+   "id": "TrashBag",
+   "lathe": {
+    "Plastic": 100
+   },
+   "name": "trash bag"
+  },
   "TritiumCanister": {
    "desc": "A canister that can contain any type of gas. This one is supposed to contain tritium. It can be attached to connector ports using a wrench.",
    "file": "Resources/Prototypes/Entities/Structures/Storage/Canisters/gas_canisters.yml",
@@ -37388,6 +37829,25 @@
     "Steel": 100
    },
    "name": "uniform printer machine board"
+  },
+  "UraniumShiv": {
+   "craft": [
+    {
+     "amount": 1,
+     "kind": "material",
+     "name": "Cloth"
+    }
+   ],
+   "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/shiv.yml",
+   "desc": "A crude weapon fashioned from a piece of cloth and a uranium glass shard. Violates the geneva convention!",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Melee/knife.yml",
+   "icon": "Objects_Weapons_Melee_uranium_shiv.rsi_icon.png",
+   "id": "UraniumShiv",
+   "melee": {
+    "Radiation": 4.0,
+    "Slash": 7.0
+   },
+   "name": "uranium shiv"
   },
   "Vaccinator": {
    "board": "VaccinatorMachineCircuitboard",
@@ -37484,6 +37944,13 @@
    "icon": "Objects_Misc_module.rsi_security.png",
    "id": "WeaponEnergyTurretSecurityMachineCircuitboard",
    "name": "sentry turret machine board"
+  },
+  "WeaponFlareGun": {
+   "desc": "A compact, single-shot pistol that fires shotgun shells. Comes with a safety feature that prevents the user from fitting lethal shells inside.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/flare_gun.yml",
+   "icon": "Objects_Weapons_Guns_Shotguns_flaregun.rsi_base.png",
+   "id": "WeaponFlareGun",
+   "name": "flare gun"
   },
   "WeaponImprovisedPneumaticCannon": {
    "craft": [
@@ -45675,6 +46142,12 @@
    "desc": "An organosulfur compound found in alliums like garlic, onions, and related plants.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Foods",
+   "metab": {
+    "cond": {
+     "Poison": 0.06
+    },
+    "rate": 0.05
+   },
    "name": "allicin"
   },
   "AlliesCocktail": {
@@ -45696,6 +46169,12 @@
    "desc": "A cryogenics chemical. Used to treat severe burns and frostbite via regeneration of the affected tissue. Works regardless of the patient being alive or dead.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Burn": -4.5
+    },
+    "rate": 0.5
+   },
    "name": "aloxadone"
   },
   "Aluminium": {
@@ -45717,6 +46196,12 @@
    "desc": "A deadly toxin found in some mushrooms, primarily fly amanita. Small doses can be lethal.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 3.0
+    },
+    "rate": 0.2
+   },
    "name": "amatoxin"
   },
   "Ambuzol": {
@@ -45738,6 +46223,18 @@
    "desc": "An effective fertilizer, it gives your plants some nutrients.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Airloss": -5.0,
+     "Brute": -2.5,
+     "Burn": -2.5,
+     "Poison": 1.0
+    },
+    "dmg": {
+     "Caustic": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "ammonia"
   },
   "AmmoniaBlood": {
@@ -45766,6 +46263,16 @@
    "desc": "A sickeningly blue cryogenics chemical that is able to heal extreme wounds even on the dead. It has trouble stabilizing patients however.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Brute": -3.0,
+     "Burn": -3.0
+    },
+    "fx": [
+     "AdjustTemperature"
+    ],
+    "rate": 0.5
+   },
    "name": "arcryox"
   },
   "Arithrazine": {
@@ -45773,6 +46280,13 @@
    "desc": "A mildly unstable medication used for the most extreme case of radiation poisoning. Exerts minor stress on the body.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Blunt": 1.5,
+     "Radiation": -3.0
+    },
+    "rate": 0.5
+   },
    "name": "arithrazine"
   },
   "ArnoldPalmer": {
@@ -45780,6 +46294,12 @@
    "desc": "Now watch this drive.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "Arnold Palmer"
   },
   "ArtifactGlue": {
@@ -45794,6 +46314,12 @@
    "desc": "A lavender mixture of microscopic artifact fragments and a strong acid. It has the ability to activate artifacts.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "artifexium"
   },
   "Ash": {
@@ -45829,6 +46355,16 @@
    "desc": "You didn't think it was possible for a liquid to be so utterly revolting. Are you sure about this...?",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Poison": 0.24
+    },
+    "fx": [
+     "Satiate",
+     "Drunk"
+    ],
+    "rate": 0.5
+   },
    "name": "bacchus's blessing"
   },
   "BahamaMama": {
@@ -45850,6 +46386,12 @@
    "desc": "A mild psychedelic that is found in small traces in banana peels.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "bananadine"
   },
   "Barefoot": {
@@ -45864,6 +46406,21 @@
    "desc": "A potent chemical that prevents pressure damage. Causes extreme stress on the body.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Poison": 3.0
+    },
+    "dmg": {
+     "Heat": 0.5
+    },
+    "fx": [
+     "ModifyStatusEffect",
+     "GenericStatusEffect",
+     "Emote",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "barozine"
   },
   "BaseAlcohol": {
@@ -45871,6 +46428,12 @@
    "desc": "",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/base_drink.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "BaseAlcohol"
   },
   "BaseDrink": {
@@ -45878,6 +46441,12 @@
    "desc": "",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/base_drink.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "BaseDrink"
   },
   "BaseJuice": {
@@ -45899,6 +46468,12 @@
    "desc": "",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/base_drink.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "BaseSoda"
   },
   "BbqSauce": {
@@ -45927,6 +46502,12 @@
    "desc": "An aromatic, slightly carcinogenic, ring of carbon, forming a base for many organic compounds.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Cellular": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "benzene"
   },
   "Bicaridine": {
@@ -45934,6 +46515,16 @@
    "desc": "An analgesic which is highly effective at treating brute damage. It's useful for stabilizing people who have been severely beaten, as well as treating less life-threatening injuries.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 0.5,
+     "Poison": 1.5
+    },
+    "dmg": {
+     "Brute": -1.5
+    },
+    "rate": 0.5
+   },
    "name": "bicaridine"
   },
   "BlackRussian": {
@@ -45948,6 +46539,12 @@
    "desc": "Often used to flavor food or make people sneeze.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Emote"
+    ],
+    "rate": 0.5
+   },
    "name": "black pepper"
   },
   "Bleach": {
@@ -45955,6 +46552,17 @@
    "desc": "Heavy duty cleaner that can clean tiles better than Space Cleaner. Extremely toxic when ingested.",
    "file": "Resources/Prototypes/Reagents/cleaning.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 2.0,
+     "Poison": 2.0
+    },
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 0.5
+   },
    "name": "bleach"
   },
   "Blood": {
@@ -45962,6 +46570,16 @@
    "desc": "I hope this is ketchup.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "cond": {
+     "Brute": -3.0,
+     "Burn": -1.25
+    },
+    "dmg": {
+     "Poison": 0.2
+    },
+    "rate": 0.5
+   },
    "name": "blood"
   },
   "BloodyMary": {
@@ -46018,6 +46636,18 @@
    "desc": "Originally developed as a cough medicine, it turns out this chemical is wildly effective at treating blunt force trauma.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Poison": 2.5
+    },
+    "dmg": {
+     "Blunt": -2.25
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.25
+   },
    "name": "bruizine"
   },
   "BudgetInsulsDrink": {
@@ -46025,6 +46655,13 @@
    "desc": "A tider's preferred drink.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "budget insuls"
   },
   "Bungotoxin": {
@@ -46032,6 +46669,12 @@
    "desc": "A moderately slow-acting poison found within the pit of the bungo fruit.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 1.8
+    },
+    "rate": 0.2
+   },
    "name": "bungotoxin"
   },
   "Butter": {
@@ -46046,6 +46689,13 @@
    "desc": "Liquid bees. Oh god it's LIQUID BEES NO-",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Piercing": 2.0,
+     "Poison": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "buzzochloric bees"
   },
   "CafeLatte": {
@@ -46053,6 +46703,13 @@
    "desc": "A nice, strong and tasty beverage while you are reading.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "cafe latte"
   },
   "Caipirinha": {
@@ -46067,6 +46724,15 @@
    "desc": "A type of carcinogenic enzyme known to break down proteins found within the vocal cords of most animals. Mixing is NOT recommended.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Radiation": 0.5
+    },
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.2
+   },
    "name": "caninase"
   },
   "CapsaicinOil": {
@@ -46074,6 +46740,16 @@
    "desc": "Capsaicin Oil is the ingredient found in different types of hot peppers.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "cond": {
+     "Caustic": 1.0
+    },
+    "fx": [
+     "AdjustTemperature",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "Capsaicin Oil"
   },
   "Carbon": {
@@ -46088,6 +46764,12 @@
    "desc": "You have genuinely no idea what this is.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "cond": {
+     "Poison": 1.2
+    },
+    "rate": 0.5
+   },
    "name": "carbon dioxide"
   },
   "Carpetium": {
@@ -46095,6 +46777,12 @@
    "desc": "A mystical chemical, usually outsourced from the Clown Planet, that covers everything it touches in carpet. Somehow filters out carpotoxin from the blood stream.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Special",
+   "metab": {
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "carpetium"
   },
   "CarpoToxin": {
@@ -46102,6 +46790,15 @@
    "desc": "A highly toxic reagent found in space carps. Causes a painful burning sensation.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 4.0
+    },
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "carpotoxin"
   },
   "Cellulose": {
@@ -46116,6 +46813,12 @@
    "desc": "A premium sparkling wine",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "champagne"
   },
   "ChangelingSting": {
@@ -46130,6 +46833,15 @@
    "desc": "A black, porous solid",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Poison": -1.0
+    },
+    "fx": [
+     "CleanBloodstream"
+    ],
+    "rate": 0.5
+   },
    "name": "charcoal"
   },
   "ChloralHydrate": {
@@ -46137,6 +46849,17 @@
    "desc": "A sedative and hypnotic chemical. Commonly used to put other people to sleep, whether they want to or not.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Poison": 1.5
+    },
+    "fx": [
+     "Emote",
+     "MovementSpeedModifier",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "chloral hydrate"
   },
   "Chlorine": {
@@ -46144,6 +46867,12 @@
    "desc": "A yellow-green gas which is toxic to humans.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Poison": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "chlorine"
   },
   "ChlorineTrifluoride": {
@@ -46151,6 +46880,18 @@
    "desc": "You really, REALLY don't want to get this shit anywhere near you.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 0.5,
+     "Heat": 2.0,
+     "Poison": 1.0
+    },
+    "fx": [
+     "Flammable",
+     "AdjustTemperature"
+    ],
+    "rate": 0.5
+   },
    "name": "chlorine trifluoride"
   },
   "CocoaPowder": {
@@ -46172,6 +46913,12 @@
    "desc": "A favorite of survivors on deserted islands.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "coconut water"
   },
   "Coffee": {
@@ -46179,6 +46926,13 @@
    "desc": "A drink made from brewed coffee beans. Contains a moderate amount of caffeine.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "coffee"
   },
   "CoffeeLiqueur": {
@@ -46193,6 +46947,13 @@
    "desc": "Not even Ratvar's Four Generals could withstand this! Qevax Jryy!",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "Cogchamp"
   },
   "Cognac": {
@@ -46214,6 +46975,13 @@
    "desc": "A sweet, carbonated soft drink.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/soda.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "Space Cola"
   },
   "Coldsauce": {
@@ -46228,6 +46996,12 @@
    "desc": "A soft, malleable, and ductile metal with very high thermal and electrical conductivity.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "cond": {
+     "Poison": 0.1
+    },
+    "rate": 0.1
+   },
    "name": "copper"
   },
   "CopperBlood": {
@@ -46242,6 +47016,12 @@
    "desc": "Used for baking.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "cornmeal"
   },
   "Cornoil": {
@@ -46263,6 +47043,12 @@
    "desc": "The fatty, still liquid part of milk. Why don't you mix this with sum scotch, eh?",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "cream"
   },
   "CreamOfCoconut": {
@@ -46270,6 +47056,12 @@
    "desc": "Sweet, syrupy version of coconut cream with added sugar.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "cream of coconut"
   },
   "CrushDepth": {
@@ -46284,6 +47076,18 @@
    "desc": "Required for the proper function of cryogenics. Heals all standard types of damage, but only works in temperatures under 213K. It can treat and rejuvenate plants when applied in small doses.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Airloss": -3.0,
+     "Brute": -2.0,
+     "Burn": -2.0,
+     "Toxin": -2.0
+    },
+    "fx": [
+     "AdjustTemperature"
+    ],
+    "rate": 0.5
+   },
    "name": "cryoxadone"
   },
   "Cryptobiolin": {
@@ -46291,6 +47095,12 @@
    "desc": "Causes confusion and dizziness.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "cryptobiolin"
   },
   "CubaLibre": {
@@ -46340,6 +47150,19 @@
    "desc": "An advanced chemical that is more effective at treating burn damage than kelotane.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 1.0,
+     "Blunt": 0.5,
+     "Cold": 2.0
+    },
+    "dmg": {
+     "Cold": -1.5,
+     "Heat": -1.5,
+     "Shock": -1.5
+    },
+    "rate": 0.5
+   },
    "name": "dermaline"
   },
   "Desoxyephedrine": {
@@ -46347,6 +47170,22 @@
    "desc": "A more effective ephedrine, with more active downsides. Requires less doses to cure narcolepsy.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 2.0,
+     "Poison": 3.0
+    },
+    "dmg": {
+     "Blunt": 1.1,
+     "Poison": 0.55
+    },
+    "fx": [
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "GenericStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "desoxyephedrine"
   },
   "DevilsKiss": {
@@ -46361,6 +47200,17 @@
    "desc": "Used for treating minor oxygen deprivation and bloodloss. A required reagent for dexalin plus.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 3.0,
+     "Cold": 1.0
+    },
+    "dmg": {
+     "Asphyxiation": -1.0,
+     "Bloodloss": -0.5
+    },
+    "rate": 0.5
+   },
    "name": "dexalin"
   },
   "DexalinPlus": {
@@ -46368,6 +47218,17 @@
    "desc": "Used in treatment of extreme cases of oxygen deprivation and bloodloss. Flushes heartbreaker toxin out of the blood stream.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 5.0,
+     "Cold": 3.0
+    },
+    "dmg": {
+     "Asphyxiation": -3.5,
+     "Bloodloss": -3.0
+    },
+    "rate": 0.5
+   },
    "name": "dexalin plus"
   },
   "Diethylamine": {
@@ -46375,6 +47236,12 @@
    "desc": "A very potent fertilizer, treats plants with nutrients, eliminates pests, and sometimes it can even speed up growth.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "dmg": {
+     "Caustic": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "diethylamine"
   },
   "Diphenhydramine": {
@@ -46382,6 +47249,17 @@
    "desc": "Rapidly purges the body of histamine, reduces jitteriness, causes drowsiness, and treats poison damage. Often included in sleep medication.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Poison": -3.0
+    },
+    "fx": [
+     "AdjustReagent",
+     "GenericStatusEffect",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "diphenhydramine"
   },
   "Diphenylmethylamine": {
@@ -46389,6 +47267,13 @@
    "desc": "A more stable medicine than ethyloxyephedrine. Useful for keeping someone awake.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "diphenylmethylamine"
   },
   "DoctorsDelight": {
@@ -46396,6 +47281,18 @@
    "desc": "A gulp a day keeps the MediBot away. That's probably for the best.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Airloss": -1.0,
+     "Brute": -1.0,
+     "Burn": -1.0,
+     "Toxin": -1.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "The Doctor's Delight"
   },
   "Doxarubixadone": {
@@ -46403,6 +47300,12 @@
    "desc": "A cryogenics chemical. Heals cellular damage caused by dangerous gasses and chemicals.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Cellular": -2.0
+    },
+    "rate": 0.5
+   },
    "name": "doxarubixadone"
   },
   "DrGibb": {
@@ -46424,6 +47327,12 @@
    "desc": "Dry noodles and salt.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "dry ramen"
   },
   "Dylovene": {
@@ -46431,6 +47340,15 @@
    "desc": "A broad-spectrum anti-toxin, which treats toxin damage in organisms. Overdosing will cause vomiting, dizzyness and pain.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Blunt": 2.0
+    },
+    "dmg": {
+     "Poison": -1.0
+    },
+    "rate": 0.5
+   },
    "name": "dylovene"
   },
   "EZNutrient": {
@@ -46480,6 +47398,13 @@
    "desc": "A dose of energy! Nanotrasen is not responsible if you grow avian appendages.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/soda.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "Red Bool"
   },
   "Enzyme": {
@@ -46494,6 +47419,19 @@
    "desc": "A caffeinated adrenaline stimulator chemical that makes you faster and harder to knock down. Also helps combat narcolepsy at dosages over thirty, at the cost of severe nerval stress.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 2.0,
+     "Poison": 2.0
+    },
+    "fx": [
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "ModifyKnockdown",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "ephedrine"
   },
   "Epinephrine": {
@@ -46501,6 +47439,20 @@
    "desc": "An effective stabilizing chemical used to keep a critical person from dying to asphyxiation while patching up minor damage during crit. Flushes heartbreaker toxin out the blood stream at the cost of more epinephrine, but may add histamine. Helps reduce stun time. Commonly found in the form of emergency medipens.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": -2.0,
+     "Brute": -0.5,
+     "Burn": -0.5,
+     "Poison": 0.5
+    },
+    "fx": [
+     "AdjustReagent",
+     "ModifyStatusEffect",
+     "ModifyKnockdown"
+    ],
+    "rate": 0.5
+   },
    "name": "epinephrine"
   },
   "ErikaSurprise": {
@@ -46522,6 +47474,16 @@
    "desc": "A simple alcohol, makes you drunk if consumed, flammable.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Brute": -0.1,
+     "Poison": 0.12
+    },
+    "fx": [
+     "Drunk"
+    ],
+    "rate": 0.05
+   },
    "name": "ethanol"
   },
   "Ethyloxyephedrine": {
@@ -46529,6 +47491,14 @@
    "desc": "A mildly unstable medicine derived from desoxyephedrine, primarily used to combat narcolepsy.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "GenericStatusEffect",
+     "ModifyStatusEffect",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "ethyloxyephedrine"
   },
   "Ethylredoxrazine": {
@@ -46536,6 +47506,15 @@
    "desc": "Neutralises the effects of alcohol in the blood stream. Though it is commonly needed, it is rarely requested.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Poison": -0.5
+    },
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "ethylredoxrazine"
   },
   "Fat": {
@@ -46550,6 +47529,15 @@
    "desc": "A type of carcinogenic enzyme known to break down proteins found within the vocal cords of most animals. Mixing is NOT recommended.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Radiation": 0.5
+    },
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.2
+   },
    "name": "felinase"
   },
   "FerrochromicAcid": {
@@ -46557,6 +47545,16 @@
    "desc": "A mildy corrosive solution, unable of causing severe danger unless ingested.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Caustic": 1.0,
+     "Heat": 2.5
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "ferrochromic acid"
   },
   "Fersilicite": {
@@ -46578,6 +47576,12 @@
    "desc": "Used for baking.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "flour"
   },
   "Fluorine": {
@@ -46585,6 +47589,13 @@
    "desc": "A highly toxic pale yellow gas. Extremely reactive.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Caustic": 0.5,
+     "Poison": 0.5
+    },
+    "rate": 0.5
+   },
    "name": "fluorine"
   },
   "FluorosulfuricAcid": {
@@ -46592,6 +47603,16 @@
    "desc": "A highly corrosive chemical, capable of leaving quite a mark on your skin.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Caustic": 8.0
+    },
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 3.0
+   },
    "name": "fluorosulfuric acid"
   },
   "Fluorosurfactant": {
@@ -46613,6 +47634,15 @@
    "desc": "A highly processed liquid substance barely-passing intergalatic health standards for a soft drink.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/soda.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "Fourteen Loko"
   },
   "Fresium": {
@@ -46620,6 +47650,13 @@
    "desc": "A mysterious compound that slows the vibration of atoms and molecules... somehow. In layman's terms, it makes things cold... REALLY cold. Can cause long-lasting movement issues if ingested.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Cold": 0.01,
+     "Heat": -3.0
+    },
+    "rate": 0.45
+   },
    "name": "Fresium"
   },
   "Frezon": {
@@ -46627,6 +47664,17 @@
    "desc": "A highly effective coolant.. and hallucinogenic.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "dmg": {
+     "Cellular": 0.55
+    },
+    "fx": [
+     "ModifyStatusEffect",
+     "Drunk",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "frezon"
   },
   "FrostOil": {
@@ -46634,6 +47682,16 @@
    "desc": "Frost Oil is the ingredient found in chilly peppers, a rare pepper mutation.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "cond": {
+     "Cold": 1.0
+    },
+    "fx": [
+     "AdjustTemperature",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "Frost Oil"
   },
   "GargleBlaster": {
@@ -46648,6 +47706,12 @@
    "desc": "A moderately toxic byproduct of decomposition. Most commonly found in spoiled food.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "gastrotoxin"
   },
   "Gildlager": {
@@ -46711,6 +47775,15 @@
    "desc": "Thought juice, the stuff that leaks out of your ears.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "dmg": {
+     "Cellular": 2.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "grey matter"
   },
   "Grog": {
@@ -46732,6 +47805,15 @@
    "desc": "Removes most stimulating and hallucinogenic drugs. Reduces druggy effects and jitteriness. Causes drowsiness.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "Emote",
+     "ModifyStatusEffect",
+     "GenericStatusEffect",
+     "AdjustReagent"
+    ],
+    "rate": 0.5
+   },
    "name": "haloperidol"
   },
   "Happiness": {
@@ -46739,6 +47821,12 @@
    "desc": "Fills you with ecstatic numbness and causes minor brain damage. Highly addictive. If overdosed causes sudden mood swings.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "happiness"
   },
   "HeartbreakerToxin": {
@@ -46746,6 +47834,12 @@
    "desc": "A hallucinogenic compound derived from mindbreaker toxin. it blocks neurological signals to the respiratory system, causing asphyxiation. Dexalin plus and epinephrine will filter it out, however.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Asphyxiation": 5.0
+    },
+    "rate": 0.5
+   },
    "name": "heartbreaker toxin"
   },
   "Hemorrhinol": {
@@ -46753,6 +47847,13 @@
    "desc": "A toxin that causes severe damage to blood vessels, causing rapid bleeding.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect",
+     "ModifyBleed"
+    ],
+    "rate": 0.5
+   },
    "name": "hemorrhinol"
   },
   "Heparin": {
@@ -46760,6 +47861,12 @@
    "desc": "Commonly used as an anticoagulant medication. Causes blood to have difficulty forming clots. Can cause internal bleeding when overdosed.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "heparin"
   },
   "HippiesDelight": {
@@ -46774,6 +47881,20 @@
    "desc": "A chemical caused by allergenics reacting with antibodies. Lethal at large quantities.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 2.0,
+     "Blunt": 2.0,
+     "Poison": 2.0
+    },
+    "dmg": {
+     "Blunt": 2.0
+    },
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "histamine"
   },
   "Hivarol": {
@@ -46781,6 +47902,12 @@
    "desc": "A toxin that attacks specific types of cells in the body, damaging hivemind communication and causing severe pain if one is present.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Shock": 3.0
+    },
+    "rate": 0.5
+   },
    "name": "hivarol"
   },
   "Holywater": {
@@ -46788,6 +47915,19 @@
    "desc": "The cleanest and purest of waters straight from the hands of god, is known to magically heal wounds.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Blunt": -0.2,
+     "Cold": -0.2,
+     "Heat": -0.2,
+     "Poison": -0.2,
+     "Shock": -0.2
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "holy water"
   },
   "Honk": {
@@ -46795,6 +47935,15 @@
    "desc": "A toxin found in bananium. Causes severe honking and internal bleeding, may also cause the patient to mutate.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Poison": 0.06
+    },
+    "fx": [
+     "Emote"
+    ],
+    "rate": 0.05
+   },
    "name": "honk"
   },
   "Hooch": {
@@ -46823,6 +47972,12 @@
    "desc": "Hot noodles.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "hot ramen"
   },
   "Hotsauce": {
@@ -46858,6 +48013,18 @@
    "desc": "A weak treatment for radiation damage. A precursor to arithrazine and phalanximine. Can cause vomiting.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Heat": 2.0
+    },
+    "dmg": {
+     "Radiation": -1.0
+    },
+    "fx": [
+     "Vomit"
+    ],
+    "rate": 0.5
+   },
    "name": "hyronalin"
   },
   "Ice": {
@@ -46865,6 +48032,12 @@
    "desc": "Frozen water.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "ice"
   },
   "IceCream": {
@@ -46886,6 +48059,13 @@
    "desc": "Coffee and ice, refreshing and cool.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "iced coffee"
   },
   "IcedGreenTea": {
@@ -46907,6 +48087,20 @@
    "desc": "An extremely potent regenerative chemical, perfected by space fauna evolution. Produced in the dragon's digestive system, it is seen as an exotic commodity due to the gargantuan effort of hunting for it.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "dmg": {
+     "Bloodloss": -3.0,
+     "Brute": -3.0,
+     "Burn": -3.0,
+     "Toxin": -2.0
+    },
+    "fx": [
+     "Satiate",
+     "ModifyBloodLevel",
+     "ModifyBleed"
+    ],
+    "rate": 0.5
+   },
    "name": "ichor"
   },
   "Impedrezene": {
@@ -46914,6 +48108,18 @@
    "desc": "A narcotic that impedes one's ability by slowing down the higher brain cell functions.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "dmg": {
+     "Poison": 2.0
+    },
+    "fx": [
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "Vomit",
+     "Drunk"
+    ],
+    "rate": 0.5
+   },
    "name": "impedrezene"
   },
   "Inaprovaline": {
@@ -46921,6 +48127,15 @@
    "desc": "Inaprovaline is a synaptic stimulant and cardiostimulant, commonly used to treat asphyxiation damage caused during critical states and reduce bleeding. Used in many advanced medicines.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": -2.0
+    },
+    "fx": [
+     "ModifyBleed"
+    ],
+    "rate": 0.1
+   },
    "name": "inaprovaline"
   },
   "InsectBlood": {
@@ -46935,6 +48150,19 @@
    "desc": "Rapidly repairs dead tissue caused by electrocution, but cools you slightly. Completely freezes the patient when overdosed.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Cold": 1.0
+    },
+    "dmg": {
+     "Shock": -1.5
+    },
+    "fx": [
+     "AdjustReagent",
+     "AdjustTemperature"
+    ],
+    "rate": 0.25
+   },
    "name": "insuzine"
   },
   "Iodine": {
@@ -46956,6 +48184,13 @@
    "desc": "Like a bool in a Ireland shop.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "Irish bool"
   },
   "IrishCoffee": {
@@ -46984,6 +48219,12 @@
    "desc": "A silvery-grey metal which forms iron oxides (rust) with contact with air. Commonly alloyed with other elements to create alloys such as steel.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "cond": {
+     "Poison": 0.1
+    },
+    "rate": 0.1
+   },
    "name": "iron"
   },
   "JackRose": {
@@ -47019,6 +48260,15 @@
    "desc": "A surprisingly tasty juice blended from various kinds of very deadly and toxic berries.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "poison berry juice"
   },
   "JuiceBluePumpkin": {
@@ -47089,6 +48339,12 @@
    "desc": "Pure essence of inversed lizard plush. Makes you Hew!",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "Emote"
+    ],
+    "rate": 0.25
+   },
    "name": "juice that makes you Hew"
   },
   "JuiceThatMakesYouWeh": {
@@ -47096,6 +48352,12 @@
    "desc": "Pure essence of lizard plush. Makes you Weh!",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "Emote"
+    ],
+    "rate": 0.25
+   },
    "name": "juice that makes you Weh"
   },
   "JuiceTomato": {
@@ -47131,6 +48393,14 @@
    "desc": "Treats burn damage. Overdosing greatly reduces the body's ability to retain water.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Cold": -0.33,
+     "Heat": -0.33,
+     "Shock": -0.33
+    },
+    "rate": 0.5
+   },
    "name": "kelotane"
   },
   "Ketchunaise": {
@@ -47152,6 +48422,16 @@
    "desc": "A fairly unreactive chemical that boosts collagen synthesis to incredible levels, healing slash trauma.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Cold": 1.5
+    },
+    "dmg": {
+     "Heat": 0.2,
+     "Slash": -2.0
+    },
+    "rate": 0.25
+   },
    "name": "lacerinol"
   },
   "LaughinSyrup": {
@@ -47166,6 +48446,13 @@
    "desc": "Some say that this is the best medicine, but recent studies have proven that to be untrue.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Special",
+   "metab": {
+    "fx": [
+     "Emote",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "laughter"
   },
   "Lead": {
@@ -47173,6 +48460,12 @@
    "desc": "A slow-acting but incredibly lethal toxin found in steel, albeit in trace amounts. Tasteless.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 0.6
+    },
+    "rate": 0.03
+   },
    "name": "lead"
   },
   "Left4Zed": {
@@ -47180,6 +48473,12 @@
    "desc": "A cocktail of mutagenic compounds that gives nutrients, harms and affects plant life's genome.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "left-4-zed"
   },
   "LemonLime": {
@@ -47201,6 +48500,12 @@
    "desc": "Drink using lemon juice, water, and a sweetener such as cane sugar or honey.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "lemonade"
   },
   "Leporazine": {
@@ -47208,6 +48513,16 @@
    "desc": "A chemical used to stabilize body temperature and rapidly cure cold damage. Great for unprotected EVA travel, but prevents the use of cryogenic tubes.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Cold": -4.0
+    },
+    "fx": [
+     "PopupMessage",
+     "AdjustReagent"
+    ],
+    "rate": 0.5
+   },
    "name": "leporazine"
   },
   "Lexorin": {
@@ -47215,6 +48530,13 @@
    "desc": "A fast-acting chemical used to asphyxiate people rapidly.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Asphyxiation": 5.0,
+     "Bloodloss": 5.0
+    },
+    "rate": 0.5
+   },
    "name": "lexorin"
   },
   "Licoxide": {
@@ -47222,6 +48544,12 @@
    "desc": "A synthetic battery acid. It looks... electrifying.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "Electrocute"
+    ],
+    "rate": 2.0
+   },
    "name": "licoxide"
   },
   "Lipolicide": {
@@ -47229,6 +48557,15 @@
    "desc": "A powerful toxin that will destroy fat cells, massively reducing body weight in a short time. Deadly to those without nutriment in their body.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Poison": 2.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "lipolicide"
   },
   "Lipozine": {
@@ -47236,6 +48573,12 @@
    "desc": "A chemical that accelerates metabolism, causing the user to hunger faster.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "lipozine"
   },
   "Lithium": {
@@ -47243,6 +48586,15 @@
    "desc": "A soft, silvery-white alkali metal. It's highly reactive, and ignites if it makes contact with water.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Poison": 0.05
+    },
+    "fx": [
+     "Emote"
+    ],
+    "rate": 0.1
+   },
    "name": "lithium"
   },
   "LivingTissue": {
@@ -47264,6 +48616,12 @@
    "desc": "A translucent, orange, alkaline solution used in traditional soap production.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "lye"
   },
   "Manhattan": {
@@ -47320,6 +48678,15 @@
    "desc": "An affront to god and man. Do not drink it.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Poison": 0.5
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "mayojito"
   },
   "Mead": {
@@ -47334,6 +48701,12 @@
    "desc": "A neurotoxin used as venom by some species of spider. Degrades movement when built up.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Poison": 1.6
+    },
+    "rate": 0.2
+   },
    "name": "mechanotoxin"
   },
   "MelonLiquor": {
@@ -47348,6 +48721,15 @@
    "desc": "A silver metal which is liquid at room temperature. It's highly toxic to humans.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "mercury"
   },
   "Milk": {
@@ -47355,6 +48737,12 @@
    "desc": "An opaque white liquid produced by the mammary glands of mammals.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "milk"
   },
   "MilkGoat": {
@@ -47369,6 +48757,12 @@
    "desc": "Surprisingly tasty.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "oat milk"
   },
   "MilkSheep": {
@@ -47390,6 +48784,12 @@
    "desc": "This milk has gone rancid.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "spoiled milk"
   },
   "Mimeosa": {
@@ -47397,6 +48797,13 @@
    "desc": "It has an orange tang so sour you just can't describe it.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "mimeosa"
   },
   "Mimosa": {
@@ -47411,6 +48818,12 @@
    "desc": "A potent hallucinogenic compound that is formerly known as LSD.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "mindbreaker toxin"
   },
   "Mojito": {
@@ -47425,6 +48838,12 @@
    "desc": "A fungal growth, often found in dark, humid places or on expired bread. Will cause you to develop a disease if ingested.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "mold"
   },
   "MonkeyBusiness": {
@@ -47446,6 +48865,12 @@
    "desc": "Dirty, stagnant mop water.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "mopwata"
   },
   "MoscowMule": {
@@ -47467,6 +48892,12 @@
    "desc": "A thick chemical that coats the vocal cords, making the user unable to speak during metabolization.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "mute toxin"
   },
   "NTCahors": {
@@ -47481,6 +48912,17 @@
    "desc": "It's just a little flammable.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 0.5,
+     "Heat": 2.0,
+     "Poison": 1.0
+    },
+    "fx": [
+     "Flammable"
+    ],
+    "rate": 0.5
+   },
    "name": "napalm"
   },
   "Neurotoxin": {
@@ -47488,6 +48930,15 @@
    "desc": "A strong neurotoxin that puts the subject into a death-like state.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "neurotoxin"
   },
   "Nicotine": {
@@ -47502,6 +48953,12 @@
    "desc": "A colorless, odorless unreactive gas. Highly stable.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "dmg": {
+     "Cold": 0.5
+    },
+    "rate": 0.5
+   },
    "name": "nitrogen"
   },
   "NitrousOxide": {
@@ -47509,6 +48966,15 @@
    "desc": "You know how everything seems funnier when you're tired? Well...",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "dmg": {
+     "Poison": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "nitrous oxide"
   },
   "Nocturine": {
@@ -47516,6 +48982,12 @@
    "desc": "A highly effective sedative and hypnotic, developed by the Syndicate for stealth operations. One-way ticket to honk-shoo town.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "MovementSpeedModifier"
+    ],
+    "rate": 0.5
+   },
    "name": "nocturine"
   },
   "NorepinephricAcid": {
@@ -47523,6 +48995,12 @@
    "desc": "A smooth chemical that blocks the optical receptors, rendering the user blind during metabolization.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "norepinephric acid"
   },
   "Nothing": {
@@ -47530,6 +49008,12 @@
    "desc": "Absolutely nothing.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "nothing"
   },
   "NuclearCola": {
@@ -47537,6 +49021,16 @@
    "desc": "Cola, cola never changes.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Drinks",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "nuclear cola"
   },
   "Nutriment": {
@@ -47544,6 +49038,12 @@
    "desc": "All the vitamins, minerals, and carbohydrates the body needs in pure form.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/food.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "nutriment"
   },
   "Oats": {
@@ -47579,6 +49079,15 @@
    "desc": "A soothing milky liquid with an iridescent gleam. A well known conspiracy theory says that its origins remain a mystery because revealing the secrets of its production would render most commercial pharmaceuticals obsolete.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Airloss": -2.0,
+     "Brute": -2.0,
+     "Burn": -2.0,
+     "Toxin": -2.0
+    },
+    "rate": 0.5
+   },
    "name": "omnizine"
   },
   "Opporozidone": {
@@ -47600,6 +49109,12 @@
    "desc": "An oxidizing, colorless gas.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "cond": {
+     "Poison": 2.2
+    },
+    "rate": 0.5
+   },
    "name": "oxygen"
   },
   "Painkiller": {
@@ -47621,6 +49136,12 @@
    "desc": "A psychiatric chemical which prevents the patient from directly harming anyone.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "GenericStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "pax"
   },
   "PestKiller": {
@@ -47628,6 +49149,12 @@
    "desc": "A mixture that targets pests. While useful it slowly poisons plants with toxins, be careful when using it.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Poison": 3.0
+    },
+    "rate": 0.5
+   },
    "name": "pest killer"
   },
   "Phalanximine": {
@@ -47635,6 +49162,18 @@
    "desc": "An advanced chemical used in the treatment of cancer. Causes moderate radiation poisoning, acid burns, and vomiting on organics. Can potentially remove the death gene on plants.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Caustic": 0.3,
+     "Radiation": 0.2
+    },
+    "dmg": {
+     "Caustic": 0.15,
+     "Cellular": -0.3,
+     "Radiation": 0.15
+    },
+    "rate": 0.1
+   },
    "name": "phalanximine"
   },
   "Phenol": {
@@ -47642,6 +49181,13 @@
    "desc": "An aromatic ring of carbon with a hydroxyl group. A useful precursor to some medicines, but has no healing properties on its own.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Caustic": 1.0,
+     "Poison": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "phenol"
   },
   "Phlogiston": {
@@ -47649,6 +49195,17 @@
    "desc": "Catches you on fire and makes you ignite.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Heat": 3.0,
+     "Poison": 1.0
+    },
+    "fx": [
+     "Flammable",
+     "AdjustTemperature"
+    ],
+    "rate": 0.5
+   },
    "name": "phlogiston"
   },
   "Phosphorus": {
@@ -47663,6 +49220,12 @@
    "desc": "A sickening mixture of milk and cola.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "pilk"
   },
   "PinaColada": {
@@ -47677,6 +49240,15 @@
    "desc": "A harmful toxic mixture to kill plantlife. Very effective against kudzu.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Blunt": 2.0,
+     "Piercing": 1.0,
+     "Poison": -4.0,
+     "Slash": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "plant-B-gone"
   },
   "Plasma": {
@@ -47684,6 +49256,16 @@
    "desc": "Funky, space-magic pixie dust. You probably shouldn't eat this, but we both know you will anyways.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "dmg": {
+     "Poison": 1.6
+    },
+    "fx": [
+     "AdjustReagent",
+     "AdjustAlert"
+    ],
+    "rate": 0.5
+   },
    "name": "plasma"
   },
   "PoisonWine": {
@@ -47691,6 +49273,15 @@
    "desc": "Is this even wine? Toxic! Hallucinogenic! Probably consumed in boatloads by your superiors!",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "poison wine"
   },
   "PolypyryliumOligomers": {
@@ -47698,6 +49289,19 @@
    "desc": "A purple mixture of short polyelectrolyte chains not easily synthesized in the laboratory. Heals asphyxiation and brute damage. Stops bleeding over time.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 3.5
+    },
+    "dmg": {
+     "Airloss": -1.0,
+     "Brute": -1.75
+    },
+    "fx": [
+     "ModifyBleed"
+    ],
+    "rate": 0.5
+   },
    "name": "Polypyrylium Oligomers"
   },
   "PolytrinicAcid": {
@@ -47705,6 +49309,16 @@
    "desc": "An extremely corrosive chemical substance. Severely burns anyone who comes directly into contact with it.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Caustic": 11.0
+    },
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 3.0
+   },
    "name": "polytrinic acid"
   },
   "Posca": {
@@ -47726,6 +49340,15 @@
    "desc": "Will reduce the damaging effects of radiation by 90%. Prophylactic use only.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "potassium iodide"
   },
   "Protein": {
@@ -47733,6 +49356,16 @@
    "desc": "Found in certain meals, good for bodily health.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/food.yml",
    "group": "Foods",
+   "metab": {
+    "dmg": {
+     "Brute": -0.4
+    },
+    "fx": [
+     "ModifyBloodLevel",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "protein"
   },
   "Psicodine": {
@@ -47740,6 +49373,17 @@
    "desc": "Suppresses anxiety and other various forms of mental distress. Overdose causes hallucinations and minor toxin damage.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Poison": 2.0
+    },
+    "fx": [
+     "GenericStatusEffect",
+     "ModifyStatusEffect",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "psicodine"
   },
   "PulpedBananaPeel": {
@@ -47747,6 +49391,12 @@
    "desc": "Pulped banana peels have some effectiveness against bleeding.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "ModifyBleed"
+    ],
+    "rate": 0.5
+   },
    "name": "pulped banana peel"
   },
   "PumpkinFlesh": {
@@ -47761,6 +49411,16 @@
    "desc": "A fizzy chemical that helps rebuild trauma caused by piercing damage, leaving a slight amount of tissue damage behind.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Blunt": 3.0
+    },
+    "dmg": {
+     "Piercing": -2.5,
+     "Radiation": 0.05
+    },
+    "rate": 0.25
+   },
    "name": "puncturase"
   },
   "PwrGame": {
@@ -47775,6 +49435,16 @@
    "desc": "Efficiently heals burns from the hottest of fires. Causes massive internal bleeding when overdosed.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Piercing": 0.5,
+     "Slash": 0.5
+    },
+    "dmg": {
+     "Heat": -1.0
+    },
+    "rate": 0.1
+   },
    "name": "pyrazine"
   },
   "Radium": {
@@ -47796,6 +49466,16 @@
    "desc": "A strange, non-newtonian chemical. It is produced when two conflicting brute medications are combined. When force is applied to it, it temporarily hardens creating millions of tiny, sharp edges. Very painful.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Slash": 9.0
+    },
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 3.0
+   },
    "name": "razorium"
   },
   "RedMead": {
@@ -47824,6 +49504,17 @@
    "desc": "A highly effective fertilizer with a limited potency-boosting effect on plants. Use it cautiously, as excessive application can reduce plant yield. It has a particularly beneficial effect on dionas.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Asphyxiation": 1.0,
+     "Blunt": -3.0,
+     "Heat": 2.0,
+     "Piercing": -3.0,
+     "Poison": -1.0,
+     "Slash": -3.0
+    },
+    "rate": 0.5
+   },
    "name": "robust harvest"
   },
   "Romerol": {
@@ -47852,6 +49543,15 @@
    "desc": "A strange substance which fills the cores of the hivelords that roam the mining asteroid. Thought to be the source of their regenerative powers.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Biological",
+   "metab": {
+    "dmg": {
+     "Brute": -4.0
+    },
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "rororium"
   },
   "RoyRogers": {
@@ -47859,6 +49559,12 @@
    "desc": "Solid proof that there IS something known as too sweet.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/soda.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "Roy Rogers"
   },
   "Rubberneck": {
@@ -47866,6 +49572,13 @@
    "desc": "A popular drink amongst those adhering to an all synthetic diet.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "rubberneck"
   },
   "Rum": {
@@ -47887,6 +49600,13 @@
    "desc": "A mixture of salt and water. Commonly used to treat dehydration or low fluid presence in blood.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyBloodLevel"
+    ],
+    "rate": 0.5
+   },
    "name": "saline"
   },
   "Sap": {
@@ -47894,6 +49614,12 @@
    "desc": "Sticky, sweet tree blood.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "sap"
   },
   "Sbiten": {
@@ -47929,6 +49655,12 @@
    "desc": "A favorite amongst younger members of the crew.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/soda.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "Shirley Temple"
   },
   "Siderlac": {
@@ -47936,6 +49668,12 @@
    "desc": "A powerful anti-caustic medicine derived from plants.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Caustic": -5.0
+    },
+    "rate": 0.5
+   },
    "name": "siderlac"
   },
   "Sigynate": {
@@ -47943,6 +49681,15 @@
    "desc": "A thick pink syrup useful for neutralizing acids and soothing trauma caused by acids. Tastes sweet!",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Heat": 1.0
+    },
+    "dmg": {
+     "Caustic": -1.25
+    },
+    "rate": 0.25
+   },
    "name": "sigynate"
   },
   "Silencer": {
@@ -47950,6 +49697,13 @@
    "desc": "A drink from Mime Heaven.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "silencer"
   },
   "Silicon": {
@@ -47957,6 +49711,12 @@
    "desc": "A hard and brittle crystalline solid with a blue-grey color.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Poison": 1.5
+    },
+    "rate": 0.5
+   },
    "name": "silicon"
   },
   "Silver": {
@@ -48020,6 +49780,12 @@
    "desc": "A white, odorless, water-soluble salt that yields an strong alkaline solution in water. Causes burns and vomiting when ingested.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Heat": 1.5
+    },
+    "rate": 0.5
+   },
    "name": "sodium hydroxide"
   },
   "SodiumPolyacrylate": {
@@ -48027,6 +49793,13 @@
    "desc": "A super-absorbent polymer with assorted industrial uses.",
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "sodium polyacrylate"
   },
   "SolDry": {
@@ -48041,6 +49814,13 @@
    "desc": "A coffee drink made with espresso and steamed soy milk.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "soy latte"
   },
   "Soysauce": {
@@ -48048,6 +49828,12 @@
    "desc": "A salty soy-based flavoring.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/condiments.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "soy sauce"
   },
   "SpaceCleaner": {
@@ -48062,6 +49848,12 @@
    "desc": "An illegal compound which induces a number of effects such as loss of balance and visual artefacts.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "space mirage"
   },
   "SpaceGlue": {
@@ -48069,6 +49861,12 @@
    "desc": "Space Glue is a high performance glue intended for maintenance of extremely complex mechanical equipment (and certainly not used to make people stick to the floor).",
    "file": "Resources/Prototypes/Reagents/cleaning.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "space glue"
   },
   "SpaceLube": {
@@ -48104,6 +49902,12 @@
    "desc": "A natual anti-toxin with particular effectiveness against amatoxin.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Poison": -4.0
+    },
+    "rate": 0.5
+   },
    "name": "stellibinin"
   },
   "Stimulants": {
@@ -48111,6 +49915,22 @@
    "desc": "A chemical cocktail developed by Donk Co. that allows agents to recover from stuns faster, move more quickly, and grants a small heal when you're more dead than alive. Due to the complex nature of the chemical, it is much harder for the body to purge naturally.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "cond": {
+     "Asphyxiation": -2.0,
+     "Brute": -0.5,
+     "Burn": -0.5,
+     "Poison": 3.0
+    },
+    "fx": [
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "ModifyKnockdown",
+     "ModifyBleed",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "hyperzine"
   },
   "StrawberryIce": {
@@ -48118,6 +49938,22 @@
    "desc": "A special drug designed to be even stronger than Desoxyephedrine. Known as \"Strawberry Ice\" or \"Girl Ice\" given its color and flavor, it is incredibly addictive and comes with strong withdrawal symptoms. While the highs are higher and users report flying in rainbows through space while under its influence, near-eternal horrors await those who cease consuming it.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "cond": {
+     "Cellular": 1.5,
+     "Poison": 1.5
+    },
+    "dmg": {
+     "Cellular": 0.05
+    },
+    "fx": [
+     "AdjustReagent",
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "GenericStatusEffect"
+    ],
+    "rate": 1.0
+   },
    "name": "Methylenedioxystraquinone"
   },
   "Sugar": {
@@ -48139,6 +49975,12 @@
    "desc": "A yellow, crystalline solid.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Caustic": 0.1
+    },
+    "rate": 0.5
+   },
    "name": "sulfur"
   },
   "SulfurBlood": {
@@ -48153,6 +49995,16 @@
    "desc": "A corrosive chemical. Keep away from your face.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Caustic": 5.0
+    },
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 3.0
+   },
    "name": "sulfuric acid"
   },
   "Synaptizine": {
@@ -48160,6 +50012,16 @@
    "desc": "A toxic chemical that halves the duration of stuns and knockdowns.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "dmg": {
+     "Poison": 2.0
+    },
+    "fx": [
+     "ModifyStatusEffect",
+     "ModifyKnockdown"
+    ],
+    "rate": 0.5
+   },
    "name": "synaptizine"
   },
   "SyndicateBomb": {
@@ -48174,6 +50036,12 @@
    "desc": "Delicious syrup made from tree sap, somehow stickier than glue.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/condiments.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "syrup"
   },
   "THC": {
@@ -48181,6 +50049,12 @@
    "desc": "The main psychoactive compound in cannabis.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "THC"
   },
   "TableSalt": {
@@ -48188,6 +50062,12 @@
    "desc": "Commonly known as salt, Sodium Chloride is often used to season food or kill borers instantly.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/condiments.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "table salt"
   },
   "Tazinide": {
@@ -48195,6 +50075,12 @@
    "desc": "A highly dangerous metallic mixture which can interfere with most movement through an electrifying current.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "fx": [
+     "Electrocute"
+    ],
+    "rate": 2.0
+   },
    "name": "tazinide"
   },
   "Tea": {
@@ -48209,6 +50095,12 @@
    "desc": "Finely ground tea leaves, used for making tea.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "tea powder"
   },
   "TearGas": {
@@ -48216,6 +50108,13 @@
    "desc": "A chemical that causes severe irritation and crying, commonly used in riot control.",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
+   "metab": {
+    "fx": [
+     "PopupMessage",
+     "Emote"
+    ],
+    "rate": 0.5
+   },
    "name": "tear gas"
   },
   "Tequila": {
@@ -48251,6 +50150,12 @@
    "desc": "A bitter alkaloid of the cacao plant, commonly found in chocolate. Do not feed to animals.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cond": {
+     "Poison": 0.4
+    },
+    "rate": 0.05
+   },
    "name": "theobromine"
   },
   "Thermite": {
@@ -48258,6 +50163,13 @@
    "desc": "A mixture that becomes extremely hot when ignited.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "dmg": {
+     "Heat": 2.0,
+     "Poison": 1.0
+    },
+    "rate": 0.5
+   },
    "name": "thermite"
   },
   "ThreeMileIsland": {
@@ -48286,6 +50198,12 @@
    "desc": "An unsurprisingly toxic chemical. Available at an emagged chem dispenser.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 4.0
+    },
+    "rate": 0.5
+   },
    "name": "toxin"
   },
   "ToxinTrash": {
@@ -48307,6 +50225,15 @@
    "desc": "A blood-clotting medicine used to prevent profuse bleeding. Causes heavier bleeding on overdose. Commonly found in small doses within emergency medipens.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Bloodloss": 3.0
+    },
+    "fx": [
+     "ModifyBleed"
+    ],
+    "rate": 0.5
+   },
    "name": "tranexamic acid"
   },
   "Tricordrazine": {
@@ -48314,6 +50241,14 @@
    "desc": "A wide-spectrum stimulant, originally derived from cordrazine. Treats minor damage of all basic health types as long as the user is not heavily wounded. Best used as an additive to other chemicals.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Brute": -1.0,
+     "Burn": -1.0,
+     "Poison": -0.5
+    },
+    "rate": 0.5
+   },
    "name": "tricordrazine"
   },
   "Tritium": {
@@ -48321,6 +50256,15 @@
    "desc": "Radioactive space-magic pixie dust.",
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
+   "metab": {
+    "dmg": {
+     "Radiation": 2.5
+    },
+    "fx": [
+     "AdjustAlert"
+    ],
+    "rate": 0.5
+   },
    "name": "tritium"
   },
   "Ultravasculine": {
@@ -48328,6 +50272,13 @@
    "desc": "A complicated anti-toxin solution that quickly flushes out toxin while causing minor stress on the body. Reacts with histamine, duplicating itself while flushing it out. Overdose causes extreme pain.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cond": {
+     "Blunt": 7.5,
+     "Toxin": -8.0
+    },
+    "rate": 0.5
+   },
    "name": "ultravasculine"
   },
   "UncookedAnimalProteins": {
@@ -48335,6 +50286,12 @@
    "desc": "This is very risky for the stomachs of softer lifeforms to digest.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Foods",
+   "metab": {
+    "cond": {
+     "Poison": 1.25
+    },
+    "rate": 0.5
+   },
    "name": "uncooked animal proteins"
   },
   "UnstableMutagen": {
@@ -48342,6 +50299,12 @@
    "desc": "Causes mutations when injected into living people or plants. High doses may be lethal, especially in humans.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Radiation": 3.0
+    },
+    "rate": 0.5
+   },
    "name": "unstable mutagen"
   },
   "Uranium": {
@@ -48349,6 +50312,12 @@
    "desc": "A grey metallic chemical element in the actinide series, weakly radioactive.",
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
+   "metab": {
+    "dmg": {
+     "Radiation": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "uranium"
   },
   "Vampiro": {
@@ -48363,6 +50332,12 @@
    "desc": "A jet black substance found in poorly maintained ventilation systems. Can cause vent cough.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Poison": 2.0
+    },
+    "rate": 0.5
+   },
    "name": "vent crud"
   },
   "Vermouth": {
@@ -48377,6 +50352,16 @@
    "desc": "Has an adverse reaction within the body causing major jittering. While not particularly useful on its own, it can be used to produce a small variety of chemicals.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "dmg": {
+     "Asphyxiation": 1.0,
+     "Bloodloss": 1.0
+    },
+    "fx": [
+     "MovementSpeedModifier"
+    ],
+    "rate": 0.5
+   },
    "name": "vestine"
   },
   "Vinaigrette": {
@@ -48398,6 +50383,17 @@
    "desc": "Found in healthy, complete meals.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/food.yml",
    "group": "Foods",
+   "metab": {
+    "dmg": {
+     "Brute": -0.5,
+     "Burn": -0.5
+    },
+    "fx": [
+     "ModifyBleed",
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "vitamin"
   },
   "Vodka": {
@@ -48419,6 +50415,13 @@
    "desc": "Because heart failure and liver failure go hand in hand.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "vodka red bool"
   },
   "VodkaTonic": {
@@ -48433,6 +50436,12 @@
    "desc": "You can see a few chunks of someone's last meal in it.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "vomit"
   },
   "Water": {
@@ -48440,6 +50449,15 @@
    "desc": "A colorless liquid that humans need in order to survive.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/drinks.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Heat": 3.0
+    },
+    "fx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "water"
   },
   "WatermelonWakeup": {
@@ -48447,6 +50465,13 @@
    "desc": "If you want to be awake, this will do it... Also sweet.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "watermelon wakeup"
   },
   "WeedKiller": {
@@ -48454,6 +50479,12 @@
    "desc": "A mixture that targets weeds. Very effective against kudzu. While useful it slowly poisons plants with toxins, be careful when using it.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cond": {
+     "Poison": 4.0
+    },
+    "rate": 0.5
+   },
    "name": "weed killer"
   },
   "WeldingFuel": {
@@ -48461,6 +50492,15 @@
    "desc": "Used by welders to weld.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Flammable"
+    ],
+    "rate": 0.5
+   },
    "name": "welding fuel"
   },
   "Whiskey": {
@@ -48517,6 +50557,13 @@
    "desc": "The perfect drink before an expedition.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "fx": [
+     "Satiate",
+     "ModifyStatusEffect"
+    ],
+    "rate": 0.5
+   },
    "name": "Xeno Basher"
   },
   "XenoborgOil": {
@@ -48524,6 +50571,15 @@
    "desc": "A light oil used to slip and burn organics.",
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
+   "metab": {
+    "cond": {
+     "Poison": 1.0
+    },
+    "fx": [
+     "Flammable"
+    ],
+    "rate": 0.5
+   },
    "name": "xenoborg oil"
   },
   "Zinc": {
@@ -48538,6 +50594,16 @@
    "desc": "Would not advise eating. Can be used to create an inoculation against the infection.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "dmg": {
+     "Poison": 4.0
+    },
+    "fx": [
+     "Satiate",
+     "Vomit"
+    ],
+    "rate": 0.5
+   },
    "name": "zombie blood"
   },
   "ZombieCocktail": {

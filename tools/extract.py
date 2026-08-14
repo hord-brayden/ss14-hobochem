@@ -40,7 +40,65 @@ CURATED_GEAR = {
     # gas containers referenced by the Max Caps page
     "OxygenTank", "PlasmaTank", "EmergencyOxygenTank", "GasCanister",
     "OxygenCanister", "PlasmaCanister", "TritiumCanister", "StorageCanister",
+    # Tider Munitions arsenal
+    "WeaponImprovisedPneumaticCannon", "BowImprovised", "ArrowImprovised",
+    "ArrowImprovisedPlasma", "ArrowImprovisedUranium", "ArrowImprovisedCarp",
+    "Shiv", "ReinforcedShiv", "PlasmaShiv", "UraniumShiv", "Stunprod", "Bola",
+    "BladedFlatcapGrey", "BladedFlatcapBrown", "WeaponShotgunImprovised",
+    "ShellShotgunImprovised", "WeaponFlareGun", "TrashBag",
 }
+
+
+def flat_damage(d):
+    """Flatten a damage specifier ({types:{}, groups:{}} or bare {Brute: -1}) to one dict."""
+    out = {}
+    if not isinstance(d, dict):
+        return out
+    for sub in ("types", "groups"):
+        for k, v in (d.get(sub) or {}).items():
+            try:
+                out[str(k)] = round(out.get(str(k), 0) + float(v), 3)
+            except (TypeError, ValueError):
+                pass
+    for k, v in d.items():
+        if k not in ("types", "groups", "__type") and isinstance(v, (int, float)):
+            out[str(k)] = round(out.get(str(k), 0) + float(v), 3)
+    return out
+
+
+def parse_metabolisms(doc):
+    """Per-reagent body effects: damage/healing per metabolism tick + notable effects."""
+    mets = doc.get("metabolisms")
+    if not isinstance(mets, dict):
+        return None
+    rate, dmg, cond, fx = 0.5, {}, {}, []
+    for group in mets.values():
+        if not isinstance(group, dict):
+            continue
+        try:
+            rate = float(group.get("metabolismRate", rate))
+        except (TypeError, ValueError):
+            pass
+        for eff in group.get("effects") or []:
+            if not isinstance(eff, dict):
+                continue
+            t = eff.get("__type")
+            target = cond if eff.get("conditions") else dmg
+            if t in ("HealthChange", "EvenHealthChange"):
+                for k, v in flat_damage(eff.get("damage")).items():
+                    target[k] = round(target.get(k, 0) + v, 3)
+            elif t and not eff.get("conditions") and t not in fx:
+                fx.append(t)
+    if not (dmg or cond or fx):
+        return None
+    out = {"rate": rate}
+    if dmg:
+        out["dmg"] = dmg
+    if cond:
+        out["cond"] = cond
+    if fx:
+        out["fx"] = fx[:8]
+    return out
 
 
 class SS14Loader(yaml.SafeLoader):
@@ -201,6 +259,9 @@ def extract(repo, copy_sprites=True):
                     "color": str(doc.get("color", "")),
                     "file": rel,
                 }
+                metab = parse_metabolisms(doc)
+                if metab:
+                    reagents[rid]["metab"] = metab
 
             elif t == "reaction":
                 xid = str(doc.get("id"))
@@ -244,6 +305,7 @@ def extract(repo, copy_sprites=True):
                     parents = [parents]
                 sols, methods = {}, set()
                 blood = icon = mixer_types = board_for = random_fill = None
+                melee = thrown = None
                 board_reqs = {}
                 for comp in doc.get("components") or []:
                     if not isinstance(comp, dict):
@@ -272,6 +334,14 @@ def extract(repo, copy_sprites=True):
                                 board_reqs.update({str(a): b for a, b in v.items()})
                     if ct == "RandomFillSolution" and comp.get("weightedRandomId"):
                         random_fill = str(comp["weightedRandomId"])
+                    if ct == "MeleeWeapon" and comp.get("damage"):
+                        d = flat_damage(comp["damage"])
+                        if d:
+                            melee = d
+                    if ct in ("DamageOtherOnHit", "Projectile") and comp.get("damage"):
+                        d = flat_damage(comp["damage"])
+                        if d:
+                            thrown = d
                     if ct == "Icon" and comp.get("sprite"):
                         icon = (str(comp["sprite"]), str(comp.get("state", "icon")), 1)
                     if ct == "Sprite" and icon is None:
@@ -300,6 +370,8 @@ def extract(repo, copy_sprites=True):
                     "boardFor": board_for,
                     "boardReqs": board_reqs,
                     "randomFill": random_fill,
+                    "melee": melee,
+                    "thrown": thrown,
                     "file": rel,
                 }
 
@@ -434,6 +506,12 @@ def extract(repo, copy_sprites=True):
             g["desc"] = str(inherit(chain, "desc") or "")
             if mixer_types:
                 g["mixerTypes"] = mixer_types
+            melee = inherit(chain, "melee")
+            thrown = inherit(chain, "thrown")
+            if melee:
+                g["melee"] = melee
+            if thrown:
+                g["thrown"] = thrown
             if eid in build_steps:
                 g["craft"] = build_steps[eid]["steps"]
                 g["craftFile"] = build_steps[eid]["file"]
