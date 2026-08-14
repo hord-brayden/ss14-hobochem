@@ -270,7 +270,57 @@
         changed = true;
       }
     }
-    return { steps, fx };
+    return { steps, fx, have };
+  }
+
+  // Reactions 1-2 ingredients away, ranked by how much chaos they unlock.
+  const CHAOS = new Set(["ChlorineTrifluoride", "FluorosulfuricAcid", "SulfuricAcid",
+    "Napalm", "Phlogiston", "ThermitePowder", "Thermite", "SpaceLube", "SpaceGlue",
+    "PolytrinicAcid", "Licoxide", "UnstableMutagen", "MindbreakerToxin", "Nocturine",
+    "ChloralHydrate", "MuteToxin", "Pax", "Lexorin", "Amatoxin"]);
+  function chaosScore(rx) {
+    let s = 0;
+    if ((rx.effects || []).some((e) => /Explosion/i.test(e))) s += 3;
+    for (const p of Object.keys(rx.products)) {
+      if (CHAOS.has(p)) s += 3;
+      const grp = (D.reagents[p] || {}).group;
+      if (grp === "Toxins" || grp === "Pyrotechnic") s += 2;
+      else if (grp === "Narcotics") s += 1;
+    }
+    return s;
+  }
+  function nearMisses(have, equip) {
+    const out = [];
+    for (const [xid, rx] of Object.entries(D.reactions)) {
+      const products = Object.keys(rx.products);
+      if (!products.length && !(rx.effects || []).length) continue;
+      if (products.length && products.every((p) => have.has(p))) continue;
+      const missing = Object.keys(rx.reactants).filter((r) => !have.has(r));
+      if (missing.length > 2) continue;
+      const needEq = [];
+      for (const m of rx.mixers) if (!equip["m:" + m]) needEq.push(m);
+      if (rx.minTemp > 310 && !equip.heat) needEq.push("heat");
+      if (rx.maxTemp != null && rx.maxTemp < 280 && !equip.chill) needEq.push("chill");
+      if (!missing.length && !needEq.length) continue; // fully runnable — already in the plan
+      out.push({ xid, rx, missing, needEq, score: chaosScore(rx) });
+    }
+    out.sort((a, b) => b.score - a.score || a.missing.length - b.missing.length);
+    return out;
+  }
+  function nearMissCard(n) {
+    const bits = n.missing.map((rid) =>
+      `<a class="chip ok" href="#/r/${encodeURIComponent(rid)}">find ${esc(fmt(n.rx.reactants[rid].amount))}u ${esc(rname(rid))}</a>`);
+    for (const m of n.needEq) {
+      if (m === "heat") bits.push(`<a class="chip heat" href="#/g/ChemistryHotplate">find a heat source</a>`);
+      else if (m === "chill") bits.push(`<span class="chip heat">find cooling</span>`);
+      else {
+        const prov = (mixerProviders[m] || [])[0];
+        bits.push(prov ? `<a class="chip mixer" href="#/g/${esc(prov)}">find a ${esc(G[prov].name)}</a>`
+          : `<span class="chip mixer">${esc(D.mixerNames[m] || m)}</span>`);
+      }
+    }
+    const spice = n.score >= 3 ? `<span class="chip boom">worth chasing</span>` : "";
+    return `<div class="card">${bits.join(" ")} ${spice}<div style="margin-top:7px">${reactionNodeHTML(n.xid, "", [], 0)}</div></div>`;
   }
 
   function renderCook() {
@@ -299,7 +349,7 @@
       </div>`;
 
     if (inv.length) {
-      const { steps, fx } = solve(inv, equip);
+      const { steps, fx, have } = solve(inv, equip);
       h += `<h3 class="sec">What you can make (${steps.length} step${steps.length === 1 ? "" : "s"})</h3>`;
       h += steps.length
         ? steps.map((s, i) => `<div class="card"><span class="stepnum">${i + 1}</span>${reactionNodeHTML(s.xid, s.makes[0], [], 0)}</div>`).join("")
@@ -308,8 +358,19 @@
         h += `<h3 class="sec">Effects you can trigger</h3>` +
           fx.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [], 0)}</div>`).join("");
       }
+      const near = nearMisses(have, equip);
+      if (near.length) {
+        const first = near.slice(0, 10), rest = near.slice(10);
+        h += `<h3 class="sec">Almost within reach (${near.length})</h3>
+          <div class="meta" style="margin-bottom:10px">Cletus's watchlist: what your stash could become if you chase down one or two more things. The nasty stuff floats to the top.</div>` +
+          first.map(nearMissCard).join("");
+        if (rest.length) h += `<button class="showmore" id="near-more">show ${rest.length} more</button>
+          <div id="near-rest" style="display:none">${rest.map(nearMissCard).join("")}</div>`;
+      }
     }
     main.innerHTML = h + `</div>`;
+    const nearBtn = document.getElementById("near-more");
+    if (nearBtn) nearBtn.onclick = () => { document.getElementById("near-rest").style.display = "block"; nearBtn.remove(); };
 
     const input = document.getElementById("inv-input");
     input.addEventListener("change", () => {
@@ -378,26 +439,55 @@
       <ul>${sourceNodes(rid, [rid], 1).map((x) => `<li>${x}</li>`).join("")}</ul></li></ul>`;
   }
 
-  // ---------------- max caps ----------------
-  function renderMaxcaps() {
-    markSidebar(null);
-    const blocks = (window.CLETUS_MAXCAPS || []).map((b) => {
+  // ---------------- articles (max caps, space law) ----------------
+  function cletusNote(text) {
+    return `<div class="cletus-note"><img src="cletus.png" alt="" onerror="this.remove()">
+      <div><span class="lbl">counsel's note</span><p>${tokenize(text)}</p></div></div>`;
+  }
+  function articleHTML(blocks) {
+    return blocks.map((b) => {
       if (b.h) return `<h3 class="sec">${esc(b.h)}</h3>`;
       if (b.p) return `<p class="desc" style="max-width:760px;margin-bottom:10px">${tokenize(b.p)}</p>`;
-      if (b.ol) return `<ol style="padding-left:24px;max-width:760px">${b.ol.map((s, i) =>
+      if (b.ol) return `<ol style="padding-left:24px;max-width:760px">${b.ol.map((s) =>
         `<li style="margin-bottom:10px">${tokenize(s)}</li>`).join("")}</ol>`;
       if (b.warn) return `<div class="tip" style="border-left-color:var(--red)"><b style="color:var(--red)">Hold on</b><p>${tokenize(b.warn)}</p></div>`;
       if (b.src) return `<div class="meta" style="margin:-4px 0 14px">source: <a target="_blank" rel="noopener" href="${GH}${esc(b.src)}">${esc(b.src)}</a></div>`;
+      if (b.cletus) return cletusNote(b.cletus);
+      if (b.laws) return `<ol class="laws">${b.laws.map((l) => `<li>${esc(l)}</li>`).join("")}</ol>`;
+      if (b.statute) {
+        const s = b.statute;
+        return `<div class="statute"><div><span class="code-chip" style="background:${esc(s.color)}">${esc(s.code)}</span>
+          <b>${esc(s.name)}</b></div>
+          <p class="desc" style="margin-top:6px">${esc(s.desc)}</p>
+          <div class="meta" style="margin-top:4px">${esc(s.note)}</div>
+          ${cletusNote(s.counsel)}</div>`;
+      }
+      if (b.matrix) {
+        return `<div class="matrix">` + b.matrix.groups.map((g) =>
+          `<div class="mrow"><div class="mhead"><span class="code-chip" style="background:${esc(g.color)}">${esc(g.code)}</span> ${esc(g.label)}</div>
+           <div class="mcrimes">${g.crimes.map(([sev, name]) =>
+             `<span class="chip sev sev${sev}" title="${esc(b.matrix.sev[sev - 1])}">${sev} · ${esc(name)}</span>`).join("")}</div></div>`
+        ).join("") + `</div>`;
+      }
       if (b.table) return `<div class="card" style="max-width:780px;overflow-x:auto"><table class="list">
         <tr>${b.table.head.map((c) => `<td style="font:700 11px var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:1px">${esc(c)}</td>`).join("")}</tr>
         ${b.table.rows.map((r) => `<tr>${r.map((c) => `<td>${tokenize(c)}</td>`).join("")}</tr>`).join("")}</table></div>`;
       return "";
     }).join("");
-    main.innerHTML = `<div class="page"><h2 class="title">Max Caps</h2>
-      <div class="tagline" style="color:var(--dim);font-style:italic;margin:2px 0 14px">Gas, pressure, and the biggest boom the server allows — the atmospherics masterclass.</div>
-      ${blocks}</div>`;
+  }
+  function renderArticlePage(title, tagline, blocks) {
+    markSidebar(null);
+    main.innerHTML = `<div class="page"><h2 class="title">${esc(title)}</h2>
+      <div class="tagline" style="color:var(--dim);font-style:italic;margin:2px 0 14px">${esc(tagline)}</div>
+      ${articleHTML(blocks)}</div>`;
     main.scrollTop = 0;
   }
+  const renderMaxcaps = () => renderArticlePage("Max Caps",
+    "Gas, pressure, and the biggest boom the server allows — the atmospherics masterclass.",
+    window.CLETUS_MAXCAPS || []);
+  const renderSpaceLaw = () => renderArticlePage("Space Law",
+    "Know your rights. Annotated by Cletus Cooper, Esq. — Attorney at Space Law.",
+    window.CLETUS_SPACELAW || []);
 
   // ---------------- discoveries ----------------
   function mulberry(seed) {
@@ -452,6 +542,19 @@
           drain it, gamble for it, or bleed it out of something is mapped below. No chemistry job required.</p>
           <div class="meta">by <b>Cletus Cooper</b> · founding father of Maints Chemistry</div>
         </div>
+      </div>
+      <div class="foreword">
+        <h3 class="sec" style="margin-top:22px">A foreword from Uncle Cletus</h3>
+        <p>As a lawyer, I know how hard it can be to sit in the Sec lobby all shift, gazing at an armory
+        nobody is ever going to issue you. And I know what it's like to stare down a squad of nuclear
+        operatives holding nothing but a mop and a strong opinion. So I wrote it all down for you, my
+        nieces and nephews, so you walk into your next shift prepared.</p>
+        <p>Self-defense is a right — a right your predecessors fought and died for, mostly by mixing the
+        wrong two liquids in a dark hallway. Honor their sacrifice: read the labels.</p>
+        <p>And if you're ever in trouble, you call your Uncle Cletus. I don't care if you're a tider.
+        I don't care if you're the clown — everybody deserves counsel, even the ones who honk during
+        sentencing. Just try to be a little more like the mime, and let your Uncle Cletus do the talking.</p>
+        <div class="meta">— Cletus Cooper, Esq. · Attorney at <a href="#/spacelaw">Space Law</a> · consultations in maints, retainer payable in flares</div>
       </div>
       <div class="stats">
         <div class="stat"><div class="n">${Object.keys(D.reagents).length}</div><div class="l">chemicals</div></div>
@@ -528,8 +631,14 @@
   }
   listEl.addEventListener("click", (ev) => {
     const item = ev.target.closest(".s-item");
-    if (item) location.hash = item.dataset.nav;
+    if (item) {
+      location.hash = item.dataset.nav;
+      document.querySelector(".sidebar").classList.remove("open");
+    }
   });
+  const sideToggle = document.getElementById("side-toggle");
+  if (sideToggle) sideToggle.addEventListener("click", () =>
+    document.querySelector(".sidebar").classList.toggle("open"));
   document.querySelectorAll(".tabs button").forEach((b) =>
     b.addEventListener("click", () => {
       tab = b.dataset.tab;
@@ -554,9 +663,14 @@
     else if (hash === "#/cook") renderCook();
     else if (hash === "#/specials") renderSpecials();
     else if (hash === "#/maxcaps") renderMaxcaps();
+    else if (hash === "#/spacelaw") renderSpaceLaw();
     else renderHome();
   }
-  window.addEventListener("hashchange", route);
+  window.addEventListener("hashchange", () => {
+    route();
+    if (typeof gtag === "function")
+      gtag("event", "page_view", { page_location: location.href, page_title: document.title });
+  });
   document.getElementById("logo").addEventListener("click", () => (location.hash = ""));
 
   document.getElementById("footer-meta").textContent =

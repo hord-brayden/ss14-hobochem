@@ -7,6 +7,15 @@
   <meta name="description" content="Every way to cook, grind, drain, gamble, or bleed any chemical in Space Station 14 — plus the gear to do it with. Maints Chemistry by Cletus Cooper.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R51TBBZE2K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R51TBBZE2K');
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -14,10 +23,12 @@
       <img class="cletus-logo" src="cletus.png" alt="Cletus Cooper">
       <div><b>HoboChem Compendium</b><small>Maints Chemistry · Cletus Cooper</small></div>
     </div>
+    <button id="side-toggle" title="browse chemicals & gear">Browse</button>
     <nav>
-      <a href="#/cook">Cook-Off Calculator</a>
-      <a href="#/specials">Weekly Specials</a>
-      <a href="#/maxcaps">Max Caps</a>
+      <a href="#/cook"><img class="nav-ico" src="sprites/Structures_Machines_microwave.rsi_mw0.png" alt="">Cook-Off</a>
+      <a href="#/specials"><img class="nav-ico" src="sprites/Objects_Consumable_Food_burger.rsi_empowered.png" alt="">Specials</a>
+      <a href="#/maxcaps"><img class="nav-ico" src="sprites/Objects_Tanks_oxygen.rsi_icon.png" alt="">Max Caps</a>
+      <a href="#/spacelaw"><img class="nav-ico" src="sprites/BookSpaceLaw_composite.png" alt="">Space Law</a>
     </nav>
   </header>
   <div class="layout">
@@ -36,6 +47,7 @@
   <script src="tips.js"></script>
   <script src="specials.js"></script>
   <script src="maxcaps.js"></script>
+  <script src="spacelaw.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
