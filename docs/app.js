@@ -378,6 +378,27 @@
       <ul>${sourceNodes(rid, [rid], 1).map((x) => `<li>${x}</li>`).join("")}</ul></li></ul>`;
   }
 
+  // ---------------- max caps ----------------
+  function renderMaxcaps() {
+    markSidebar(null);
+    const blocks = (window.CLETUS_MAXCAPS || []).map((b) => {
+      if (b.h) return `<h3 class="sec">${esc(b.h)}</h3>`;
+      if (b.p) return `<p class="desc" style="max-width:760px;margin-bottom:10px">${tokenize(b.p)}</p>`;
+      if (b.ol) return `<ol style="padding-left:24px;max-width:760px">${b.ol.map((s, i) =>
+        `<li style="margin-bottom:10px">${tokenize(s)}</li>`).join("")}</ol>`;
+      if (b.warn) return `<div class="tip" style="border-left-color:var(--red)"><b style="color:var(--red)">Hold on</b><p>${tokenize(b.warn)}</p></div>`;
+      if (b.src) return `<div class="meta" style="margin:-4px 0 14px">source: <a target="_blank" rel="noopener" href="${GH}${esc(b.src)}">${esc(b.src)}</a></div>`;
+      if (b.table) return `<div class="card" style="max-width:780px;overflow-x:auto"><table class="list">
+        <tr>${b.table.head.map((c) => `<td style="font:700 11px var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:1px">${esc(c)}</td>`).join("")}</tr>
+        ${b.table.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</table></div>`;
+      return "";
+    }).join("");
+    main.innerHTML = `<div class="page"><h2 class="title">Max Caps</h2>
+      <div class="tagline" style="color:var(--dim);font-style:italic;margin:2px 0 14px">Gas, pressure, and the biggest boom the server allows — the atmospherics masterclass.</div>
+      ${blocks}</div>`;
+    main.scrollTop = 0;
+  }
+
   // ---------------- discoveries ----------------
   function mulberry(seed) {
     return () => {
@@ -532,6 +553,7 @@
     else if ((m = hash.match(/^#\/g\/(.+)$/))) renderItem(decodeURIComponent(m[1]));
     else if (hash === "#/cook") renderCook();
     else if (hash === "#/specials") renderSpecials();
+    else if (hash === "#/maxcaps") renderMaxcaps();
     else renderHome();
   }
   window.addEventListener("hashchange", route);
