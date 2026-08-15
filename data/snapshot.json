@@ -33432,6 +33432,16 @@
    "id": "BoxCardboardSmall",
    "name": "small cardboard box"
   },
+  "BriefcaseBrownFilled": {
+   "desc": "Useful for carrying items in your hands.",
+   "file": "Resources/Prototypes/Catalog/Fills/Items/briefcases.yml",
+   "icon": "Objects_Storage_Briefcases_briefcase_brown.rsi_icon.png",
+   "id": "BriefcaseBrownFilled",
+   "melee": {
+    "Blunt": 8.0
+   },
+   "name": "brown briefcase"
+  },
   "Bucket": {
    "desc": "It's a boring old bucket.",
    "file": "Resources/Prototypes/Entities/Objects/Tools/bucket.yml",

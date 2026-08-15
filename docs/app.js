@@ -496,6 +496,15 @@
           <div class="meta" style="margin-top:4px">${esc(s.note)}</div>
           ${cletusNote(s.counsel)}</div>`;
       }
+      if (b.case) {
+        const c = b.case;
+        return `<div class="case">
+          <div><span class="code-chip" style="background:#3a3550">${esc(c.docket)}</span> <b>${esc(c.name)}</b></div>
+          <div class="meta" style="margin-top:4px">Charge: ${esc(c.charge)}</div>
+          <p class="desc casepart"><span class="lbl">the facts</span>${tokenize(c.facts)}</p>
+          <p class="desc casepart"><span class="lbl">the defense</span>${tokenize(c.defense)}</p>
+          <div class="verdict">${tokenize(c.verdict)}</div></div>`;
+      }
       if (b.matrix) {
         return `<div class="matrix">` + b.matrix.groups.map((g) =>
           `<div class="mrow"><div class="mhead"><span class="code-chip" style="background:${esc(g.color)}">${esc(g.code)}</span> ${esc(g.label)}</div>
@@ -525,6 +534,9 @@
   const renderMunitions = () => renderArticlePage("Tider Munitions",
     "The homemade armory: everything a passenger can build from trash to defend themselves.",
     window.CLETUS_MUNITIONS || []);
+  const renderCaselaw = () => renderArticlePage("Case Law",
+    "Selected victories from the practice of Cletus Cooper, Esq. All persons fictional. All invoices outstanding.",
+    window.CLETUS_CASELAW || []);
 
   // ---------------- discoveries ----------------
   function mulberry(seed) {
@@ -702,6 +714,7 @@
     else if (hash === "#/maxcaps") renderMaxcaps();
     else if (hash === "#/spacelaw") renderSpaceLaw();
     else if (hash === "#/munitions") renderMunitions();
+    else if (hash === "#/caselaw") renderCaselaw();
     else renderHome();
   }
   window.addEventListener("hashchange", () => {

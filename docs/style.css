@@ -284,6 +284,19 @@ select.poison {
 ol.laws { padding-left: 26px; max-width: 720px; margin-bottom: 12px; }
 ol.laws li { margin-bottom: 7px; font-size: 14.5px; }
 
+/* ---------- case law ---------- */
+.case {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; padding: 15px 18px; margin-bottom: 16px; max-width: 780px;
+}
+.case .casepart { margin-top: 9px; max-width: none; color: var(--text); }
+.case .casepart .lbl { display: block; margin-bottom: 2px; }
+.verdict {
+  margin-top: 11px; padding: 9px 13px; border-radius: 8px;
+  background: rgba(143, 201, 115, .07); border: 1px dashed #43663a;
+  color: var(--text); font-size: 14px;
+}
+
 .showmore {
   background: none; border: 1px dashed var(--line2); color: var(--dim);
   padding: 6px 16px; border-radius: 9px; cursor: pointer;

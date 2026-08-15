@@ -46,6 +46,8 @@ CURATED_GEAR = {
     "Shiv", "ReinforcedShiv", "PlasmaShiv", "UraniumShiv", "Stunprod", "Bola",
     "BladedFlatcapGrey", "BladedFlatcapBrown", "WeaponShotgunImprovised",
     "ShellShotgunImprovised", "WeaponFlareGun", "TrashBag",
+    # Cletus's briefcase (Case Law nav icon)
+    "BriefcaseBrownFilled",
 }
 
 
