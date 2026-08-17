@@ -75,6 +75,8 @@ def main():
             lambda v: f"{v['name']} carries " + ", ".join(v.get("reagents", {})))
     section("Gear & machines", old.get("gear", {}), new.get("gear", {}),
             lambda v: v["name"])
+    section("Microwave recipes", old.get("cooks", {}), new.get("cooks", {}),
+            lambda v: f"{v['name']} → {v['result']}")
 
     report = PROJECT / "UPDATE_REPORT.md"
     if total == 0:

@@ -1,4 +1,2561 @@
 {
+ "cooks": {
+  "RecipeAloeCream": {
+   "file": "Resources/Prototypes/Recipes/Cooking/medical_recipes.yml",
+   "name": "RecipeAloeCream",
+   "result": "AloeCream",
+   "solids": {
+    "FoodAloe": 1
+   },
+   "time": 10
+  },
+  "RecipeAmanitaJelly": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAmanitaJelly",
+   "reagents": {
+    "Vodka": 5,
+    "Water": 5
+   },
+   "result": "FoodJellyAmanita",
+   "solids": {
+    "FoodFlyAmanita": 3
+   },
+   "time": 10
+  },
+  "RecipeAmanitaPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAmanitaPie",
+   "result": "FoodPieAmanita",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodFlyAmanita": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeAnomalyMeat": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAnomalyMeat",
+   "result": "FoodMeatAnomaly",
+   "solids": {
+    "AnomalyCoreFlesh": 1
+   },
+   "time": 5
+  },
+  "RecipeAnomalyMeatCooked": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAnomalyMeatCooked",
+   "result": "FoodMeatAnomalyCooked",
+   "solids": {
+    "FoodMeatAnomaly": 1
+   },
+   "time": 5
+  },
+  "RecipeAppendixBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAppendixBurger",
+   "result": "FoodBurgerAppendix",
+   "solids": {
+    "FoodBreadBun": 1,
+    "OrganHumanAppendix": 1
+   },
+   "time": 10
+  },
+  "RecipeAppleCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeAppleCake",
+   "result": "FoodCakeApple",
+   "solids": {
+    "FoodApple": 3,
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeApplePie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeApplePie",
+   "result": "FoodPieApple",
+   "solids": {
+    "FoodApple": 3,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeBaconBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaconBurger",
+   "result": "FoodBurgerBacon",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 2,
+    "FoodMeatBacon": 1
+   },
+   "time": 10
+  },
+  "RecipeBagel": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBagel",
+   "result": "FoodBagel",
+   "solids": {
+    "FoodDoughRope": 1
+   },
+   "time": 5
+  },
+  "RecipeBagelCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBagelCotton",
+   "result": "FoodBagelCotton",
+   "solids": {
+    "FoodDoughCottonRope": 1
+   },
+   "time": 5
+  },
+  "RecipeBagelPoppy": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBagelPoppy",
+   "result": "FoodBagelPoppy",
+   "solids": {
+    "FoodDoughRope": 1,
+    "PoppySeeds": 1
+   },
+   "time": 5
+  },
+  "RecipeBaguette": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaguette",
+   "reagents": {
+    "Blackpepper": 1,
+    "TableSalt": 1
+   },
+   "result": "FoodBreadBaguette",
+   "solids": {
+    "FoodDough": 1
+   },
+   "time": 15
+  },
+  "RecipeBaguetteCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaguetteCotton",
+   "reagents": {
+    "Blackpepper": 1,
+    "TableSalt": 1
+   },
+   "result": "FoodBreadBaguetteCotton",
+   "solids": {
+    "FoodDoughCotton": 1
+   },
+   "time": 15
+  },
+  "RecipeBaguetteSword": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaguetteSword",
+   "reagents": {
+    "Blackpepper": 1,
+    "TableSalt": 1
+   },
+   "result": "WeaponBaguette",
+   "solids": {
+    "FoodDough": 1,
+    "PartRodMetal1": 1
+   },
+   "time": 15
+  },
+  "RecipeBaklava": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaklava",
+   "result": "FoodPieBaklava",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1,
+    "FoodSnackPistachios": 1
+   },
+   "time": 15
+  },
+  "RecipeBananaBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBananaBread",
+   "result": "FoodBreadBanana",
+   "solids": {
+    "FoodBanana": 1,
+    "FoodDough": 1
+   },
+   "time": 15
+  },
+  "RecipeBananaCreamPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBananaCreamPie",
+   "result": "FoodPieBananaCream",
+   "solids": {
+    "FoodBanana": 3,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeBaseballBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBaseballBurger",
+   "result": "FoodBurgerBaseball",
+   "solids": {
+    "BaseBallBat": 1,
+    "FoodBreadBun": 1
+   },
+   "time": 10
+  },
+  "RecipeBearger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBearger",
+   "result": "FoodBurgerBear",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatBear": 1
+   },
+   "time": 10
+  },
+  "RecipeBerryClafoutis": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBerryClafoutis",
+   "result": "FoodPieClafoutis",
+   "solids": {
+    "FoodBerries": 3,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeBerryDelight": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBerryDelight",
+   "reagents": {
+    "Milk": 10
+   },
+   "result": "FoodCakeBerryDelight",
+   "solids": {
+    "FoodBerries": 2,
+    "FoodCakeBlueberry": 1
+   },
+   "time": 5
+  },
+  "RecipeBigBiteBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBigBiteBurger",
+   "result": "FoodBurgerBig",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeat": 2,
+    "FoodOnionSlice": 2,
+    "FoodTomato": 1
+   },
+   "time": 15
+  },
+  "RecipeBirthdayCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBirthdayCake",
+   "reagents": {
+    "Cream": 5
+   },
+   "result": "FoodCakeBirthday",
+   "solids": {
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeBisque": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBisque",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupBisque",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodMeatFish": 1,
+    "FoodMushroom": 1,
+    "FoodTomato": 1
+   },
+   "time": 10
+  },
+  "RecipeBlueberryCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBlueberryCake",
+   "result": "FoodCakeBlueberry",
+   "solids": {
+    "FoodBerries": 3,
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeBlueberryPancake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBlueberryPancake",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 5,
+    "Milk": 5
+   },
+   "result": "FoodBakedPancakeBb",
+   "solids": {
+    "FoodBerries": 2
+   },
+   "time": 5
+  },
+  "RecipeBoiledRice": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBoiledRice",
+   "reagents": {
+    "Rice": 20,
+    "Water": 20
+   },
+   "result": "FoodRiceBoiled",
+   "solids": {
+    "FoodBowlBig": 1
+   },
+   "time": 15
+  },
+  "RecipeBoiledSnail": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBoiledSnail",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodMeatSnailCooked",
+   "solids": {
+    "MobSnail": 1
+   },
+   "time": 5
+  },
+  "RecipeBoiledSpaghetti": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBoiledSpaghetti",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 15,
+    "OilOlive": 5
+   },
+   "result": "FoodNoodlesBoiled",
+   "solids": {},
+   "time": 15
+  },
+  "RecipeBrainBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBrainBurger",
+   "result": "FoodBurgerBrain",
+   "solids": {
+    "FoodBreadBun": 1,
+    "OrganHumanBrain": 1
+   },
+   "time": 10
+  },
+  "RecipeBrainCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBrainCake",
+   "result": "FoodCakeBrain",
+   "solids": {
+    "FoodCakePlain": 1,
+    "OrganHumanBrain": 1
+   },
+   "time": 15
+  },
+  "RecipeBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBread",
+   "result": "FoodBreadPlain",
+   "solids": {
+    "FoodDough": 1
+   },
+   "time": 10
+  },
+  "RecipeBreadCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBreadCotton",
+   "result": "FoodBreadCotton",
+   "solids": {
+    "FoodDoughCotton": 1
+   },
+   "time": 10
+  },
+  "RecipeBreadDog": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBreadDog",
+   "reagents": {
+    "Cognizine": 5
+   },
+   "result": "MobBreadDog",
+   "solids": {
+    "FoodBreadSausage": 1,
+    "FoodSpaceshroomCooked": 1,
+    "OrganAnimalHeart": 1
+   },
+   "time": 15
+  },
+  "RecipeBreakfastAmerican": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBreakfastAmerican",
+   "reagents": {
+    "Egg": 12
+   },
+   "result": "FoodBreakfastAmerican",
+   "solids": {
+    "FoodBakedPancake": 2,
+    "FoodMeatBacon": 2,
+    "FoodPotato": 1
+   },
+   "time": 30
+  },
+  "RecipeBreakfastEnglish": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBreakfastEnglish",
+   "reagents": {
+    "Egg": 12
+   },
+   "result": "FoodBreakfastEnglish",
+   "solids": {
+    "FoodMeat": 1,
+    "FoodMeatBacon": 1,
+    "FoodSoybeans": 2,
+    "FoodTomato": 1
+   },
+   "time": 30
+  },
+  "RecipeBrownies": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBrownies",
+   "reagents": {
+    "Egg": 18,
+    "Flour": 15,
+    "Sugar": 30
+   },
+   "result": "FoodBakedBrownieBatch",
+   "solids": {
+    "FoodButter": 1,
+    "FoodSnackChocolateBar": 2
+   },
+   "time": 25
+  },
+  "RecipeBun": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBun",
+   "result": "FoodBreadBun",
+   "solids": {
+    "FoodDoughSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeBungoSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBungoSoup",
+   "reagents": {
+    "Water": 5
+   },
+   "result": "FoodSoupBungo",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodBungo": 2,
+    "FoodChiliPepper": 1
+   },
+   "time": 10
+  },
+  "RecipeBurgerMcguffin": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBurgerMcguffin",
+   "reagents": {
+    "Egg": 6
+   },
+   "result": "FoodBurgerMcguffin",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1
+   },
+   "time": 10
+  },
+  "RecipeBurgerMcrib": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeBurgerMcrib",
+   "result": "FoodBurgerMcrib",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMealRibs": 1,
+    "FoodOnionSlice": 5
+   },
+   "time": 10
+  },
+  "RecipeButterNoodles": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeButterNoodles",
+   "result": "FoodNoodlesButter",
+   "solids": {
+    "FoodButterSlice": 2,
+    "FoodNoodlesBoiled": 1
+   },
+   "time": 10
+  },
+  "RecipeButteredToast": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeButteredToast",
+   "result": "FoodBreadButteredToast",
+   "solids": {
+    "FoodBreadPlainSlice": 1,
+    "FoodButterSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeCaesarSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCaesarSalad",
+   "reagents": {
+    "OilOlive": 5
+   },
+   "result": "FoodSaladCaesar",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodBreadPlainSlice": 1,
+    "FoodCabbage": 1,
+    "FoodCheeseSlice": 1,
+    "FoodOnionRedSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCake",
+   "result": "FoodCakePlain",
+   "solids": {
+    "FoodCakeBatter": 1
+   },
+   "time": 15
+  },
+  "RecipeCannabisBrownies": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCannabisBrownies",
+   "reagents": {
+    "Egg": 18,
+    "Flour": 15,
+    "Sugar": 30
+   },
+   "result": "FoodBakedCannabisBrownieBatch",
+   "solids": {
+    "FoodCannabisButter": 1,
+    "FoodSnackChocolateBar": 2
+   },
+   "time": 25
+  },
+  "RecipeCannabisButter": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCannabisButter",
+   "result": "FoodCannabisButter",
+   "solids": {
+    "FoodButter": 1,
+    "LeavesCannabis": 1
+   },
+   "time": 15
+  },
+  "RecipeCarpBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCarpBurger",
+   "result": "FoodBurgerCarp",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeatFish": 1
+   },
+   "time": 10
+  },
+  "RecipeCarrotCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCarrotCake",
+   "result": "FoodCakeCarrot",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodCarrot": 2
+   },
+   "time": 5
+  },
+  "RecipeCarrotFries": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCarrotFries",
+   "reagents": {
+    "TableSalt": 2
+   },
+   "result": "FoodMealFriesCarrot",
+   "solids": {
+    "FoodCarrot": 1
+   },
+   "time": 15
+  },
+  "RecipeCatBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCatBurger",
+   "result": "FoodBurgerCat",
+   "solids": {
+    "ClothingHeadHatCatEars": 1,
+    "FoodBreadBun": 1,
+    "FoodMeat": 1
+   },
+   "time": 10
+  },
+  "RecipeCatCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCatCake",
+   "reagents": {
+    "Cognizine": 5,
+    "Milk": 15
+   },
+   "result": "MobCatCake",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodSnackRaisins": 1,
+    "OrganAnimalHeart": 1
+   },
+   "time": 15
+  },
+  "RecipeCheeseCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCheeseCake",
+   "reagents": {
+    "Cream": 10
+   },
+   "result": "FoodCakeCheese",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodCheeseSlice": 3
+   },
+   "time": 5
+  },
+  "RecipeCheeseburger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCheeseburger",
+   "result": "FoodBurgerCheese",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeat": 1
+   },
+   "time": 10
+  },
+  "RecipeCheesyFries": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCheesyFries",
+   "reagents": {
+    "TableSalt": 2
+   },
+   "result": "FoodMealFriesCheesy",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodPotato": 1
+   },
+   "time": 15
+  },
+  "RecipeCherryPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCherryPie",
+   "result": "FoodPieCherry",
+   "solids": {
+    "FoodCherry": 5,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeChickenSandwich": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeChickenSandwich",
+   "reagents": {
+    "Mayo": 2
+   },
+   "result": "FoodBurgerChicken",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatChicken": 1
+   },
+   "time": 10
+  },
+  "RecipeChiliClown": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeChiliClown",
+   "result": "FoodSoupChiliClown",
+   "solids": {
+    "ClothingShoesClown": 1,
+    "FoodBowlBig": 1,
+    "FoodChiliPepper": 1,
+    "FoodMeatCutlet": 1,
+    "FoodOnionSlice": 1,
+    "FoodTomato": 1
+   },
+   "time": 30
+  },
+  "RecipeChocolateCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeChocolateCake",
+   "result": "FoodCakeChocolate",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodSnackChocolateBar": 2
+   },
+   "time": 5
+  },
+  "RecipeChocolateChipPancake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeChocolateChipPancake",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 5,
+    "Milk": 5
+   },
+   "result": "FoodBakedPancakeCc",
+   "solids": {
+    "FoodSnackChocolateBar": 1
+   },
+   "time": 5
+  },
+  "RecipeChowMein": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeChowMein",
+   "reagents": {
+    "Egg": 6
+   },
+   "result": "FoodNoodlesChowmein",
+   "solids": {
+    "FoodCarrot": 1,
+    "FoodCorn": 1,
+    "FoodEggplant": 1,
+    "FoodNoodlesBoiled": 1
+   },
+   "time": 10
+  },
+  "RecipeCitrusSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCitrusSalad",
+   "result": "FoodSaladCitrus",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodLemon": 1,
+    "FoodLime": 1,
+    "FoodOrange": 1
+   },
+   "time": 5
+  },
+  "RecipeClownBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeClownBurger",
+   "result": "FoodBurgerClown",
+   "solids": {
+    "ClothingMaskClown": 1,
+    "FoodBreadBun": 1
+   },
+   "time": 10
+  },
+  "RecipeClownCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeClownCake",
+   "result": "FoodCakeClown",
+   "solids": {
+    "ClothingMaskClown": 1,
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeClownTears": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeClownTears",
+   "result": "FoodSoupClown",
+   "solids": {
+    "BikeHorn": 1,
+    "FoodBowlBig": 1,
+    "FoodOnionSlice": 1,
+    "FoodTomato": 1
+   },
+   "time": 15
+  },
+  "RecipeClownTearsSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeClownTearsSoup",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupClown",
+   "solids": {
+    "FoodBanana": 1,
+    "FoodBowlBig": 1,
+    "MaterialBananium": 1,
+    "ShardGlass": 1
+   },
+   "time": 10
+  },
+  "RecipeCocoTart": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCocoTart",
+   "reagents": {
+    "Milk": 5,
+    "Sugar": 5
+   },
+   "result": "FoodTartCoco",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1,
+    "FoodSnackChocolateBar": 3
+   },
+   "time": 15
+  },
+  "RecipeColdChili": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeColdChili",
+   "reagents": {
+    "FrostOil": 10
+   },
+   "result": "FoodSoupChiliCold",
+   "solids": {
+    "FoodSoupChiliHot": 1
+   },
+   "time": 5
+  },
+  "RecipeColeslaw": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeColeslaw",
+   "reagents": {
+    "Vinaigrette": 5
+   },
+   "result": "FoodSaladColeslaw",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCabbage": 2,
+    "FoodOnionRed": 2
+   },
+   "time": 5
+  },
+  "RecipeCookie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCookie",
+   "reagents": {
+    "Flour": 5,
+    "Sugar": 5
+   },
+   "result": "FoodBakedCookie",
+   "solids": {
+    "FoodButterSlice": 1,
+    "FoodSnackChocolateBar": 1
+   },
+   "time": 5
+  },
+  "RecipeCookieOatmeal": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCookieOatmeal",
+   "reagents": {
+    "Oats": 5,
+    "Sugar": 5
+   },
+   "result": "FoodBakedCookieOatmeal",
+   "solids": {
+    "FoodButterSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeCopypasta": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCopypasta",
+   "result": "FoodNoodlesCopy",
+   "solids": {
+    "FoodNoodles": 2,
+    "FoodPlateSmall": 2
+   },
+   "time": 10
+  },
+  "RecipeCorgiBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCorgiBurger",
+   "result": "FoodBurgerCorgi",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatCorgi": 1
+   },
+   "time": 10
+  },
+  "RecipeCornInButter": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCornInButter",
+   "result": "FoodMealCornInButter",
+   "solids": {
+    "FoodButterSlice": 1,
+    "FoodCorn": 1,
+    "FoodPlate": 1
+   },
+   "time": 10
+  },
+  "RecipeCornbread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCornbread",
+   "result": "FoodBreadCorn",
+   "solids": {
+    "FoodDoughCornmeal": 1
+   },
+   "time": 10
+  },
+  "RecipeCottonBun": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCottonBun",
+   "result": "FoodCottonBun",
+   "solids": {
+    "FoodDoughCottonSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeCottonCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCottonCake",
+   "reagents": {
+    "Fiber": 10
+   },
+   "result": "FoodCakeCotton",
+   "solids": {
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeCottonPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCottonPizza",
+   "result": "FoodPizzaCotton",
+   "solids": {
+    "CottonBol": 4,
+    "FoodDoughCottonFlat": 1
+   },
+   "time": 30
+  },
+  "RecipeCrabBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCrabBurger",
+   "result": "FoodBurgerCrab",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatCrab": 2
+   },
+   "time": 10
+  },
+  "RecipeCrazyHamburger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCrazyHamburger",
+   "reagents": {
+    "OilOlive": 15
+   },
+   "result": "FoodBurgerCrazy",
+   "solids": {
+    "CrayonGreen": 1,
+    "Flare": 1,
+    "FoodBreadBun": 1,
+    "FoodCabbage": 1,
+    "FoodCheeseSlice": 2,
+    "FoodChiliPepper": 1,
+    "FoodMeat": 2
+   },
+   "time": 15
+  },
+  "RecipeCreamCheeseBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCreamCheeseBread",
+   "reagents": {
+    "Milk": 5
+   },
+   "result": "FoodBreadCreamcheese",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDough": 1
+   },
+   "time": 15
+  },
+  "RecipeCroissant": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCroissant",
+   "result": "FoodBakedCroissant",
+   "solids": {
+    "FoodButterSlice": 1,
+    "FoodCroissantRaw": 1
+   },
+   "time": 5
+  },
+  "RecipeCroissantCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCroissantCotton",
+   "result": "FoodBakedCroissantCotton",
+   "solids": {
+    "FoodButterSlice": 1,
+    "FoodCroissantRawCotton": 1
+   },
+   "time": 5
+  },
+  "RecipeCubanCarp": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeCubanCarp",
+   "result": "FoodMealCubancarp",
+   "solids": {
+    "FoodCheeseSlice": 2,
+    "FoodChiliPepper": 1,
+    "FoodDoughSlice": 1,
+    "FoodMeatFish": 2
+   },
+   "time": 15
+  },
+  "RecipeDankPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDankPizza",
+   "result": "FoodPizzaDank",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDoughFlat": 1,
+    "FoodTomato": 1,
+    "LeavesCannabis": 2
+   },
+   "time": 30
+  },
+  "RecipeDonkpocketBerry": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketBerry",
+   "result": "FoodDonkpocketBerryWarm",
+   "solids": {
+    "FoodDonkpocketBerry": 1
+   },
+   "time": 5
+  },
+  "RecipeDonkpocketCarp": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketCarp",
+   "result": "FoodDonkpocketCarpWarm",
+   "solids": {
+    "FoodDonkpocketCarp": 1
+   },
+   "time": 5
+  },
+  "RecipeDonkpocketHonk": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketHonk",
+   "result": "FoodDonkpocketHonkWarm",
+   "solids": {
+    "FoodDonkpocketHonk": 1
+   },
+   "time": 5
+  },
+  "RecipeDonkpocketMoth": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketMoth",
+   "result": "FoodDonkpocketMothWarm",
+   "solids": {
+    "FoodDonkpocketMoth": 1
+   },
+   "time": 5
+  },
+  "RecipeDonkpocketPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketPizza",
+   "result": "FoodPizzaDonkpocket",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDonkpocketWarm": 3,
+    "FoodDoughFlat": 1,
+    "FoodTomato": 1
+   },
+   "time": 30
+  },
+  "RecipeDonkpocketStonk": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDonkpocketStonk",
+   "result": "FoodDonkpocketStonkWarm",
+   "solids": {
+    "FoodDonkpocketStonk": 1
+   },
+   "time": 5
+  },
+  "RecipeDriedCannabis": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDriedCannabis",
+   "result": "LeavesCannabisDried",
+   "solids": {
+    "LeavesCannabis": 1
+   },
+   "time": 10
+  },
+  "RecipeDriedCannabisRainbow": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDriedCannabisRainbow",
+   "result": "LeavesCannabisRainbowDried",
+   "solids": {
+    "LeavesCannabisRainbow": 1
+   },
+   "time": 10
+  },
+  "RecipeDriedTeaLeaves": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDriedTeaLeaves",
+   "result": "LeavesTeaDried",
+   "solids": {
+    "LeavesTea": 1
+   },
+   "time": 10
+  },
+  "RecipeDriedTobacco": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDriedTobacco",
+   "result": "LeavesTobaccoDried",
+   "solids": {
+    "LeavesTobacco": 1
+   },
+   "time": 10
+  },
+  "RecipeDuckBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDuckBurger",
+   "result": "FoodBurgerDuck",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeatDuck": 1
+   },
+   "time": 10
+  },
+  "RecipeDumplings": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeDumplings",
+   "reagents": {
+    "UncookedAnimalProteins": 2,
+    "Water": 10
+   },
+   "result": "FoodBakedDumplings",
+   "solids": {
+    "FoodDoughSlice": 1
+   },
+   "time": 15
+  },
+  "RecipeEggRice": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeEggRice",
+   "reagents": {
+    "Egg": 6
+   },
+   "result": "FoodRiceEgg",
+   "solids": {
+    "FoodCarrot": 1,
+    "FoodRiceBoiled": 1
+   },
+   "time": 15
+  },
+  "RecipeEmpoweredBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeEmpoweredBurger",
+   "result": "FoodBurgerEmpowered",
+   "solids": {
+    "FoodBreadBun": 1,
+    "SheetPlasma1": 2
+   },
+   "time": 10
+  },
+  "RecipeEnchiladas": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeEnchiladas",
+   "result": "FoodMealEnchiladas",
+   "solids": {
+    "FoodChiliPepper": 1,
+    "FoodDoughTortillaFlat": 1,
+    "FoodMeatCutlet": 2
+   },
+   "time": 20
+  },
+  "RecipeEscargotSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeEscargotSoup",
+   "reagents": {
+    "Water": 5
+   },
+   "result": "FoodSoupEscargot",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodButterSlice": 2,
+    "FoodGarlic": 1,
+    "FoodMeatSnailCooked": 1,
+    "FoodOnionSlice": 1
+   },
+   "time": 10
+  },
+  "RecipeEyeballSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeEyeballSoup",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupEyeball",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCarrot": 1,
+    "FoodPotato": 1,
+    "OrganHumanEyes": 1
+   },
+   "time": 10
+  },
+  "RecipeFiveBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFiveBurger",
+   "result": "FoodBurgerFive",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodChiliPepper": 3,
+    "FoodMeat": 1
+   },
+   "time": 10
+  },
+  "RecipeFoodBakedChevreChaud": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFoodBakedChevreChaud",
+   "result": "FoodBakedChevreChaud",
+   "solids": {
+    "FoodBreadBaguetteSlice": 1,
+    "FoodChevreSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeFoodBakedChevreChaudCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFoodBakedChevreChaudCotton",
+   "result": "FoodBakedChevreChaudCotton",
+   "solids": {
+    "FoodBreadBaguetteCottonSlice": 1,
+    "FoodChevreSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeFrenchToast": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFrenchToast",
+   "reagents": {
+    "Egg": 6,
+    "Milk": 5
+   },
+   "result": "FoodBreadFrenchToast",
+   "solids": {
+    "FoodBreadPlainSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeFries": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFries",
+   "reagents": {
+    "TableSalt": 2
+   },
+   "result": "FoodMealFries",
+   "solids": {
+    "FoodPotato": 1
+   },
+   "time": 15
+  },
+  "RecipeFrostyPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFrostyPie",
+   "result": "FoodPieFrosty",
+   "solids": {
+    "FoodChillyPepper": 3,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeFruitSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeFruitSalad",
+   "result": "FoodSaladFruit",
+   "solids": {
+    "FoodApple": 1,
+    "FoodBowlBig": 1,
+    "FoodGrape": 1,
+    "FoodOrange": 1,
+    "FoodWatermelonSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeGappleTart": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGappleTart",
+   "reagents": {
+    "Gold": 10,
+    "Milk": 5,
+    "Sugar": 5
+   },
+   "result": "FoodTartGapple",
+   "solids": {
+    "FoodApple": 2,
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeGarlicBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGarlicBread",
+   "result": "FoodBreadGarlicSlice",
+   "solids": {
+    "FoodBreadPlainSlice": 1,
+    "FoodButterSlice": 1,
+    "FoodGarlic": 1
+   },
+   "time": 5
+  },
+  "RecipeGhostBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGhostBurger",
+   "result": "FoodBurgerGhost",
+   "solids": {
+    "Ectoplasm": 1,
+    "FoodBreadBun": 1
+   },
+   "time": 10
+  },
+  "RecipeGrapeTart": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGrapeTart",
+   "reagents": {
+    "Milk": 5,
+    "Sugar": 5
+   },
+   "result": "FoodTartGrape",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodGrape": 3,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeGrilledCheeseSandwich": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGrilledCheeseSandwich",
+   "result": "FoodBakedGrilledCheeseSandwich",
+   "solids": {
+    "FoodBreadPlainSlice": 2,
+    "FoodButterSlice": 1,
+    "FoodCheeseSlice": 1
+   },
+   "time": 10
+  },
+  "RecipeGrilledCheeseSandwichCotton": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeGrilledCheeseSandwichCotton",
+   "result": "FoodBakedGrilledCheeseSandwichCotton",
+   "solids": {
+    "FoodBreadCottonSlice": 2,
+    "FoodButterSlice": 1,
+    "FoodCheeseSlice": 1
+   },
+   "time": 10
+  },
+  "RecipeHawaiianPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeHawaiianPizza",
+   "result": "FoodPizzaPineapple",
+   "solids": {
+    "FoodDoughFlat": 1,
+    "FoodMeatChickenCutlet": 3,
+    "FoodPineappleSlice": 5
+   },
+   "time": 30
+  },
+  "RecipeHerbSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeHerbSalad",
+   "result": "FoodSaladHerb",
+   "solids": {
+    "FoodAmbrosiaVulgaris": 3,
+    "FoodApple": 1,
+    "FoodBowlBig": 1
+   },
+   "time": 5
+  },
+  "RecipeHotChili": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeHotChili",
+   "result": "FoodSoupChiliHot",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodChiliPepper": 1,
+    "FoodMeatCutlet": 1,
+    "FoodOnionSlice": 1,
+    "FoodTomato": 1
+   },
+   "time": 20
+  },
+  "RecipeHumanBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeHumanBurger",
+   "result": "FoodBurgerHuman",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatHuman": 1
+   },
+   "time": 10
+  },
+  "RecipeInertAnomalyMeat": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeInertAnomalyMeat",
+   "result": "FoodMeatAnomaly",
+   "solids": {
+    "AnomalyCoreFleshInert": 1
+   },
+   "time": 5
+  },
+  "RecipeJellyBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeJellyBurger",
+   "result": "FoodBurgerJelly",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodJellyAmanita": 1
+   },
+   "time": 10
+  },
+  "RecipeJellyToast": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeJellyToast",
+   "result": "FoodBreadJellySlice",
+   "solids": {
+    "FoodBreadPlainSlice": 1,
+    "FoodJellyAmanita": 1
+   },
+   "time": 5
+  },
+  "RecipeJungleSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeJungleSalad",
+   "result": "FoodSaladJungle",
+   "solids": {
+    "FoodApple": 1,
+    "FoodBanana": 1,
+    "FoodBowlBig": 1,
+    "FoodGrape": 1,
+    "FoodWatermelonSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeKimchiSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeKimchiSalad",
+   "reagents": {
+    "Vinegar": 5
+   },
+   "result": "FoodSaladKimchi",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCabbage": 2,
+    "FoodCarrot": 1,
+    "FoodGarlic": 1
+   },
+   "time": 5
+  },
+  "RecipeLemonCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeLemonCake",
+   "result": "FoodCakeLemon",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodLemon": 3
+   },
+   "time": 5
+  },
+  "RecipeLemoonCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeLemoonCake",
+   "result": "FoodCakeLemoon",
+   "solids": {
+    "FoodBerries": 1,
+    "FoodCakePlain": 1,
+    "FoodLemoon": 1
+   },
+   "time": 5
+  },
+  "RecipeLimeCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeLimeCake",
+   "result": "FoodCakeLime",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodLime": 3
+   },
+   "time": 5
+  },
+  "RecipeLoadedBakedPotato": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeLoadedBakedPotato",
+   "result": "FoodMealPotatoLoaded",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodPotato": 1
+   },
+   "time": 15
+  },
+  "RecipeMargheritaPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMargheritaPizza",
+   "result": "FoodPizzaMargherita",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDoughFlat": 1,
+    "FoodTomato": 4
+   },
+   "time": 30
+  },
+  "RecipeMeatBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMeatBread",
+   "result": "FoodBreadMeat",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDough": 1,
+    "FoodMeatCutlet": 2
+   },
+   "time": 15
+  },
+  "RecipeMeatPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMeatPie",
+   "result": "FoodPieMeat",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodMeat": 3,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMeatPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMeatPizza",
+   "result": "FoodPizzaMeat",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDoughFlat": 1,
+    "FoodMeat": 3,
+    "FoodTomato": 1
+   },
+   "time": 30
+  },
+  "RecipeMeatballSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMeatballSoup",
+   "reagents": {
+    "Water": 20
+   },
+   "result": "FoodSoupMeatball",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCarrot": 1,
+    "FoodMeatMeatball": 1,
+    "FoodPotato": 1
+   },
+   "time": 10
+  },
+  "RecipeMeatballSpaghetti": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMeatballSpaghetti",
+   "result": "FoodNoodlesMeatball",
+   "solids": {
+    "FoodMeatMeatball": 1,
+    "FoodNoodlesBoiled": 1
+   },
+   "time": 10
+  },
+  "RecipeMedicatedSuture": {
+   "file": "Resources/Prototypes/Recipes/Cooking/medical_recipes.yml",
+   "name": "RecipeMedicatedSuture",
+   "reagents": {
+    "Cryptobiolin": 20,
+    "TranexamicAcid": 20
+   },
+   "result": "MedicatedSuture",
+   "solids": {
+    "Brutepack": 1,
+    "FoodPoppy": 1,
+    "MaterialCloth1": 1
+   },
+   "time": 10
+  },
+  "RecipeMimanaBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMimanaBread",
+   "reagents": {
+    "Nothing": 5
+   },
+   "result": "FoodBreadMimana",
+   "solids": {
+    "FoodDough": 1,
+    "FoodMimana": 2
+   },
+   "time": 15
+  },
+  "RecipeMimeBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMimeBurger",
+   "result": "FoodBurgerMime",
+   "solids": {
+    "ClothingMaskMime": 1,
+    "FoodBreadBun": 1
+   },
+   "time": 10
+  },
+  "RecipeMimeTart": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMimeTart",
+   "reagents": {
+    "Milk": 5,
+    "Sugar": 5
+   },
+   "result": "FoodTartMime",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodMimana": 3,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMisoColaSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMisoColaSoup",
+   "reagents": {
+    "Cola": 5
+   },
+   "result": "DisgustingSweptSoup",
+   "solids": {
+    "FoodSoupMiso": 1
+   },
+   "time": 15
+  },
+  "RecipeMoldyBreadSlice": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMoldyBreadSlice",
+   "result": "FoodBreadMoldySlice",
+   "solids": {
+    "FoodBreadPlainSlice": 1,
+    "FoodFlyAmanita": 1
+   },
+   "time": 5
+  },
+  "RecipeMonkeysDelightSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMonkeysDelightSoup",
+   "reagents": {
+    "Blackpepper": 1,
+    "Flour": 5,
+    "TableSalt": 1
+   },
+   "result": "FoodSoupMonkey",
+   "solids": {
+    "FoodBanana": 1,
+    "FoodBowlBig": 1,
+    "MonkeyCube": 1
+   },
+   "time": 10
+  },
+  "RecipeMoproach": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMoproach",
+   "reagents": {
+    "SpaceCleaner": 15
+   },
+   "result": "MobMoproach",
+   "solids": {
+    "MobMothroach": 1,
+    "MoproachShoes": 1,
+    "OrganAnimalHeart": 1
+   },
+   "time": 30
+  },
+  "RecipeMothRoachburger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMothRoachburger",
+   "result": "FoodBurgerMothRoach",
+   "solids": {
+    "FoodBreadBun": 1,
+    "MobMothroach": 1
+   },
+   "time": 5
+  },
+  "RecipeMuffin": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMuffin",
+   "reagents": {
+    "Sugar": 10
+   },
+   "result": "FoodBakedMuffin",
+   "solids": {
+    "FoodDoughSlice": 1,
+    "FoodPlateMuffinTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMuffinBanana": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMuffinBanana",
+   "reagents": {
+    "Sugar": 10
+   },
+   "result": "FoodBakedMuffinBanana",
+   "solids": {
+    "FoodBanana": 1,
+    "FoodDoughSlice": 1,
+    "FoodPlateMuffinTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMuffinBerry": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMuffinBerry",
+   "reagents": {
+    "Sugar": 10
+   },
+   "result": "FoodBakedMuffinBerry",
+   "solids": {
+    "FoodBerries": 1,
+    "FoodDoughSlice": 1,
+    "FoodPlateMuffinTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMuffinCherry": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMuffinCherry",
+   "reagents": {
+    "Sugar": 10
+   },
+   "result": "FoodBakedMuffinCherry",
+   "solids": {
+    "FoodCherry": 3,
+    "FoodDoughSlice": 1,
+    "FoodPlateMuffinTin": 1
+   },
+   "time": 15
+  },
+  "RecipeMuffinChocolate": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMuffinChocolate",
+   "reagents": {
+    "Sugar": 10
+   },
+   "result": "FoodBakedMuffinChocolate",
+   "solids": {
+    "FoodDoughSlice": 1,
+    "FoodPlateMuffinTin": 1,
+    "FoodSnackChocolateBar": 1
+   },
+   "time": 15
+  },
+  "RecipeMushroomPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMushroomPizza",
+   "result": "FoodPizzaMushroom",
+   "solids": {
+    "FoodDoughFlat": 1,
+    "FoodMushroom": 5
+   },
+   "time": 30
+  },
+  "RecipeMushroomSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeMushroomSoup",
+   "reagents": {
+    "Milk": 5,
+    "Water": 5
+   },
+   "result": "FoodSoupMushroom",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodMushroom": 2
+   },
+   "time": 10
+  },
+  "RecipeNachos": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeNachos",
+   "reagents": {
+    "TableSalt": 1
+   },
+   "result": "FoodMealNachos",
+   "solids": {
+    "FoodDoughTortillaFlat": 1,
+    "FoodPlateSmall": 1
+   },
+   "time": 10
+  },
+  "RecipeNachosCheesy": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeNachosCheesy",
+   "reagents": {
+    "TableSalt": 1
+   },
+   "result": "FoodMealNachosCheesy",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDoughTortillaFlat": 1,
+    "FoodPlateSmall": 1
+   },
+   "time": 10
+  },
+  "RecipeNachosCuban": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeNachosCuban",
+   "reagents": {
+    "Ketchup": 5
+   },
+   "result": "FoodMealNachosCuban",
+   "solids": {
+    "FoodChiliPepper": 1,
+    "FoodDoughTortillaFlat": 1,
+    "FoodPlateSmall": 1
+   },
+   "time": 10
+  },
+  "RecipeNettleSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeNettleSoup",
+   "reagents": {
+    "Egg": 6,
+    "Water": 10
+   },
+   "result": "FoodSoupNettle",
+   "solids": {
+    "FoodAmbrosiaDeus": 1,
+    "FoodBowlBig": 1,
+    "FoodPotato": 1,
+    "Nettle": 1
+   },
+   "time": 10
+  },
+  "RecipeOatmeal": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeOatmeal",
+   "reagents": {
+    "Oats": 20,
+    "Water": 20
+   },
+   "result": "FoodOatmeal",
+   "solids": {
+    "FoodBowlBig": 1
+   },
+   "time": 15
+  },
+  "RecipeOnionRings": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeOnionRings",
+   "result": "FoodOnionRings",
+   "solids": {
+    "FoodOnionSlice": 1
+   },
+   "time": 15
+  },
+  "RecipeOnionSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeOnionSoup",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupOnion",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCheeseSlice": 1,
+    "FoodOnionSlice": 5
+   },
+   "time": 10
+  },
+  "RecipeOrangeCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeOrangeCake",
+   "result": "FoodCakeOrange",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodOrange": 3
+   },
+   "time": 5
+  },
+  "RecipePancake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePancake",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 5,
+    "Milk": 5
+   },
+   "result": "FoodBakedPancake",
+   "solids": {},
+   "time": 5
+  },
+  "RecipePastaTomato": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePastaTomato",
+   "result": "FoodNoodles",
+   "solids": {
+    "FoodNoodlesBoiled": 1,
+    "FoodTomato": 2
+   },
+   "time": 10
+  },
+  "RecipePeaSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePeaSoup",
+   "reagents": {
+    "Water": 20
+   },
+   "result": "FoodSoupPea",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodPeaPod": 3
+   },
+   "time": 10
+  },
+  "RecipePlainBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePlainBurger",
+   "result": "FoodBurgerPlain",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeat": 1
+   },
+   "time": 10
+  },
+  "RecipePopcorn": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePopcorn",
+   "result": "FoodSnackPopcorn",
+   "solids": {
+    "FoodCorn": 1
+   },
+   "time": 20
+  },
+  "RecipePumpkinCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePumpkinCake",
+   "result": "FoodCakePumpkin",
+   "solids": {
+    "FoodCakePlain": 1,
+    "FoodPumpkin": 1
+   },
+   "time": 5
+  },
+  "RecipePumpkinPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipePumpkinPie",
+   "result": "FoodPiePumpkin",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodPlateTin": 1,
+    "FoodPumpkin": 1
+   },
+   "time": 15
+  },
+  "RecipeQueso": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeQueso",
+   "result": "FoodMealQueso",
+   "solids": {
+    "FoodCheeseSlice": 2,
+    "FoodChiliPepper": 1
+   },
+   "time": 15
+  },
+  "RecipeRaisinCookie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRaisinCookie",
+   "reagents": {
+    "Flour": 5,
+    "Sugar": 5
+   },
+   "result": "FoodBakedCookieRaisin",
+   "solids": {
+    "FoodSnackRaisins": 1
+   },
+   "time": 5
+  },
+  "RecipeRatBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRatBurger",
+   "result": "FoodBurgerRat",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatRat": 1
+   },
+   "time": 10
+  },
+  "RecipeRegenerativeMesh": {
+   "file": "Resources/Prototypes/Recipes/Cooking/medical_recipes.yml",
+   "name": "RecipeRegenerativeMesh",
+   "reagents": {
+    "Dermaline": 20,
+    "Sigynate": 20
+   },
+   "result": "RegenerativeMesh",
+   "solids": {
+    "FoodAloe": 1,
+    "MaterialCloth1": 1,
+    "Ointment": 1
+   },
+   "time": 10
+  },
+  "RecipeRibs": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRibs",
+   "reagents": {
+    "BbqSauce": 10
+   },
+   "result": "FoodMealRibs",
+   "solids": {
+    "FoodKebabSkewer": 1,
+    "FoodMeat": 2
+   },
+   "time": 15
+  },
+  "RecipeRiceGumbo": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRiceGumbo",
+   "result": "FoodRiceGumbo",
+   "solids": {
+    "FoodChiliPepper": 2,
+    "FoodMeatCutlet": 2,
+    "FoodRiceBoiled": 1
+   },
+   "time": 15
+  },
+  "RecipeRicePork": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRicePork",
+   "result": "FoodRicePork",
+   "solids": {
+    "FoodMeatCutlet": 3,
+    "FoodRiceBoiled": 1
+   },
+   "time": 15
+  },
+  "RecipeRicePudding": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRicePudding",
+   "reagents": {
+    "Egg": 6,
+    "Milk": 30,
+    "Rice": 10,
+    "Sugar": 5
+   },
+   "result": "FoodRicePudding",
+   "solids": {
+    "FoodBowlBig": 1
+   },
+   "time": 15
+  },
+  "RecipeRobotBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeRobotBurger",
+   "result": "FoodBurgerRobot",
+   "solids": {
+    "FoodBreadBun": 1,
+    "MicroManipulatorStockPart": 2
+   },
+   "time": 10
+  },
+  "RecipeSashimi": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSashimi",
+   "reagents": {
+    "TableSalt": 1
+   },
+   "result": "FoodMealSashimi",
+   "solids": {
+    "FoodMeatFish": 1
+   },
+   "time": 15
+  },
+  "RecipeSausageBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSausageBread",
+   "result": "FoodBreadSausage",
+   "solids": {
+    "FoodDough": 1,
+    "FoodMeat": 1
+   },
+   "time": 15
+  },
+  "RecipeSlimeCake": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSlimeCake",
+   "reagents": {
+    "Slime": 15
+   },
+   "result": "FoodCakeSlime",
+   "solids": {
+    "FoodCakePlain": 1
+   },
+   "time": 5
+  },
+  "RecipeSoylentBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSoylentBurger",
+   "result": "FoodBurgerSoy",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodSoybeans": 2
+   },
+   "time": 10
+  },
+  "RecipeSpellBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSpellBurger",
+   "result": "FoodBurgerSpell",
+   "solids": {
+    "ClothingHeadHatWizard": 1,
+    "FoodBreadBun": 1
+   },
+   "time": 10
+  },
+  "RecipeSpiderMeatBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSpiderMeatBread",
+   "result": "FoodBreadMeatSpider",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodDough": 1,
+    "FoodMeatSpiderCutlet": 2
+   },
+   "time": 15
+  },
+  "RecipeStewSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeStewSoup",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupStew",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCarrot": 1,
+    "FoodEggplant": 1,
+    "FoodMeatCutlet": 3,
+    "FoodMushroom": 1,
+    "FoodPotato": 1,
+    "FoodTomato": 1
+   },
+   "time": 10
+  },
+  "RecipeSugarCookie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSugarCookie",
+   "reagents": {
+    "Flour": 5,
+    "Sugar": 10
+   },
+   "result": "FoodBakedCookieSugar",
+   "solids": {
+    "FoodButterSlice": 1
+   },
+   "time": 5
+  },
+  "RecipeSuperBiteBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSuperBiteBurger",
+   "reagents": {
+    "Blackpepper": 1,
+    "Egg": 12,
+    "TableSalt": 1
+   },
+   "result": "FoodBurgerSuper",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeat": 2,
+    "FoodTomato": 2
+   },
+   "time": 25
+  },
+  "RecipeSuppermatter": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeSuppermatter",
+   "reagents": {
+    "Nitrogen": 10,
+    "Plasma": 10,
+    "Sugar": 30
+   },
+   "result": "FoodCakeSuppermatter",
+   "solids": {
+    "FoodCakeBatter": 2
+   },
+   "time": 30
+  },
+  "RecipeTacoBeef": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoBeef",
+   "result": "FoodTacoBeef",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodMeatCutlet": 1,
+    "FoodTacoShell": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoBeefSupreme": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoBeefSupreme",
+   "result": "FoodTacoBeefSupreme",
+   "solids": {
+    "FoodCabbage": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeatCutlet": 1,
+    "FoodOnionSlice": 2,
+    "FoodTacoShell": 1,
+    "FoodTomato": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoChicken": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoChicken",
+   "result": "FoodTacoChicken",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodMeatChickenCutlet": 1,
+    "FoodTacoShell": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoChickenSupreme": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoChickenSupreme",
+   "result": "FoodTacoChickenSupreme",
+   "solids": {
+    "FoodCabbage": 1,
+    "FoodCheeseSlice": 1,
+    "FoodMeatChickenCutlet": 1,
+    "FoodOnionSlice": 2,
+    "FoodTacoShell": 1,
+    "FoodTomato": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoDragon": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoDragon",
+   "result": "FoodTacoDragon",
+   "solids": {
+    "FoodChiliPepper": 1,
+    "FoodMeatDragonCutlet": 2,
+    "FoodTacoShell": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoFish": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoFish",
+   "result": "FoodTacoFish",
+   "solids": {
+    "FoodCabbage": 1,
+    "FoodMeatFish": 1,
+    "FoodOnionSlice": 2,
+    "FoodTacoShell": 1,
+    "FoodTomato": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoRat": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoRat",
+   "result": "FoodTacoRat",
+   "solids": {
+    "FoodCheeseSlice": 1,
+    "FoodMeatRat": 1,
+    "FoodTacoShell": 1
+   },
+   "time": 10
+  },
+  "RecipeTacoShell": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTacoShell",
+   "result": "FoodTacoShell",
+   "solids": {
+    "FoodDoughTortillaFlat": 1
+   },
+   "time": 5
+  },
+  "RecipeThrowingCroissant": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeThrowingCroissant",
+   "result": "WeaponCroissant",
+   "solids": {
+    "FoodButterSlice": 1,
+    "FoodCroissantRaw": 1,
+    "ShardGlass": 1
+   },
+   "time": 5
+  },
+  "RecipeTofuBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTofuBread",
+   "result": "FoodBreadTofu",
+   "solids": {
+    "FoodDough": 1,
+    "FoodTofuSlice": 1
+   },
+   "time": 15
+  },
+  "RecipeTofuBurger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTofuBurger",
+   "result": "FoodBurgerTofu",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodTofuSlice": 1
+   },
+   "time": 10
+  },
+  "RecipeTomatoBloodSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTomatoBloodSoup",
+   "reagents": {
+    "Blood": 10
+   },
+   "result": "FoodSoupTomatoBlood",
+   "solids": {
+    "FoodBloodTomato": 2,
+    "FoodBowlBig": 1
+   },
+   "time": 10
+  },
+  "RecipeTomatoSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTomatoSoup",
+   "reagents": {
+    "Water": 10
+   },
+   "result": "FoodSoupTomato",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodTomato": 2
+   },
+   "time": 10
+  },
+  "RecipeTrashBakedBananaPeel": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTrashBakedBananaPeel",
+   "result": "TrashBakedBananaPeel",
+   "solids": {
+    "TrashBananaPeel": 1
+   },
+   "time": 5
+  },
+  "RecipeTwoBreadSlice": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeTwoBreadSlice",
+   "reagents": {
+    "Wine": 5
+   },
+   "result": "FoodBreadTwoSlice",
+   "solids": {
+    "FoodBreadPlainSlice": 2
+   },
+   "time": 5
+  },
+  "RecipeUraniumPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeUraniumPizza",
+   "result": "FoodPizzaUranium",
+   "solids": {
+    "FoodChiliPepper": 2,
+    "FoodDoughFlat": 1,
+    "FoodTomato": 2,
+    "SheetUranium1": 2
+   },
+   "time": 30
+  },
+  "RecipeValidSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeValidSalad",
+   "result": "FoodSaladValid",
+   "solids": {
+    "FoodAmbrosiaVulgaris": 2,
+    "FoodBowlBig": 1,
+    "FoodMeatMeatball": 1,
+    "FoodPotato": 1
+   },
+   "time": 5
+  },
+  "RecipeVegetablePizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeVegetablePizza",
+   "result": "FoodPizzaVegetable",
+   "solids": {
+    "FoodCarrot": 1,
+    "FoodCorn": 1,
+    "FoodDoughFlat": 1,
+    "FoodEggplant": 1,
+    "FoodTomato": 1
+   },
+   "time": 30
+  },
+  "RecipeVegetableSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeVegetableSoup",
+   "reagents": {
+    "Water": 5
+   },
+   "result": "FoodSoupVegetable",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodCarrot": 1,
+    "FoodCorn": 1,
+    "FoodEggplant": 1,
+    "FoodPotato": 1
+   },
+   "time": 10
+  },
+  "RecipeWaffleSoy": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWaffleSoy",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 5,
+    "MilkSoy": 5,
+    "SodaWater": 5
+   },
+   "result": "FoodBakedWaffleSoy",
+   "solids": {},
+   "time": 10
+  },
+  "RecipeWaffles": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWaffles",
+   "reagents": {
+    "Egg": 6,
+    "Flour": 5,
+    "Milk": 5,
+    "SodaWater": 5
+   },
+   "result": "FoodBakedWaffle",
+   "solids": {},
+   "time": 10
+  },
+  "RecipeWarmDankpocket": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWarmDankpocket",
+   "result": "FoodDonkpocketDankWarm",
+   "solids": {
+    "FoodDonkpocketDank": 1
+   },
+   "time": 5
+  },
+  "RecipeWarmDonkpocket": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWarmDonkpocket",
+   "result": "FoodDonkpocketWarm",
+   "solids": {
+    "FoodDonkpocket": 1
+   },
+   "time": 5
+  },
+  "RecipeWarmDonkpocketPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWarmDonkpocketPizza",
+   "result": "FoodDonkpocketPizzaWarm",
+   "solids": {
+    "FoodDonkpocketPizza": 1
+   },
+   "time": 5
+  },
+  "RecipeWarmDonkpocketSpicy": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWarmDonkpocketSpicy",
+   "result": "FoodDonkpocketSpicyWarm",
+   "solids": {
+    "FoodDonkpocketSpicy": 1
+   },
+   "time": 5
+  },
+  "RecipeWarmDonkpocketTeriyaki": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWarmDonkpocketTeriyaki",
+   "result": "FoodDonkpocketTeriyakiWarm",
+   "solids": {
+    "FoodDonkpocketTeriyaki": 1
+   },
+   "time": 5
+  },
+  "RecipeWatermelonFruitBowlSalad": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWatermelonFruitBowlSalad",
+   "result": "FoodSaladWatermelonFruitBowl",
+   "solids": {
+    "FoodAmbrosiaVulgaris": 1,
+    "FoodApple": 1,
+    "FoodBanana": 1,
+    "FoodLemon": 1,
+    "FoodOrange": 1,
+    "FoodWatermelon": 1
+   },
+   "time": 5
+  },
+  "RecipeWingFangChuSoup": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWingFangChuSoup",
+   "reagents": {
+    "Soysauce": 10
+   },
+   "result": "FoodSoupWingFangChu",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodMeatXenoCutlet": 5
+   },
+   "time": 10
+  },
+  "RecipeWingFangChuSoupSpider": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWingFangChuSoupSpider",
+   "reagents": {
+    "Soysauce": 5
+   },
+   "result": "FoodSoupWingFangChu",
+   "solids": {
+    "FoodBowlBig": 1,
+    "FoodMeatSpider": 2
+   },
+   "time": 10
+  },
+  "RecipeWorldpeasPizza": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeWorldpeasPizza",
+   "result": "FoodPizzaWorldpeas",
+   "solids": {
+    "FoodDoughFlat": 1,
+    "FoodWorldPeas": 3
+   },
+   "time": 30
+  },
+  "RecipeXenoMeatBread": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeXenoMeatBread",
+   "result": "FoodBreadMeatXeno",
+   "solids": {
+    "FoodCheeseSlice": 2,
+    "FoodDough": 1,
+    "FoodMeatXenoCutlet": 2
+   },
+   "time": 15
+  },
+  "RecipeXenoPie": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeXenoPie",
+   "result": "FoodPieXeno",
+   "solids": {
+    "FoodDoughPie": 1,
+    "FoodMeatXeno": 3,
+    "FoodPlateTin": 1
+   },
+   "time": 15
+  },
+  "RecipeXenoburger": {
+   "file": "Resources/Prototypes/Recipes/Cooking/meal_recipes.yml",
+   "name": "RecipeXenoburger",
+   "result": "FoodBurgerXeno",
+   "solids": {
+    "FoodBreadBun": 1,
+    "FoodMeatXeno": 1
+   },
+   "time": 10
+  }
+ },
  "entities": [
   {
    "file": "Resources/Prototypes/Entities/Objects/Specific/rehydrateable.yml",

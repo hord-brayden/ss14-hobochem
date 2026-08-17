@@ -240,7 +240,7 @@ def extract(repo, copy_sprites=True):
     loc = load_locale_strings(locale_dir)
     locs = lambda k, d="": loc.get(str(k), d if d != "" else str(k or ""))
 
-    reagents, reactions, mixer_names = {}, {}, {}
+    reagents, reactions, mixer_names, cooks = {}, {}, {}, {}
     raw_entities, graphs, lathe_raw, fills = {}, {}, {}, {}
 
     for path in sorted(proto_dir.rglob("*.yml")):
@@ -295,6 +295,20 @@ def extract(repo, copy_sprites=True):
 
             elif t == "mixingCategory":
                 mixer_names[str(doc.get("id"))] = locs(doc.get("name"), str(doc.get("id")))
+
+            elif t == "microwaveMealRecipe":
+                cid = str(doc.get("id"))
+                rec = {
+                    "name": locs(doc.get("name"), cid),
+                    "result": str(doc.get("result")),
+                    "time": doc.get("time", 5),
+                    "solids": {str(k): v for k, v in (doc.get("solids") or {}).items()},
+                    "file": rel,
+                }
+                reag = {str(k): v for k, v in (doc.get("reagents") or {}).items()}
+                if reag:
+                    rec["reagents"] = reag
+                cooks[cid] = rec
 
             elif t == "constructionGraph":
                 graphs[str(doc.get("id"))] = {"doc": doc, "file": rel}
@@ -580,6 +594,7 @@ def extract(repo, copy_sprites=True):
         "entities": entities,
         "gear": dict(sorted(gear.items())),
         "fills": fills_out,
+        "cooks": dict(sorted(cooks.items())),
         "_sprites": sprites_copied,
     }
 

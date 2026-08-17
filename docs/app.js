@@ -13,6 +13,12 @@
     for (const r of Object.keys(rx.reactants)) (byReactant[r] ??= []).push(id);
     for (const s of rx.spawns || []) (spawnedBy[s] ??= []).push(id);
   }
+  const COOKS = D.cooks || {};
+  const cookByResult = {}, cookSinks = {};
+  for (const [cid, c] of Object.entries(COOKS)) {
+    (cookByResult[c.result] ??= []).push(cid);
+    for (const rid of Object.keys(c.reagents || {})) (cookSinks[rid] ??= []).push(cid);
+  }
   const entMap = {}, entsWith = {}, bloodOf = {}, gambleOf = {};
   for (const e of D.entities) {
     entMap[e.id] = e;
@@ -138,6 +144,28 @@
     return `<span class="lbl">${rx.source ? "break down" : "mix"}</span>${ins}<span class="arrow">→</span>${outs} ${reactionChips(rx)}`;
   }
 
+  function cookNodeHTML(cid, targetRid) {
+    const c = COOKS[cid];
+    const parts = [];
+    for (const [rid, amt] of Object.entries(c.reagents || {})) {
+      const hot = rid === targetRid;
+      parts.push(`<span${hot ? ' style="font-weight:700"' : ""}><span class="qty">${fmt(amt)}u</span> ${rlink(rid)}</span>`);
+    }
+    for (const [eid, n] of Object.entries(c.solids || {}))
+      parts.push(`<span><span class="qty">${fmt(n)}×</span> ${ilink(eid)}</span>`);
+    return `<span class="lbl">microwave ${esc(String(c.time))}s</span>${parts.join('<span class="arrow">+</span>')}<span class="arrow">→</span>${ilink(c.result)} <span class="chip grp">solid item</span> <a class="chip mixer" href="#/g/KitchenMicrowave">Microwave</a>
+      <div class="meta"><a class="filelink" target="_blank" rel="noopener" href="${GH}${esc(c.file)}">${esc(c.file)}</a></div>`;
+  }
+
+  // Reagent "sinks": reactions & recipes that CONSUME a reagent into a solid —
+  // i.e., ways to strip it out of a dirty mix (advanced purification).
+  function sinksFor(rid) {
+    const rx = Object.entries(D.reactions)
+      .filter(([, r]) => (r.spawns || []).length && !Object.keys(r.products).length && r.reactants[rid])
+      .map(([xid]) => xid);
+    return { rx, cook: cookSinks[rid] || [] };
+  }
+
   function sourceNodes(rid, path, depth) {
     const nodes = [];
     for (const rxId of byProduct[rid] || [])
@@ -201,12 +229,27 @@
       h += `<h3 class="sec">Everything that carries it (${ents.length})</h3>
         <table class="list">${ents.map((e) => entRow(e, rid)).join("")}</table>`;
     }
+    const sinks = sinksFor(rid);
+    if (sinks.rx.length || sinks.cook.length) {
+      const total = sinks.rx.length + sinks.cook.length;
+      h += `<h3 class="sec">Strip it out (${total} sink${total === 1 ? "" : "s"})</h3>
+        <div class="meta" style="margin-bottom:10px">Advanced purification: these consume this reagent into a solid object,
+        pulling EXACTLY the recipe amounts out of a dirty mix and leaving everything else behind. Full doctrine on the <a href="#/purity">Purity page</a>.</div>`;
+      const cards = sinks.rx.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [rid], 0)}</div>`)
+        .concat(sinks.cook.map((cid) => `<div class="card">${cookNodeHTML(cid, rid)}</div>`));
+      h += cards.slice(0, 8).join("");
+      if (cards.length > 8)
+        h += `<button class="showmore" id="sink-more">show ${cards.length - 8} more sinks</button>
+          <div id="sink-rest" style="display:none">${cards.slice(8).join("")}</div>`;
+    }
     const uses = byReactant[rid] || [];
     if (uses.length) {
       h += `<h3 class="sec">Used in (${uses.length})</h3>` +
         uses.map((id) => `<div class="card">${reactionNodeHTML(id, "", [rid], 0)}</div>`).join("");
     }
     main.innerHTML = h + `</div>`;
+    const sinkBtn = document.getElementById("sink-more");
+    if (sinkBtn) sinkBtn.onclick = () => { document.getElementById("sink-rest").style.display = "block"; sinkBtn.remove(); };
     main.scrollTop = 0;
   }
 
@@ -237,6 +280,10 @@
     if (spawnedBy[id]) {
       h += `<h3 class="sec">Cook one up (${spawnedBy[id].length} reaction${spawnedBy[id].length === 1 ? "" : "s"})</h3>` +
         spawnedBy[id].map((xid) => `<div class="card">${reactionNodeHTML(xid, id, [], 0)}</div>`).join("");
+    }
+    if (cookByResult[id]) {
+      h += `<h3 class="sec">Microwave it into existence</h3>` +
+        cookByResult[id].map((cid) => `<div class="card">${cookNodeHTML(cid, "")}</div>`).join("");
     }
 
     const contents = (e && e.reagents) || (g && g.reagents);
@@ -395,6 +442,7 @@
       }).join("") +
       `<label><input type="checkbox" data-eq="heat" ${equip.heat ? "checked" : ""}>Heat source <a href="#/g/ChemistryHotplate" class="meta">(hotplate)</a></label>
        <label><input type="checkbox" data-eq="chill" ${equip.chill ? "checked" : ""}>Cooling</label>
+       <label><input type="checkbox" data-eq="microwave" ${equip.microwave ? "checked" : ""}>Microwave <a href="#/g/KitchenMicrowave" class="meta">(kitchen)</a></label>
       </div>`;
 
     if (inv.length) {
@@ -403,9 +451,19 @@
       h += steps.length
         ? steps.map((s, i) => `<div class="card"><span class="stepnum">${i + 1}</span>${reactionNodeHTML(s.xid, s.makes[0], [], 0)}</div>`).join("")
         : `<div class="empty">Nothing new — scrounge more ingredients or tick more equipment.</div>`;
-      if (crafts.length) {
-        h += `<h3 class="sec">Solid goods you can cook (items, not liquids)</h3>` +
-          crafts.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [], 0)}</div>`).join("");
+      const cookable = equip.microwave
+        ? Object.keys(COOKS).filter((cid) => {
+            const req = COOKS[cid].reagents;
+            return req && Object.keys(req).every((r) => have.has(r));
+          })
+        : [];
+      if (crafts.length || cookable.length) {
+        h += `<h3 class="sec">Solid goods you can cook (items, not liquids)</h3>`;
+        h += crafts.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [], 0)}</div>`).join("");
+        if (cookable.length)
+          h += `<div class="meta" style="margin:8px 0">Microwave recipes your chems satisfy — scrounge the listed solids:</div>` +
+            cookable.slice(0, 12).map((cid) => `<div class="card">${cookNodeHTML(cid, "")}</div>`).join("") +
+            (cookable.length > 12 ? `<div class="meta">…and ${cookable.length - 12} more</div>` : "");
       }
       if (fx.length) {
         h += `<h3 class="sec">Effects you can trigger</h3>` +
@@ -559,6 +617,9 @@
   const renderMunitions = () => renderArticlePage("Tider Munitions",
     "The homemade armory: everything a passenger can build from trash to defend themselves.",
     window.CLETUS_MUNITIONS || []);
+  const renderPurity = () => renderArticlePage("The Purity Papers",
+    "Advanced maints chemistry: getting the junk OUT. Cletus's masterclass in purification.",
+    window.CLETUS_PURITY || []);
   const renderCaselaw = () => renderArticlePage("Case Law",
     "Selected victories from the practice of Cletus Cooper, Esq. All persons fictional. All invoices outstanding.",
     window.CLETUS_CASELAW || []);
@@ -739,6 +800,7 @@
     else if (hash === "#/maxcaps") renderMaxcaps();
     else if (hash === "#/spacelaw") renderSpaceLaw();
     else if (hash === "#/munitions") renderMunitions();
+    else if (hash === "#/purity") renderPurity();
     else if (hash === "#/caselaw") renderCaselaw();
     else renderHome();
   }
