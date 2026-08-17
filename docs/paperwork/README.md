@@ -7,8 +7,13 @@ Block-glyph logos follow the same technique as the game's own shipped Syndicate 
 
 | File | What it is |
 | --- | --- |
-| `cletus-letterhead.txt` | The firm masthead + dual NT/Syndicate endorsement bar — prepend to any document |
-| `cletus-business-card.txt` | The business card: practice areas, selected verdicts, fees |
+| `cletus-business-card.txt` | Compact card sized for the in-game **SyndicateBusinessCard** item (syndicate uplink, "pointless" tab) — a real black card with light text and a Syndicate logo header baked in |
+| `cletus-business-card-noir.txt` | Black-banded version for ordinary paper, when the uplink is out of reach |
+| `cletus-letterhead.txt` | Firm masthead with the framed scales-of-justice logo — prepend to any document |
 | `cletus-intake-form.txt` | Form CC-1, Emergency Client Intake — fax it to whoever's in the brig |
+
+Logo technique (from the community's advanced-paperwork style): grids of `█` ink and `░`
+filler — all block glyphs share the same width, so the art aligns even in the paper's
+proportional font. Never use plain spaces inside block art.
 
 Stamps (notary, CentComm, clown) layer on top in-game for extra authenticity.

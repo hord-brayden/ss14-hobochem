@@ -112,5 +112,5 @@ window.CLETUS_CASELAW = [
   { cletus: "That's the docket. If you learned anything, un-learn most of it. If you're currently IN one of these situations: stop emoting, eat the evidence, put the steaks somewhere legal, and say the whole phrase with me — 'I am invoking my right to counsel, and my counsel takes flares.'" },
 
   { h: "Official firm paperwork" },
-  { p: "Paste these onto any in-game paper (or fax them) and the formatting renders — logos, letterhead, checkboxes, the works. Copy the raw text: {{u:paperwork/cletus-business-card.txt|the business card}} · {{u:paperwork/cletus-intake-form.txt|Form CC-1, Emergency Client Intake}} · {{u:paperwork/cletus-letterhead.txt|the blank letterhead}} for drafting your own filings on firm stationery." },
+  { p: "Paste these onto any in-game paper (or fax them) and the formatting renders — logos, letterhead, checkboxes, the works. The business card is sized for the actual syndicate business card item (uplink, 'pointless' tab — a real black card; the firm regrets nothing). Copy the raw text: {{u:paperwork/cletus-business-card.txt|the business card}} · {{u:paperwork/cletus-business-card-noir.txt|the noir edition}} for plain paper · {{u:paperwork/cletus-intake-form.txt|Form CC-1, Emergency Client Intake}} · {{u:paperwork/cletus-letterhead.txt|the blank letterhead}}." },
 ];

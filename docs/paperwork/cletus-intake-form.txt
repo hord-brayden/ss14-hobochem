@@ -1,12 +1,23 @@
-[color=#e8a824]█▀▀ ▄█▄ █▀▀[/color]  [head=2]COOPER & COOPER[/head]
-[color=#e8a824]█   ▀█▀ █  [/color]  [head=3]EMERGENCY CLIENT INTAKE FORM[/head]
-[color=#e8a824]▀▀▀  ▀  ▀▀▀[/color]  [italic]Form CC-1 · Fill out honestly. I will fix it later.[/italic]
+                    [color=#e8a824]╔═════════════╗
+                    ║░░░░░░█░░░░░░║
+                    ║░███████████░║
+                    ║░█░░░░█░░░░█░║
+                    ║███░░░█░░░███║
+                    ║░░░░░░█░░░░░░║
+                    ║░░░░█████░░░░║
+                    ╚═════════════╝[/color]
+           [head=2]COOPER & COOPER[/head]
+        [head=3]EMERGENCY CLIENT INTAKE FORM[/head]
+      [italic]Form CC-1 · Fill out honestly. I will fix it later.[/italic]
+
 ────────────────────────────────────────────
 
-NAME: ________________  SPECIES: ________________
-CURRENTLY IN CRIT?  [bold][ ][/bold] YES   [bold][ ][/bold] NO   [bold][ ][/bold] IN A LOCKER, UNSURE
+NAME: ________________   SPECIES: ________________
+
+CURRENTLY IN CRIT?   [bold][ ][/bold] YES   [bold][ ][/bold] NO   [bold][ ][/bold] IN A LOCKER, UNSURE
 
 [bold]I AM ACCUSED OF[/bold] [italic](check all that apply)[/italic][bold]:[/bold]
+
 [bullet/][bold][ ][/bold] Something I did
 [bullet/][bold][ ][/bold] Something I did REPEATEDLY
 [bullet/][bold][ ][/bold] Something gravity did
@@ -15,18 +26,22 @@ CURRENTLY IN CRIT?  [bold][ ][/bold] YES   [bold][ ][/bold] NO   [bold][ ][/bold
 [bullet/][bold][ ][/bold] The thing in the EVA room [color=#87011c][bold](STOP. I do not take these anymore.)[/bold][/color]
 
 [bold]AT THE TIME OF THE INCIDENT I WAS:[/bold]
+
 [bullet/][bold][ ][/bold] Hungry [italic](it's on the HUD, it's ORANGE)[/italic]
 [bullet/][bold][ ][/bold] Defending myself
 [bullet/][bold][ ][/bold] Defending myself in advance
 [bullet/][bold][ ][/bold] A toaster legally obligated to comply
 
-[bold]DID YOU MEAN IT?[/bold]   [bold][ ][/bold] NO    [bold][ ][/bold] [color=#87011c]NO[/color]
+[bold]DID YOU MEAN IT?[/bold]    [bold][ ][/bold] NO     [bold][ ][/bold] [color=#87011c]NO[/color]
 
 RETAINER ENCLOSED: ________ flares
-[italic]By signing you agree this invoice survives your death, cloning, gibbing,
-and any rulings currently inside the singularity.[/italic]
+
+[italic]By signing you agree this invoice survives your death, cloning,
+gibbing, and any rulings currently inside the singularity.[/italic]
 
 SIGNATURE: ____________________
-[bold]C. COOPER, ESQ.[/bold] ✓   [italic](pre-signed for your convenience)[/italic]
+
+[bold]C. COOPER, ESQ.[/bold] ✓  [italic](pre-signed for your convenience)[/italic]
+
 ────────────────────────────────────────────
-[color=#2a5fc4]█▄ █ ▀█▀[/color] [color=#c41e1e]█▀▀ █ █ █▄ █[/color]  [italic]Cooper & Cooper serves all parties, sides, and species — simultaneously where billable.[/italic]
+[color=#2a5fc4][bold]■ NT[/bold][/color] · [color=#c41e1e][bold]■ SYNDICATE[/bold][/color] — [italic]Cooper & Cooper serves all parties, sides, and species — simultaneously where billable.[/italic]
