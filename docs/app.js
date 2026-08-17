@@ -417,8 +417,11 @@
   }
 
   // ---------------- specials ----------------
-  const tokenize = (s) => esc(s).replace(/\{\{(r|g):([A-Za-z0-9]+)\|([^}]+)\}\}/g, (_, kind, id, label) =>
-    kind === "r" ? `<a href="#/r/${id}">${label}</a>` : `<a href="#/g/${id}">${(lookup(id) ? spr(lookup(id), 20) : "")}${label}</a>`);
+  const tokenize = (s) => esc(s)
+    .replace(/\{\{u:([^|}]+)\|([^}]+)\}\}/g, (_, url, label) =>
+      `<a href="${url}" target="_blank" rel="noopener">${label}</a>`)
+    .replace(/\{\{(r|g):([A-Za-z0-9]+)\|([^}]+)\}\}/g, (_, kind, id, label) =>
+      kind === "r" ? `<a href="#/r/${id}">${label}</a>` : `<a href="#/g/${id}">${(lookup(id) ? spr(lookup(id), 20) : "")}${label}</a>`);
 
   function poisonList() {
     return Object.entries(D.reagents)
