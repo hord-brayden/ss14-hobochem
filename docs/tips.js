@@ -1,6 +1,25 @@
 // Uncle Cletus's field wisdom. Hand-curated — the extractor never touches this file.
-// Each tip: { title, body, reagents: [ReagentIds it should appear on] } ([] = home page only)
+// Each tip: { title, body, reagents: [ReagentIds it should appear on], gear: [EntityIds it should appear on] }
+// (empty/omitted arrays = home page only)
 window.CLETUS_TIPS = [
+  {
+    title: "Crack the Vending Machines",
+    body: "Every vending machine on this station has a hidden contraband inventory — it's in the machine's own stock list, waiting behind the maintenance panel. Screwdriver the panel, play with the wires, and the menu grows: the cigarette machine coughs up gold cigars and an igniter, the seed vendor hides fly amanita spores, the donut machine is holding a literal poison donut. Cletus's legal position, which has never lost: if you weren't supposed to have it, why do they STOCK it?",
+    reagents: [],
+    gear: [],
+  },
+  {
+    title: "The LawDrobe Pays Retainers",
+    body: "The LawDrobe — the lawyer's own wardrobe vendor — stocks two 100-speso bills. That's right: the legal profession's vending machine dispenses cash. It's in the inventory file, plain as day. Two hundred spesos, free, for anyone who thought to check the machine that dresses attorneys. This is either a bug or the single most honest thing NanoTrasen has ever done, and my firm has elected not to ask.",
+    reagents: [],
+    gear: [],
+  },
+  {
+    title: "Microwave Your ID Card",
+    body: "Put your ID in a microwave and press start. The code rolls the dice: 15% it burns to a crisp, 25% it wipes every access off the card — and the other 60% of the time, the machine ADDS ONE RANDOM ACCESS to it. The source code's own comment calls it 'a wonderful new access to compensate for everything.' Keep zapping and you're a walking skeleton key with a slight smell of burnt plastic. One warning from the code itself: cheap microwaves that can't handle IDs don't fail politely — they explode.",
+    reagents: [],
+    gear: ["KitchenMicrowave"],
+  },
   {
     title: "The Rag Trick",
     body: "A damp rag soaks up ONLY the water out of any puddle or spill — everything else stays put. Spill a mix on the floor, mop the water out, and you've concentrated whatever's left. It's a poor man's ChemMaster: 'boil down' any solution without ever setting foot in Chemistry.",

@@ -37,8 +37,11 @@
     for (const m of g.mixerTypes || []) (mixerProviders[m] ??= []).push(gid);
   for (const arr of Object.values(mixerProviders))
     arr.sort((a, b) => (G[a].craft ? 0 : 1) - (G[b].craft ? 0 : 1));
-  const tipsFor = {};
-  for (const t of TIPS) for (const rid of t.reagents) (tipsFor[rid] ??= []).push(t);
+  const tipsFor = {}, tipsForGear = {};
+  for (const t of TIPS) {
+    for (const rid of t.reagents || []) (tipsFor[rid] ??= []).push(t);
+    for (const gid of t.gear || []) (tipsForGear[gid] ??= []).push(t);
+  }
 
   // ---------------- helpers ----------------
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) =>
@@ -223,6 +226,8 @@
         Object.entries(g.thrown || {}).map(([k, v]) => `<span class="chip dmg">thrown: ${esc(k)} ${fmt(v)}</span>`).join("") +
         `</div>`;
     }
+    for (const t of tipsForGear[id] || [])
+      h += `<div class="tip" style="margin-top:14px"><b>${esc(t.title)}</b><p>${esc(t.body)}</p></div>`;
 
     const contents = (e && e.reagents) || (g && g.reagents);
     if (contents && Object.keys(contents).length) {
