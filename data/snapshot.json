@@ -34835,6 +34835,188 @@
    "id": "FoodBoxPizza",
    "name": "pizza box"
   },
+  "FoodButter": {
+   "desc": "A stick of delicious, golden, fatty goodness.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_butter.png",
+   "id": "FoodButter",
+   "methods": [
+    "eat"
+   ],
+   "name": "stick of butter",
+   "reagents": {
+    "Butter": 30.0
+   }
+  },
+  "FoodCakeBatter": {
+   "desc": "Cook it to get a cake.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_cakebatter.png",
+   "id": "FoodCakeBatter",
+   "methods": [
+    "eat"
+   ],
+   "name": "cake batter",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodCheese": {
+   "desc": "A big wheel of delicious Cheddar.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_cheesewheel.png",
+   "id": "FoodCheese",
+   "methods": [
+    "eat"
+   ],
+   "name": "cheese wheel",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodChevre": {
+   "desc": "A soft log of creamy Ch\u00e8vre.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_chevrelog.png",
+   "id": "FoodChevre",
+   "methods": [
+    "eat"
+   ],
+   "name": "ch\u00e8vre log",
+   "reagents": {
+    "Nutriment": 24.0,
+    "Vitamin": 6.0
+   }
+  },
+  "FoodDough": {
+   "desc": "A piece of dough.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_dough.png",
+   "id": "FoodDough",
+   "methods": [
+    "eat"
+   ],
+   "name": "dough",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodDoughCornmeal": {
+   "desc": "A piece of cornmeal dough.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_cornmealdough.png",
+   "id": "FoodDoughCornmeal",
+   "methods": [
+    "eat"
+   ],
+   "name": "cornmeal dough",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodDoughCotton": {
+   "desc": "A piece of fabric dough.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_cotton-dough.png",
+   "id": "FoodDoughCotton",
+   "methods": [
+    "eat"
+   ],
+   "name": "cotton dough",
+   "reagents": {
+    "Fiber": 40.0,
+    "Nutriment": 20.0
+   }
+  },
+  "FoodDoughPie": {
+   "desc": "Cook it to get a pie.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_dough-pie.png",
+   "id": "FoodDoughPie",
+   "methods": [
+    "eat"
+   ],
+   "name": "pie dough",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodDoughTortilla": {
+   "desc": "A piece of tortilla dough.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_tortilladough.png",
+   "id": "FoodDoughTortilla",
+   "methods": [
+    "eat"
+   ],
+   "name": "tortilla dough",
+   "reagents": {
+    "Nutriment": 60.0
+   }
+  },
+  "FoodMeat": {
+   "desc": "A slab of raw meat.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/meat.yml",
+   "icon": "Objects_Consumable_Food_meat.rsi_plain.png",
+   "id": "FoodMeat",
+   "methods": [
+    "eat",
+    "grind",
+    "syringe"
+   ],
+   "name": "raw meat",
+   "reagents": {
+    "Fat": 5.0,
+    "Nutriment": 5.0,
+    "UncookedAnimalProteins": 20.0
+   }
+  },
+  "FoodMeatMeatball": {
+   "desc": "A raw ball of meat. Meat ball.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/meat.yml",
+   "icon": "Objects_Consumable_Food_meat.rsi_meatball.png",
+   "id": "FoodMeatMeatball",
+   "methods": [
+    "eat",
+    "grind",
+    "syringe"
+   ],
+   "name": "meatball",
+   "reagents": {
+    "Fat": 3.0,
+    "Nutriment": 7.0,
+    "UncookedAnimalProteins": 5.0
+   }
+  },
+  "FoodSnackChocolateBar": {
+   "desc": "Tastes like cardboard.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/snacks.yml",
+   "icon": "Objects_Consumable_Food_snacks.rsi_chocolatebar-open.png",
+   "id": "FoodSnackChocolateBar",
+   "methods": [
+    "eat"
+   ],
+   "name": "chocolate bar",
+   "reagents": {
+    "CocoaPowder": 2.0,
+    "Nutriment": 5.0,
+    "Theobromine": 3.0
+   }
+  },
+  "FoodTofu": {
+   "desc": "Solid white block with a subtle flavor.",
+   "file": "Resources/Prototypes/Entities/Objects/Consumable/Food/ingredients.yml",
+   "icon": "Objects_Consumable_Food_ingredients.rsi_tofu.png",
+   "id": "FoodTofu",
+   "methods": [
+    "eat"
+   ],
+   "name": "tofu",
+   "reagents": {
+    "Nutriment": 30.0,
+    "Protein": 45.0
+   }
+  },
   "GasRecycler": {
    "board": "GasRecyclerMachineCircuitboard",
    "desc": "Recycles carbon dioxide and nitrous oxide. Heater and compressor not included.",
@@ -35241,6 +35423,38 @@
    "id": "IncompleteMortarAndPestle",
    "name": "incomplete mortar and pestle"
   },
+  "IngotGold1": {
+   "desc": "A heavy metal ingot stamped with the Nanotrasen logo.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/ingots.yml",
+   "icon": "Objects_Materials_ingots.rsi_gold.png",
+   "id": "IngotGold1",
+   "lathe": {
+    "RawGold": 100
+   },
+   "methods": [
+    "grind"
+   ],
+   "name": "gold bar",
+   "reagents": {
+    "Gold": 10.0
+   }
+  },
+  "IngotSilver1": {
+   "desc": "A heavy metal ingot stamped with the Nanotrasen logo.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/ingots.yml",
+   "icon": "Objects_Materials_ingots.rsi_silver.png",
+   "id": "IngotSilver1",
+   "lathe": {
+    "RawSilver": 100
+   },
+   "methods": [
+    "grind"
+   ],
+   "name": "silver bar",
+   "reagents": {
+    "Silver": 10.0
+   }
+  },
   "Joint": {
    "craft": [
     {
@@ -35612,6 +35826,13 @@
    "reagents": {
     "Fiber": 10.0
    }
+  },
+  "MaterialGunpowder": {
+   "desc": "An explosive compound.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/materials.yml",
+   "icon": "Objects_Misc_reagent_fillings.rsi_powderpile.png",
+   "id": "MaterialGunpowder",
+   "name": "gunpowder"
   },
   "MaterialSiloMachineCircuitboard": {
    "boardFor": "MachineMaterialSilo",
@@ -36914,6 +37135,45 @@
    },
    "name": "seed extractor machine board"
   },
+  "ShardCrystalRandom": {
+   "desc": "A small piece of crystal.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/crystal_shard.yml",
+   "id": "ShardCrystalRandom",
+   "melee": {
+    "Slash": 3.5
+   },
+   "name": "random crystal shard"
+  },
+  "SheetBrass1": {
+   "desc": "A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/Sheets/metal.yml",
+   "icon": "Objects_Materials_Sheets_metal.rsi_brass.png",
+   "id": "SheetBrass1",
+   "methods": [
+    "grind"
+   ],
+   "name": "brass",
+   "reagents": {
+    "Brass": 10.0
+   }
+  },
+  "SheetPlastic1": {
+   "desc": "A sheet of material, used often on the station in various applications.",
+   "file": "Resources/Prototypes/Entities/Objects/Materials/Sheets/other.yml",
+   "icon": "Objects_Materials_Sheets_other.rsi_plastic.png",
+   "id": "SheetPlastic1",
+   "lathe": {
+    "Plastic": 100
+   },
+   "methods": [
+    "grind"
+   ],
+   "name": "plastic",
+   "reagents": {
+    "Oil": 5.0,
+    "Phosphorus": 5.0
+   }
+  },
   "Sheetifier": {
    "board": "SheetifierMachineCircuitboard",
    "desc": "A very sheety machine.",
@@ -36936,6 +37196,20 @@
     "Steel": 100
    },
    "name": "sheet-meister 2000 machine board"
+  },
+  "ShellShotgunBeanbag": {
+   "desc": "The standard cartridge used by most modern shotguns. Beanbag ammunition contains a single less-than-lethal projectile that can stun targets.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/shotgun.yml",
+   "icon": "Objects_Weapons_Guns_Ammunition_Casings_shotgun_shell.rsi_beanbag.png",
+   "id": "ShellShotgunBeanbag",
+   "name": "shell (.50 beanbag)"
+  },
+  "ShellShotgunFlare": {
+   "desc": "The standard cartridge used by most modern shotguns. Flare ammunition contains a single brightly-burning projectile intended for illumination and signalling, rather than combat.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/shotgun.yml",
+   "icon": "Objects_Weapons_Guns_Ammunition_Casings_shotgun_shell.rsi_flare.png",
+   "id": "ShellShotgunFlare",
+   "name": "shell (.50 flare)"
   },
   "ShellShotgunImprovised": {
    "craft": [
@@ -37006,6 +37280,17 @@
    "icon": "Objects_Weapons_Guns_Ammunition_Casings_shotgun_shell.rsi_improvised.png",
    "id": "ShellShotgunImprovised",
    "name": "improvised shotgun shell"
+  },
+  "ShellTranquilizer": {
+   "desc": "The standard cartridge used by most modern shotguns. Tranquilizer ammunition contains a single ballistic syringe loaded with a strong sedative that harmlessly puts targets to sleep.",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/shotgun.yml",
+   "icon": "Objects_Weapons_Guns_Ammunition_Casings_shotgun_shell.rsi_tranquilizer.png",
+   "id": "ShellTranquilizer",
+   "methods": [],
+   "name": "shell (.50 tranquilizer)",
+   "reagents": {
+    "ChloralHydrate": 7.5
+   }
   },
   "Shiv": {
    "craft": [
@@ -37205,6 +37490,91 @@
     "Steel": 100
    },
    "name": "SmartFridge machine board"
+  },
+  "Soap": {
+   "desc": "A cheap bar of soap. Doesn't smell.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_soap-4.png",
+   "id": "Soap",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "soap",
+   "reagents": {
+    "SoapReagent": 60.0
+   }
+  },
+  "SoapDeluxe": {
+   "desc": "A deluxe Waffle Co. brand bar of soap. Smells of strawberries.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_deluxe-4.png",
+   "id": "SoapDeluxe",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "soap",
+   "reagents": {
+    "SoapReagent": 60.0
+   }
+  },
+  "SoapHomemade": {
+   "desc": "A homemade bar of soap. Smells of... well....",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_gibs-4.png",
+   "id": "SoapHomemade",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "soap",
+   "reagents": {
+    "SoapReagent": 60.0
+   }
+  },
+  "SoapNT": {
+   "desc": "A Nanotrasen brand bar of soap. Smells of plasma.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_nt-4.png",
+   "id": "SoapNT",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "soap",
+   "reagents": {
+    "Plasma": 5.0,
+    "SoapReagent": 55.0
+   }
+  },
+  "SoapOmega": {
+   "desc": "The most advanced soap known to mankind. Smells of bluespace.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_omega-4.png",
+   "id": "SoapOmega",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "omega soap",
+   "reagents": {
+    "SoapReagent": 240.0
+   }
+  },
+  "SoapSyndie": {
+   "desc": "An untrustworthy bar of soap. Smells of fear.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Janitorial/soap.yml",
+   "icon": "Objects_Specific_Janitorial_soap.rsi_syndie-4.png",
+   "id": "SoapSyndie",
+   "methods": [
+    "eat",
+    "pour"
+   ],
+   "name": "soap",
+   "reagents": {
+    "SoapReagent": 60.0
+   }
   },
   "SodaDispenserEmpty": {
    "board": "SodaDispenserMachineCircuitboard",
@@ -39558,7 +39928,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodChevre"
+   ]
   },
   "ChloralHydrate": {
    "effects": [],
@@ -40077,7 +40450,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodButter"
+   ]
   },
   "CreateCakeBatter": {
    "effects": [
@@ -40111,7 +40487,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodCakeBatter"
+   ]
   },
   "CreateChocolate": {
    "effects": [
@@ -40137,7 +40516,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodSnackChocolateBar"
+   ]
   },
   "CreateCornmealDough": {
    "effects": [
@@ -40163,7 +40545,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodDoughCornmeal"
+   ]
   },
   "CreateCrystals": {
    "effects": [
@@ -40189,7 +40574,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "ShardCrystalRandom"
+   ]
   },
   "CreateDough": {
    "effects": [
@@ -40211,7 +40599,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodDough"
+   ]
   },
   "CreateDoughCotton": {
    "effects": [
@@ -40237,7 +40628,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodDoughCotton"
+   ]
   },
   "CreateMeatball": {
    "effects": [
@@ -40263,7 +40657,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodMeatMeatball"
+   ]
   },
   "CreatePieDough": {
    "effects": [
@@ -40293,7 +40690,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodDoughPie"
+   ]
   },
   "CreateSoapBlood": {
    "effects": [
@@ -40323,7 +40723,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SoapHomemade"
+   ]
   },
   "CreateSoapDeluxe": {
    "effects": [
@@ -40353,7 +40756,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SoapDeluxe"
+   ]
   },
   "CreateSoapNT": {
    "effects": [
@@ -40383,7 +40789,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SoapNT"
+   ]
   },
   "CreateSoapOmega": {
    "effects": [
@@ -40441,7 +40850,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SoapOmega"
+   ]
   },
   "CreateSoapRegular": {
    "effects": [
@@ -40467,7 +40879,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "Soap"
+   ]
   },
   "CreateSoapSyndie": {
    "effects": [
@@ -40497,7 +40912,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SoapSyndie"
+   ]
   },
   "CreateTofu": {
    "effects": [
@@ -40519,7 +40937,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodTofu"
+   ]
   },
   "CreateTortillaDough": {
    "effects": [
@@ -40541,7 +40962,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodDoughTortilla"
+   ]
   },
   "CreateVeganCakeBatter": {
    "effects": [
@@ -40567,7 +40991,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodCakeBatter"
+   ]
   },
   "CrushDepth": {
    "effects": [],
@@ -40685,7 +41112,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodCheese"
+   ]
   },
   "Daiquiri": {
    "effects": [],
@@ -41906,7 +42336,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "MaterialGunpowder"
+   ]
   },
   "Haloperidol": {
    "effects": [],
@@ -43212,7 +43645,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "FoodMeat"
+   ]
   },
   "Mimeosa": {
    "effects": [],
@@ -44015,7 +44451,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SheetPlastic1"
+   ]
   },
   "PolytrinicAcid": {
    "effects": [],
@@ -44862,7 +45301,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "SheetBrass1"
+   ]
   },
   "SolidifyGold": {
    "effects": [
@@ -44884,7 +45326,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "IngotGold1"
+   ]
   },
   "SolidifySilver": {
    "effects": [
@@ -44906,7 +45351,10 @@
      "catalyst": false
     }
    },
-   "source": false
+   "source": false,
+   "spawns": [
+    "IngotSilver1"
+   ]
   },
   "SoyLatte": {
    "effects": [],

@@ -46,6 +46,7 @@ CURATED_GEAR = {
     "Shiv", "ReinforcedShiv", "PlasmaShiv", "UraniumShiv", "Stunprod", "Bola",
     "BladedFlatcapGrey", "BladedFlatcapBrown", "WeaponShotgunImprovised",
     "ShellShotgunImprovised", "WeaponFlareGun", "TrashBag",
+    "ShellShotgunFlare", "ShellTranquilizer", "ShellShotgunBeanbag",
     # Cletus's briefcase (Case Law nav icon)
     "BriefcaseBrownFilled",
 }
@@ -274,6 +275,10 @@ def extract(repo, copy_sprites=True):
                         "amount": spec.get("amount", 1),
                         "catalyst": bool(spec.get("catalyst", False)),
                     }
+                spawns = [
+                    str(e["entity"]) for e in (doc.get("effects") or [])
+                    if isinstance(e, dict) and e.get("__type") == "SpawnEntity" and e.get("entity")
+                ]
                 reactions[xid] = {
                     "reactants": reactants,
                     "products": {str(k): v for k, v in (doc.get("products") or {}).items()},
@@ -285,6 +290,8 @@ def extract(repo, copy_sprites=True):
                     "hasConditions": bool(doc.get("conditions")),
                     "file": rel,
                 }
+                if spawns:
+                    reactions[xid]["spawns"] = spawns
 
             elif t == "mixingCategory":
                 mixer_names[str(doc.get("id"))] = locs(doc.get("name"), str(doc.get("id")))
@@ -440,6 +447,7 @@ def extract(repo, copy_sprites=True):
 
     # ---------------- resolve entities ----------------
     entities, gear = [], {}
+    spawned_by_reaction = {s for rx in reactions.values() for s in rx.get("spawns", [])}
     boards_by_machine = {}
     for eid, e in raw_entities.items():
         if not e["abstract"] and e["boardFor"]:
@@ -485,7 +493,7 @@ def extract(repo, copy_sprites=True):
 
         is_gear = (
             mixer_types or e["boardFor"] or eid in boards_by_machine
-            or eid in craftable or eid in CURATED_GEAR
+            or eid in craftable or eid in CURATED_GEAR or eid in spawned_by_reaction
         )
         has_contents = sols or blood or random_fill
         if not (is_gear or has_contents):

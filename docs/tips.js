@@ -3,6 +3,12 @@
 // (empty/omitted arrays = home page only)
 window.CLETUS_TIPS = [
   {
+    title: "The Pawn Shop Chain",
+    body: "Some reactions don't make liquids — they spawn SOLID OBJECTS out of the beaker. Grind the band's instruments (a saxophone is brass, literally), get frost oil from botany's chilly peppers, and mix 10 metal + 5 frost oil: the brass freezes into an actual brass sheet. Same trick solidifies gold and silver into ingots. You are now a foundry. The theater kids are your ore deposit.",
+    reagents: ["Brass", "FrostOil", "Gold", "Silver"],
+    gear: [],
+  },
+  {
     title: "Crack the Vending Machines",
     body: "Every vending machine on this station has a hidden contraband inventory — it's in the machine's own stock list, waiting behind the maintenance panel. Screwdriver the panel, play with the wires, and the menu grows: the cigarette machine coughs up gold cigars and an igniter, the seed vendor hides fly amanita spores, the donut machine is holding a literal poison donut. Cletus's legal position, which has never lost: if you weren't supposed to have it, why do they STOCK it?",
     reagents: [],

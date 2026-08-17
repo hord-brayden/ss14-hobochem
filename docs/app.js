@@ -7,10 +7,11 @@
   const MAX_DEPTH = 7;
 
   // ---------------- indexes ----------------
-  const byProduct = {}, byReactant = {};
+  const byProduct = {}, byReactant = {}, spawnedBy = {};
   for (const [id, rx] of Object.entries(D.reactions)) {
     for (const p of Object.keys(rx.products)) (byProduct[p] ??= []).push(id);
     for (const r of Object.keys(rx.reactants)) (byReactant[r] ??= []).push(id);
+    for (const s of rx.spawns || []) (spawnedBy[s] ??= []).push(id);
   }
   const entMap = {}, entsWith = {}, bloodOf = {}, gambleOf = {};
   for (const e of D.entities) {
@@ -107,8 +108,11 @@
       h += `<span class="chip heat">keep ≤ ${esc(String(rx.maxTemp))}K</span>`;
     if ((rx.effects || []).some((e) => /Explosion/i.test(e)))
       h += `<span class="chip boom">explodes</span>`;
-    else if ((rx.effects || []).length && !Object.keys(rx.products).length)
-      h += `<span class="chip grp">${esc(rx.effects.join(", "))}</span>`;
+    else {
+      const fx = (rx.effects || []).filter((e) => e !== "SpawnEntity");
+      if (fx.length && !Object.keys(rx.products).length)
+        h += `<span class="chip grp">${esc(fx.join(", "))}</span>`;
+    }
     if (rx.source) h += `<span class="chip grp">breakdown</span>`;
     if (rx.hasConditions) h += `<span class="chip grp">special conditions</span>`;
     return h;
@@ -126,9 +130,11 @@
         : "";
       return `<span class="qty">${fmt(spec.amount)}u</span> ${rlink(rid)}${cat}${btn}`;
     }).join(`<span class="arrow">+</span>`);
-    const outs = Object.entries(rx.products).map(([rid, amt]) =>
-      `<span${rid === targetId ? ' style="font-weight:700"' : ""}><span class="qty">${fmt(amt)}u</span> ${rlink(rid)}</span>`
-    ).join(`<span class="arrow">+</span>`) || `<span class="warn">no product — effect only</span>`;
+    const outParts = Object.entries(rx.products).map(([rid, amt]) =>
+      `<span${rid === targetId ? ' style="font-weight:700"' : ""}><span class="qty">${fmt(amt)}u</span> ${rlink(rid)}</span>`);
+    for (const s of rx.spawns || [])
+      outParts.push(`<span${s === targetId ? ' style="font-weight:700"' : ""}>${ilink(s)} <span class="chip grp">solid item</span></span>`);
+    const outs = outParts.join(`<span class="arrow">+</span>`) || `<span class="warn">no product — effect only</span>`;
     return `<span class="lbl">${rx.source ? "break down" : "mix"}</span>${ins}<span class="arrow">→</span>${outs} ${reactionChips(rx)}`;
   }
 
@@ -228,6 +234,10 @@
     }
     for (const t of tipsForGear[id] || [])
       h += `<div class="tip" style="margin-top:14px"><b>${esc(t.title)}</b><p>${esc(t.body)}</p></div>`;
+    if (spawnedBy[id]) {
+      h += `<h3 class="sec">Cook one up (${spawnedBy[id].length} reaction${spawnedBy[id].length === 1 ? "" : "s"})</h3>` +
+        spawnedBy[id].map((xid) => `<div class="card">${reactionNodeHTML(xid, id, [], 0)}</div>`).join("");
+    }
 
     const contents = (e && e.reagents) || (g && g.reagents);
     if (contents && Object.keys(contents).length) {
@@ -284,7 +294,7 @@
 
   function solve(inv, equip) {
     const have = new Set(inv);
-    const steps = [], fx = [];
+    const steps = [], fx = [], crafts = [];
     let changed = true;
     const used = new Set();
     while (changed) {
@@ -296,8 +306,11 @@
         if (rx.minTemp > 310 && !equip.heat) continue;
         if (rx.maxTemp != null && rx.maxTemp < 280 && !equip.chill) continue;
         const newOnes = Object.keys(rx.products).filter((p) => !have.has(p));
-        if ((rx.effects || []).length && !Object.keys(rx.products).length) {
-          used.add(xid); fx.push(xid); continue;
+        if (!Object.keys(rx.products).length) {
+          used.add(xid);
+          if ((rx.spawns || []).length) crafts.push(xid);
+          else if ((rx.effects || []).length) fx.push(xid);
+          continue;
         }
         if (!newOnes.length) { used.add(xid); continue; }
         newOnes.forEach((p) => have.add(p));
@@ -306,7 +319,7 @@
         changed = true;
       }
     }
-    return { steps, fx, have };
+    return { steps, fx, crafts, have };
   }
 
   // Reactions 1-2 ingredients away, ranked by how much chaos they unlock.
@@ -385,11 +398,15 @@
       </div>`;
 
     if (inv.length) {
-      const { steps, fx, have } = solve(inv, equip);
+      const { steps, fx, crafts, have } = solve(inv, equip);
       h += `<h3 class="sec">What you can make (${steps.length} step${steps.length === 1 ? "" : "s"})</h3>`;
       h += steps.length
         ? steps.map((s, i) => `<div class="card"><span class="stepnum">${i + 1}</span>${reactionNodeHTML(s.xid, s.makes[0], [], 0)}</div>`).join("")
         : `<div class="empty">Nothing new — scrounge more ingredients or tick more equipment.</div>`;
+      if (crafts.length) {
+        h += `<h3 class="sec">Solid goods you can cook (items, not liquids)</h3>` +
+          crafts.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [], 0)}</div>`).join("");
+      }
       if (fx.length) {
         h += `<h3 class="sec">Effects you can trigger</h3>` +
           fx.map((xid) => `<div class="card">${reactionNodeHTML(xid, "", [], 0)}</div>`).join("");
