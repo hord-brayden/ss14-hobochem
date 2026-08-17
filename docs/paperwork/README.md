@@ -11,6 +11,13 @@ Block-glyph logos follow the same technique as the game's own shipped Syndicate 
 | `cletus-business-card-noir.txt` | Black-banded version for ordinary paper, when the uplink is out of reach |
 | `cletus-letterhead.txt` | Firm masthead with the framed scales-of-justice logo — prepend to any document |
 | `cletus-intake-form.txt` | Form CC-1, Emergency Client Intake — fax it to whoever's in the brig |
+| `cletus-summons.txt` | Form CC-2, Summons to Appear — with a proof-of-service stub ("read aloud while they were in crit" counts) |
+| `cletus-cease-and-desist.txt` | Form CC-3, Cease & Desist — four-step escalation ladder ends at "my client has a spear" |
+| `cletus-subpoena.txt` | Form CC-4, Subpoena Duces Tecum — "bring the stuff"; witness fees in flares |
+| `cletus-retainer-agreement.txt` | Form CC-5, Retainer Agreement — privilege survives death, cloning, and puddlehood |
+| `cletus-liability-waiver.txt` | Form CC-6, Hold Harmless (Experimental Chemistry) — sign before sampling anything from maints |
+| `cletus-last-will.txt` | Form CC-7, Last Will & Testament (recloning-contingent) — void on revival, "I want my stuff BACK" |
+| `cletus-invoice.txt` | Form CC-0, the Invoice — the firm's founding document |
 
 Logo technique (from the community's advanced-paperwork style): grids of `█` ink and `░`
 filler — all block glyphs share the same width, so the art aligns even in the paper's
