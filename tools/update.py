@@ -88,6 +88,16 @@ def main():
 
     # commit the new state for the site
     write_outputs(new)
+
+    # validate hand-curated content against the fresh data
+    from validate import validate
+    broken = validate()
+    if broken:
+        lines.append("## ⚠️ Broken curated references (fix these by hand!)")
+        lines.extend(f"- {b}" for b in broken)
+        lines.append("")
+        report.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        print(f"WARNING: {len(broken)} curated reference(s) broke — see {report}")
     print(f"data refreshed @ {new['repoCommit']}: "
           f"{len(new['reagents'])} reagents, {len(new['reactions'])} reactions, "
           f"{len(new['entities'])} entities, {len(new.get('gear', {}))} gear")

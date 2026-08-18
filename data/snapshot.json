@@ -37766,6 +37766,14 @@
    },
    "name": "gyroscope machine board"
   },
+  "HandheldJuicer": {
+   "desc": "Used for juicing small amounts of objects.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Kitchen/equipment.yml",
+   "grinder": "handheld",
+   "icon": "Objects_Specific_Kitchen_handheld_juicer.rsi_juicer_base.png",
+   "id": "HandheldJuicer",
+   "name": "handheld juicer"
+  },
   "HandheldJuicerMakeshift": {
    "craft": [
     {
@@ -37786,6 +37794,7 @@
    "craftFile": "Resources/Prototypes/Recipes/Crafting/Graphs/improvised/handheld_grinders.yml",
    "desc": "Used for juicing small amounts of objects. Inferior version made out of wood.",
    "file": "Resources/Prototypes/Entities/Objects/Specific/Kitchen/equipment.yml",
+   "grinder": "handheld",
    "icon": "Objects_Specific_Kitchen_handheld_juicer.rsi_makeshift_base.png",
    "id": "HandheldJuicerMakeshift",
    "name": "makeshift juicer"
@@ -38120,8 +38129,25 @@
    "board": "ReagentGrinderMachineCircuitboard",
    "desc": "From BlenderTech. Will It Blend? Let's find out!",
    "file": "Resources/Prototypes/Entities/Structures/Machines/reagent_grinder.yml",
+   "grinder": "machine",
    "icon": "Structures_Machines_grinder.rsi_grinder_empty.png",
    "id": "KitchenReagentGrinder",
+   "name": "reagent grinder"
+  },
+  "KitchenReagentGrinderBeaker": {
+   "desc": "From BlenderTech. Will It Blend? Let's find out!",
+   "file": "Resources/Prototypes/Entities/Structures/Machines/reagent_grinder.yml",
+   "grinder": "machine",
+   "icon": "Structures_Machines_grinder.rsi_grinder_empty.png",
+   "id": "KitchenReagentGrinderBeaker",
+   "name": "reagent grinder"
+  },
+  "KitchenReagentGrinderBeakerLarge": {
+   "desc": "From BlenderTech. Will It Blend? Let's find out!",
+   "file": "Resources/Prototypes/Entities/Structures/Machines/reagent_grinder.yml",
+   "grinder": "machine",
+   "icon": "Structures_Machines_grinder.rsi_grinder_empty.png",
+   "id": "KitchenReagentGrinderBeakerLarge",
    "name": "reagent grinder"
   },
   "LargeBeaker": {
@@ -38781,6 +38807,14 @@
    "id": "MoproachShoes",
    "name": "moproach shoes"
   },
+  "MortarAndPestle": {
+   "desc": "Used for grinding small amounts of objects.",
+   "file": "Resources/Prototypes/Entities/Objects/Specific/Kitchen/equipment.yml",
+   "grinder": "handheld",
+   "icon": "Objects_Specific_Kitchen_mortar_and_pestle.rsi_icon.png",
+   "id": "MortarAndPestle",
+   "name": "mortar and pestle"
+  },
   "MortarAndPestleMakeshift": {
    "craft": [
     {
@@ -38796,6 +38830,7 @@
    "craftFile": "Resources/Prototypes/Recipes/Crafting/Graphs/improvised/handheld_grinders.yml",
    "desc": "Used for grinding small amounts of objects. Inferior version made out of wood.",
    "file": "Resources/Prototypes/Entities/Objects/Specific/Kitchen/equipment.yml",
+   "grinder": "handheld",
    "icon": "Objects_Specific_Kitchen_mortar_and_pestle.rsi_makeshift_icon.png",
    "id": "MortarAndPestleMakeshift",
    "name": "makeshift mortar and pestle"
@@ -41027,6 +41062,914 @@
    "icon": "Clothing_Head_Helmets_scrap_helmet.rsi_construction-1.png",
    "id": "WiredBucketBase",
    "name": "wired bucket"
+  }
+ },
+ "mats": {
+  "BananiumOre": {
+   "from": [
+    {
+     "id": "MobBananiumCrab",
+     "n": 3,
+     "name": "ore crab"
+    }
+   ],
+   "name": "bananium ore",
+   "total": 1
+  },
+  "Bones": {
+   "from": [
+    {
+     "id": "SpearBone",
+     "n": 2,
+     "name": "bone spear"
+    }
+   ],
+   "name": "bones",
+   "total": 1
+  },
+  "Brass": {
+   "from": [
+    {
+     "id": "TableBrass",
+     "n": 1,
+     "name": "brass table"
+    }
+   ],
+   "name": "brass",
+   "total": 1
+  },
+  "Cable": {
+   "from": [
+    {
+     "id": "DeskBuzzer",
+     "n": 2,
+     "name": "desk buzzer"
+    },
+    {
+     "id": "CableApcExtension",
+     "n": 1,
+     "name": "LV power cable"
+    }
+   ],
+   "name": "cable",
+   "total": 2
+  },
+  "CableDet": {
+   "from": [
+    {
+     "id": "CableDet",
+     "n": 1,
+     "name": "explosive cord"
+    }
+   ],
+   "name": "cable det",
+   "total": 1
+  },
+  "CableHV": {
+   "from": [
+    {
+     "id": "CableHV",
+     "n": 1,
+     "name": "HV power cable"
+    }
+   ],
+   "name": "cable hv",
+   "total": 1
+  },
+  "CableMV": {
+   "from": [
+    {
+     "id": "CableMV",
+     "n": 1,
+     "name": "MV power cable"
+    }
+   ],
+   "name": "cable mv",
+   "total": 1
+  },
+  "Cardboard": {
+   "from": [
+    {
+     "id": "CardDoor",
+     "n": 5,
+     "name": "cardboard door"
+    },
+    {
+     "id": "CardShield",
+     "n": 4,
+     "name": "cardboard shield"
+    },
+    {
+     "id": "TableCard",
+     "n": 2,
+     "name": "cardboard table"
+    },
+    {
+     "id": "CardStool",
+     "n": 2,
+     "name": "cardboard stool"
+    },
+    {
+     "id": "Cardwall",
+     "n": 2,
+     "name": "cardboard wall"
+    },
+    {
+     "id": "CarpetCard",
+     "n": 1,
+     "name": "cardboard \"carpet\""
+    }
+   ],
+   "name": "cardboard",
+   "total": 6
+  },
+  "Cloth": {
+   "from": [
+    {
+     "id": "AltarNanotrasen",
+     "n": 3,
+     "name": "nanotrasen altar"
+    },
+    {
+     "id": "AltarChaos",
+     "n": 3,
+     "name": "chaos altar"
+    },
+    {
+     "id": "AltarDruid",
+     "n": 3,
+     "name": "druid altar"
+    },
+    {
+     "id": "AltarToolbox",
+     "n": 3,
+     "name": "toolbox altar"
+    },
+    {
+     "id": "AltarSpaceChristian",
+     "n": 3,
+     "name": "space-Christian altar"
+    },
+    {
+     "id": "AltarSatana",
+     "n": 3,
+     "name": "satanic altar"
+    },
+    {
+     "id": "AltarTechnology",
+     "n": 3,
+     "name": "technology altar"
+    },
+    {
+     "id": "AltarConvertFestival",
+     "n": 3,
+     "name": "festival altar"
+    },
+    {
+     "id": "AltarConvertMaint",
+     "n": 3,
+     "name": "maint altar"
+    },
+    {
+     "id": "AltarConvertBlue",
+     "n": 3,
+     "name": "blue altar"
+    },
+    {
+     "id": "AltarConvertBurden",
+     "n": 3,
+     "name": "burden altar"
+    },
+    {
+     "id": "AltarConvert",
+     "n": 3,
+     "name": "convert altar"
+    },
+    {
+     "id": "AltarConvertOrange",
+     "n": 3,
+     "name": "orange altar"
+    },
+    {
+     "id": "AltarConvertRed",
+     "n": 3,
+     "name": "red altar"
+    }
+   ],
+   "name": "cloth",
+   "total": 19
+  },
+  "Coal": {
+   "from": [
+    {
+     "id": "MobCoalCrab",
+     "n": 4,
+     "name": "ore crab"
+    }
+   ],
+   "name": "coal",
+   "total": 1
+  },
+  "FloorCarpetBlack": {
+   "from": [
+    {
+     "id": "CarpetBlack",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "black carpet tile",
+   "total": 1
+  },
+  "FloorCarpetBlue": {
+   "from": [
+    {
+     "id": "CarpetBlue",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "blue carpet tile",
+   "total": 1
+  },
+  "FloorCarpetCyan": {
+   "from": [
+    {
+     "id": "CarpetCyan",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "cyan carpet tile",
+   "total": 1
+  },
+  "FloorCarpetGreen": {
+   "from": [
+    {
+     "id": "CarpetGreen",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "green carpet tile",
+   "total": 1
+  },
+  "FloorCarpetOrange": {
+   "from": [
+    {
+     "id": "CarpetOrange",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "orange carpet tile",
+   "total": 1
+  },
+  "FloorCarpetPink": {
+   "from": [
+    {
+     "id": "CarpetPink",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "pink carpet tile",
+   "total": 1
+  },
+  "FloorCarpetPurple": {
+   "from": [
+    {
+     "id": "CarpetPurple",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "purple carpet tile",
+   "total": 1
+  },
+  "FloorCarpetRed": {
+   "from": [
+    {
+     "id": "Carpet",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "red carpet tile",
+   "total": 1
+  },
+  "FloorCarpetSkyBlue": {
+   "from": [
+    {
+     "id": "CarpetSBlue",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "skyblue carpet tile",
+   "total": 1
+  },
+  "FloorCarpetWhite": {
+   "from": [
+    {
+     "id": "CarpetWhite",
+     "n": 1,
+     "name": "carpet"
+    }
+   ],
+   "name": "white carpet tile",
+   "total": 1
+  },
+  "Glass": {
+   "from": [
+    {
+     "id": "MirrorShield",
+     "n": 5,
+     "name": "mirror shield"
+    },
+    {
+     "id": "RiotShield",
+     "n": 2,
+     "name": "riot shield"
+    },
+    {
+     "id": "RiotLaserShield",
+     "n": 2,
+     "name": "laser shield"
+    },
+    {
+     "id": "RiotBulletShield",
+     "n": 2,
+     "name": "ballistic shield"
+    },
+    {
+     "id": "ClockworkShield",
+     "n": 2,
+     "name": "clockwork shield"
+    },
+    {
+     "id": "TelescopicShield",
+     "n": 2,
+     "name": "telescopic shield"
+    }
+   ],
+   "name": "glass",
+   "total": 6
+  },
+  "Gold": {
+   "from": [
+    {
+     "id": "GoldDoor",
+     "n": 5,
+     "name": "gold door"
+    },
+    {
+     "id": "ToiletGoldenEmpty",
+     "n": 5,
+     "name": "golden toilet"
+    },
+    {
+     "id": "DrinkGoldenCup",
+     "n": 1,
+     "name": "golden cup"
+    }
+   ],
+   "name": "gold",
+   "total": 3
+  },
+  "GoldOre": {
+   "from": [
+    {
+     "id": "MobGoldCrab",
+     "n": 3,
+     "name": "ore crab"
+    }
+   ],
+   "name": "gold ore",
+   "total": 1
+  },
+  "MetalRod": {
+   "from": [
+    {
+     "id": "ShowcaseRobot",
+     "n": 10,
+     "name": "security robot showcase"
+    },
+    {
+     "id": "ShowcaseRobotWhite",
+     "n": 10,
+     "name": "white robot showcase"
+    },
+    {
+     "id": "ShowcaseRobotAntique",
+     "n": 10,
+     "name": "cargo robot showcase"
+    },
+    {
+     "id": "ShowcaseRobotMarauder",
+     "n": 10,
+     "name": "marauder showcase"
+    },
+    {
+     "id": "ShelfRMetal",
+     "n": 2,
+     "name": "sturdy metal shelf"
+    },
+    {
+     "id": "ShelfKitchen",
+     "n": 2,
+     "name": "kitchen shelf"
+    },
+    {
+     "id": "FenceMetalBroken",
+     "n": 2,
+     "name": "broken chain link fence"
+    },
+    {
+     "id": "FenceMetalStraight",
+     "n": 2,
+     "name": "chain link fence"
+    },
+    {
+     "id": "FenceMetalGate",
+     "n": 2,
+     "name": "chain link fence gate"
+    },
+    {
+     "id": "RailingCorner",
+     "n": 2,
+     "name": "railing"
+    },
+    {
+     "id": "PlastitaniumWindow",
+     "n": 2,
+     "name": "plastitanium window"
+    },
+    {
+     "id": "ReinforcedPlasmaWindow",
+     "n": 2,
+     "name": "reinforced plasma window"
+    },
+    {
+     "id": "ReinforcedUraniumWindow",
+     "n": 2,
+     "name": "reinforced uranium window"
+    },
+    {
+     "id": "UraniumReinforcedWindowDirectional",
+     "n": 2,
+     "name": "directional reinforced uranium window"
+    }
+   ],
+   "name": "metal rod",
+   "total": 30
+  },
+  "Paper": {
+   "from": [
+    {
+     "id": "PaperDoor",
+     "n": 5,
+     "name": "paper door"
+    }
+   ],
+   "name": "paper",
+   "total": 1
+  },
+  "Plasma": {
+   "from": [
+    {
+     "id": "PlasmaDoor",
+     "n": 5,
+     "name": "plasma door"
+    }
+   ],
+   "name": "plasma",
+   "total": 1
+  },
+  "PlasmaGlass": {
+   "from": [
+    {
+     "id": "WindoorAssemblyPlasma",
+     "n": 3,
+     "name": "plasma windoor assembly"
+    }
+   ],
+   "name": "plasma glass",
+   "total": 1
+  },
+  "Plasteel": {
+   "from": [
+    {
+     "id": "PlayerStationAiAssembly",
+     "n": 4,
+     "name": "AI core assembly"
+    },
+    {
+     "id": "WindoorAssemblySecure",
+     "n": 3,
+     "name": "secure windoor assembly"
+    },
+    {
+     "id": "WindoorAssemblySecurePlasma",
+     "n": 3,
+     "name": "secure plasma windoor assembly"
+    },
+    {
+     "id": "WindoorAssemblySecureUranium",
+     "n": 3,
+     "name": "secure uranium windoor assembly"
+    },
+    {
+     "id": "ShelfRMetal",
+     "n": 3,
+     "name": "sturdy metal shelf"
+    },
+    {
+     "id": "PlayerStationAiEmpty",
+     "n": 2,
+     "name": "AI core"
+    },
+    {
+     "id": "WindoorSecure",
+     "n": 2,
+     "name": "secure windoor"
+    },
+    {
+     "id": "WindoorSecurePlasma",
+     "n": 2,
+     "name": "secure plasma windoor"
+    },
+    {
+     "id": "WindoorSecureUranium",
+     "n": 2,
+     "name": "secure uranium windoor"
+    },
+    {
+     "id": "GasCanisterBrokenBase",
+     "n": 2,
+     "name": "broken gas canister"
+    },
+    {
+     "id": "WaterVaporCanisterBroken",
+     "n": 2,
+     "name": "broken water vapor canister"
+    },
+    {
+     "id": "ShelfChemistry",
+     "n": 2,
+     "name": "chemical shelf"
+    },
+    {
+     "id": "TableReinforced",
+     "n": 1,
+     "name": "reinforced table"
+    },
+    {
+     "id": "ReinforcedGirder",
+     "n": 1,
+     "name": "reinforced girder"
+    }
+   ],
+   "name": "plasteel",
+   "total": 14
+  },
+  "Plastic": {
+   "from": [
+    {
+     "id": "ShelfRGlass",
+     "n": 3,
+     "name": "sturdy glass shelf"
+    },
+    {
+     "id": "CrateNPCHamster",
+     "n": 2,
+     "name": "hamster cage"
+    },
+    {
+     "id": "ShelfChemistry",
+     "n": 2,
+     "name": "chemical shelf"
+    },
+    {
+     "id": "Jug",
+     "n": 1,
+     "name": "jug"
+    },
+    {
+     "id": "Bucket",
+     "n": 1,
+     "name": "bucket"
+    },
+    {
+     "id": "BorgBucket",
+     "n": 1,
+     "name": "internal tank"
+    }
+   ],
+   "name": "plastic",
+   "total": 6
+  },
+  "ReinforcedPlasmaGlass": {
+   "from": [
+    {
+     "id": "WindoorAssemblySecurePlasma",
+     "n": 3,
+     "name": "secure plasma windoor assembly"
+    }
+   ],
+   "name": "reinforced plasma glass",
+   "total": 1
+  },
+  "ReinforcedUraniumGlass": {
+   "from": [
+    {
+     "id": "WindoorAssemblySecureUranium",
+     "n": 3,
+     "name": "secure uranium windoor assembly"
+    }
+   ],
+   "name": "reinforced uranium glass",
+   "total": 1
+  },
+  "Silver": {
+   "from": [
+    {
+     "id": "SilverDoor",
+     "n": 5,
+     "name": "silver door"
+    }
+   ],
+   "name": "silver",
+   "total": 1
+  },
+  "SilverOre": {
+   "from": [
+    {
+     "id": "MobSilverCrab",
+     "n": 3,
+     "name": "ore crab"
+    }
+   ],
+   "name": "silver ore",
+   "total": 1
+  },
+  "SpaceQuartz": {
+   "from": [
+    {
+     "id": "MobQuartzCrab",
+     "n": 4,
+     "name": "ore crab"
+    }
+   ],
+   "name": "space quartz",
+   "total": 1
+  },
+  "Steel": {
+   "from": [
+    {
+     "id": "DeployableBarrier",
+     "n": 5,
+     "name": "deployable barrier"
+    },
+    {
+     "id": "TargetHuman",
+     "n": 5,
+     "name": "human target"
+    },
+    {
+     "id": "TargetSyndicate",
+     "n": 5,
+     "name": "syndicate target"
+    },
+    {
+     "id": "TargetClown",
+     "n": 5,
+     "name": "clown target"
+    },
+    {
+     "id": "WeaponTurretSyndicate",
+     "n": 5,
+     "name": "ballistic turret"
+    },
+    {
+     "id": "AltarNanotrasen",
+     "n": 5,
+     "name": "nanotrasen altar"
+    },
+    {
+     "id": "AltarChaos",
+     "n": 5,
+     "name": "chaos altar"
+    },
+    {
+     "id": "AltarDruid",
+     "n": 5,
+     "name": "druid altar"
+    },
+    {
+     "id": "AltarToolbox",
+     "n": 5,
+     "name": "toolbox altar"
+    },
+    {
+     "id": "AltarSpaceChristian",
+     "n": 5,
+     "name": "space-Christian altar"
+    },
+    {
+     "id": "AltarSatana",
+     "n": 5,
+     "name": "satanic altar"
+    },
+    {
+     "id": "AltarTechnology",
+     "n": 5,
+     "name": "technology altar"
+    },
+    {
+     "id": "AltarHeaven",
+     "n": 5,
+     "name": "heaven altar"
+    },
+    {
+     "id": "AltarFangs",
+     "n": 5,
+     "name": "fanged altar"
+    }
+   ],
+   "name": "steel",
+   "total": 175
+  },
+  "SteelOre": {
+   "from": [
+    {
+     "id": "MobIronCrab",
+     "n": 4,
+     "name": "ore crab"
+    },
+    {
+     "id": "StatueIronsandSmall",
+     "n": 2,
+     "name": "ironsand small statue"
+    },
+    {
+     "id": "StatueIronsandTall",
+     "n": 2,
+     "name": "ironsand tall statue"
+    }
+   ],
+   "name": "iron ore",
+   "total": 3
+  },
+  "Uranium": {
+   "from": [
+    {
+     "id": "GeneratorRTGDamaged",
+     "n": 5,
+     "name": "damaged RTG"
+    }
+   ],
+   "name": "uranium",
+   "total": 1
+  },
+  "UraniumGlass": {
+   "from": [
+    {
+     "id": "WindoorAssemblyUranium",
+     "n": 3,
+     "name": "uranium windoor assembly"
+    }
+   ],
+   "name": "uranium glass",
+   "total": 1
+  },
+  "UraniumOre": {
+   "from": [
+    {
+     "id": "MobUraniumCrab",
+     "n": 3,
+     "name": "ore crab"
+    }
+   ],
+   "name": "uranium ore",
+   "total": 1
+  },
+  "WebSilk": {
+   "from": [
+    {
+     "id": "CrateWeb",
+     "n": 5,
+     "name": "web crate"
+    },
+    {
+     "id": "WebDoor",
+     "n": 2,
+     "name": "web door"
+    },
+    {
+     "id": "WebShield",
+     "n": 1,
+     "name": "web shield"
+    },
+    {
+     "id": "WebBed",
+     "n": 1,
+     "name": "web bed"
+    },
+    {
+     "id": "ChairWeb",
+     "n": 1,
+     "name": "web chair"
+    },
+    {
+     "id": "WallWeb",
+     "n": 1,
+     "name": "web wall"
+    },
+    {
+     "id": "SpiderWeb",
+     "n": 1,
+     "name": "spider web"
+    }
+   ],
+   "name": "web silk",
+   "total": 7
+  },
+  "WoodPlank": {
+   "from": [
+    {
+     "id": "TargetDarts",
+     "n": 5,
+     "name": "dartboard"
+    },
+    {
+     "id": "WoodenBuckler",
+     "n": 5,
+     "name": "wooden buckler"
+    },
+    {
+     "id": "WoodDoor",
+     "n": 5,
+     "name": "wooden door"
+    },
+    {
+     "id": "AltarConvertFestival",
+     "n": 5,
+     "name": "festival altar"
+    },
+    {
+     "id": "AltarConvertMaint",
+     "n": 5,
+     "name": "maint altar"
+    },
+    {
+     "id": "AltarConvertBlue",
+     "n": 5,
+     "name": "blue altar"
+    },
+    {
+     "id": "AltarConvertBurden",
+     "n": 5,
+     "name": "burden altar"
+    },
+    {
+     "id": "AltarConvert",
+     "n": 5,
+     "name": "convert altar"
+    },
+    {
+     "id": "AltarConvertOrange",
+     "n": 5,
+     "name": "orange altar"
+    },
+    {
+     "id": "AltarConvertRed",
+     "n": 5,
+     "name": "red altar"
+    },
+    {
+     "id": "AltarConvertWhite",
+     "n": 5,
+     "name": "white altar"
+    },
+    {
+     "id": "AltarConvertYellow",
+     "n": 5,
+     "name": "yellow altar"
+    },
+    {
+     "id": "DogBed",
+     "n": 5,
+     "name": "dog bed"
+    },
+    {
+     "id": "GlassBoxFrame",
+     "n": 5,
+     "name": "glass box frame"
+    }
+   ],
+   "name": "wood plank",
+   "total": 62
   }
  },
  "mixerNames": {
@@ -49122,6 +50065,13 @@
    "desc": "A anise-flavoured spirit derived from botanicals.",
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
+   "metab": {
+    "cfx": [
+     "ModifyStatusEffect",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "absinthe"
   },
   "Acetone": {
@@ -49224,6 +50174,12 @@
    "desc": "A highly engineered substance able to halt the progression of a zombie infection.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "CureZombieInfection"
+    ],
+    "rate": 0.5
+   },
    "name": "ambuzol"
   },
   "AmbuzolPlus": {
@@ -49231,6 +50187,12 @@
    "desc": "Further engineered with omnizine, inoculates the living against the infection.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "CureZombieInfection"
+    ],
+    "rate": 0.5
+   },
    "name": "ambuzol plus"
   },
   "Ammonia": {
@@ -49239,6 +50201,12 @@
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
    "metab": {
+    "cfx": [
+     "Vomit",
+     "PopupMessage",
+     "ModifyBloodLevel",
+     "Oxygenate"
+    ],
     "cond": {
      "Airloss": -5.0,
      "Brute": -2.5,
@@ -49371,6 +50339,9 @@
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "cond": {
      "Poison": 0.24
     },
@@ -49422,6 +50393,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "cond": {
      "Poison": 3.0
     },
@@ -49531,6 +50505,10 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Vomit",
+     "Jitter"
+    ],
     "cond": {
      "Asphyxiation": 0.5,
      "Poison": 1.5
@@ -49586,6 +50564,9 @@
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
    "metab": {
+    "cfx": [
+     "Satiate"
+    ],
     "cond": {
      "Brute": -3.0,
      "Burn": -1.25
@@ -49705,6 +50686,9 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "PopupMessage"
+    ],
     "cond": {
      "Piercing": 2.0,
      "Poison": 2.0
@@ -49740,6 +50724,11 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "AdjustReagent",
+     "ModifyStatusEffect",
+     "Emote"
+    ],
     "cond": {
      "Radiation": 0.5
     },
@@ -49780,6 +50769,9 @@
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
    "metab": {
+    "cfx": [
+     "Oxygenate"
+    ],
     "cond": {
      "Poison": 1.2
     },
@@ -49793,6 +50785,9 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Special",
    "metab": {
+    "cfx": [
+     "AdjustReagent"
+    ],
     "fx": [
      "PopupMessage"
     ],
@@ -49914,6 +50909,12 @@
    "desc": "From the best varieties of cocoa beans",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "cfx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "cocoa powder"
   },
   "CoconutRum": {
@@ -49983,6 +50984,12 @@
    "desc": "A mysterious chemical which is able to make any non-sentient creature sentient.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "MakeSentient"
+    ],
+    "rate": 0.5
+   },
    "name": "cognizine"
   },
   "Cola": {
@@ -50012,6 +51019,9 @@
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
    "metab": {
+    "cfx": [
+     "ModifyBloodLevel"
+    ],
     "cond": {
      "Poison": 0.1
     },
@@ -50166,6 +51176,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Jitter"
+    ],
     "cond": {
      "Asphyxiation": 1.0,
      "Blunt": 0.5,
@@ -50186,6 +51199,10 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "ModifyStatusEffect",
+     "ResetNarcolepsy"
+    ],
     "cond": {
      "Asphyxiation": 2.0,
      "Poison": 3.0
@@ -50234,6 +51251,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustReagent"
+    ],
     "cond": {
      "Asphyxiation": 5.0,
      "Cold": 3.0
@@ -50283,6 +51303,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "ResetNarcolepsy"
+    ],
     "fx": [
      "ModifyStatusEffect",
      "PopupMessage"
@@ -50356,6 +51379,12 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Jitter",
+     "PopupMessage",
+     "Vomit",
+     "Drunk"
+    ],
     "cond": {
      "Blunt": 2.0
     },
@@ -50371,6 +51400,12 @@
    "desc": "Give your plants some of those EZ nutrients! Dionas find this delicious.",
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
+   "metab": {
+    "cfx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "EZ nutrient"
   },
   "Egg": {
@@ -50435,6 +51470,10 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "ModifyStatusEffect",
+     "ResetNarcolepsy"
+    ],
     "cond": {
      "Asphyxiation": 2.0,
      "Poison": 2.0
@@ -50455,6 +51494,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustReagent"
+    ],
     "cond": {
      "Asphyxiation": -2.0,
      "Brute": -0.5,
@@ -50490,6 +51532,9 @@
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "cond": {
      "Brute": -0.1,
      "Poison": 0.12
@@ -50507,6 +51552,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "ResetNarcolepsy"
+    ],
     "fx": [
      "GenericStatusEffect",
      "ModifyStatusEffect",
@@ -50545,6 +51593,11 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "AdjustReagent",
+     "ModifyStatusEffect",
+     "Emote"
+    ],
     "cond": {
      "Radiation": 0.5
     },
@@ -50584,6 +51637,12 @@
    "desc": "A raw material, usually extracted from wool or other fabric products.",
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Unsorted",
+   "metab": {
+    "cfx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "fiber"
   },
   "Flour": {
@@ -50666,6 +51725,11 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "PopupMessage",
+     "AdjustTemperature",
+     "MovementSpeedModifier"
+    ],
     "dmg": {
      "Cold": 0.01,
      "Heat": -3.0
@@ -50722,6 +51786,9 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "dmg": {
      "Poison": 2.0
     },
@@ -50837,6 +51904,10 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "Emote",
+     "PopupMessage"
+    ],
     "fx": [
      "ModifyStatusEffect"
     ],
@@ -50877,6 +51948,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "ModifyBleed"
+    ],
     "fx": [
      "ModifyStatusEffect"
     ],
@@ -50897,6 +51971,9 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "PopupMessage"
+    ],
     "cond": {
      "Asphyxiation": 2.0,
      "Blunt": 2.0,
@@ -50918,6 +51995,11 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "PopupMessage",
+     "Emote",
+     "Jitter"
+    ],
     "cond": {
      "Shock": 3.0
     },
@@ -51021,6 +52103,14 @@
    "desc": "Byproduct of Methylenedioxystraquinone (aka Strawberry Ice) when metabolized. It binds to the newly vacant neuroreceptors in the brain after Methylenedioxystraquinone is flushed out of the system, causing slowness and drowsiness. The only ways to reduce its effects is to either wait it out, or take another hit of that strawberry goodness...",
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Toxins",
+   "metab": {
+    "cfx": [
+     "MovementSpeedModifier",
+     "ModifyStatusEffect",
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "Hydroxysomnolene"
   },
   "Hyronalin": {
@@ -51029,6 +52119,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Jitter"
+    ],
     "cond": {
      "Heat": 2.0
     },
@@ -51166,6 +52259,10 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustTemperature",
+     "Jitter"
+    ],
     "cond": {
      "Cold": 1.0
     },
@@ -51192,6 +52289,12 @@
    "desc": "A rapid-acting emetic. Useful for stopping unmetabolized poisons, or mass-vomiting sessions.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "Vomit"
+    ],
+    "rate": 0.5
+   },
    "name": "ipecac"
   },
   "IrishBool": {
@@ -51235,6 +52338,9 @@
    "file": "Resources/Prototypes/Reagents/elements.yml",
    "group": "Elements",
    "metab": {
+    "cfx": [
+     "ModifyBloodLevel"
+    ],
     "cond": {
      "Poison": 0.1
     },
@@ -51355,6 +52461,10 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "Polymorph",
+     "AdjustReagent"
+    ],
     "fx": [
      "Emote"
     ],
@@ -51368,6 +52478,10 @@
    "file": "Resources/Prototypes/Reagents/fun.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "Polymorph",
+     "AdjustReagent"
+    ],
     "fx": [
      "Emote"
     ],
@@ -51409,6 +52523,10 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Satiate",
+     "PopupMessage"
+    ],
     "dmg": {
      "Cold": -0.33,
      "Heat": -0.33,
@@ -51489,6 +52607,9 @@
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
    "metab": {
+    "cfx": [
+     "Satiate"
+    ],
     "cond": {
      "Poison": 1.0
     },
@@ -51529,6 +52650,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustTemperature"
+    ],
     "dmg": {
      "Cold": -4.0
     },
@@ -51665,6 +52789,12 @@
    "desc": "Efficiently restores brain damage.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "PopupMessage"
+    ],
+    "rate": 0.5
+   },
    "name": "mannitol"
   },
   "Margarita": {
@@ -51694,6 +52824,9 @@
    "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "dmg": {
      "Poison": 0.5
     },
@@ -51717,6 +52850,9 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "MovementSpeedModifier"
+    ],
     "cond": {
      "Poison": 1.6
     },
@@ -51969,6 +53105,10 @@
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
    "metab": {
+    "cfx": [
+     "Oxygenate",
+     "ModifyLungGas"
+    ],
     "dmg": {
      "Cold": 0.5
     },
@@ -51982,6 +53122,12 @@
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
    "metab": {
+    "cfx": [
+     "Emote",
+     "PopupMessage",
+     "MovementSpeedModifier",
+     "ModifyStatusEffect"
+    ],
     "cond": {
      "Poison": 1.0
     },
@@ -51998,6 +53144,9 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "ModifyStatusEffect"
+    ],
     "fx": [
      "MovementSpeedModifier"
     ],
@@ -52011,6 +53160,10 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "PopupMessage",
+     "ModifyStatusEffect"
+    ],
     "fx": [
      "PopupMessage"
     ],
@@ -52110,6 +53263,12 @@
    "desc": "A difficult to synthesize cryogenic drug used to regenerate rotting tissue and brain matter.",
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
+   "metab": {
+    "cfx": [
+     "ReduceRotting"
+    ],
+    "rate": 0.5
+   },
    "name": "opporozidone"
   },
   "OrangeLimeSoda": {
@@ -52125,6 +53284,11 @@
    "file": "Resources/Prototypes/Reagents/gases.yml",
    "group": "Gases",
    "metab": {
+    "cfx": [
+     "Oxygenate",
+     "ModifyLungGas",
+     "AdjustAlert"
+    ],
     "cond": {
      "Poison": 2.2
     },
@@ -52389,6 +53553,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "ModifyStatusEffect"
+    ],
     "cond": {
      "Poison": 2.0
     },
@@ -52451,6 +53618,10 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Vomit",
+     "Emote"
+    ],
     "cond": {
      "Piercing": 0.5,
      "Slash": 0.5
@@ -52520,6 +53691,9 @@
    "file": "Resources/Prototypes/Reagents/botany.yml",
    "group": "Botanical",
    "metab": {
+    "cfx": [
+     "Polymorph"
+    ],
     "cond": {
      "Asphyxiation": 1.0,
      "Blunt": -3.0,
@@ -52537,6 +53711,12 @@
    "desc": "An otherworldly concoction able to bring the undead to life. If untreated, the effects are irreversible and will bring certain doom upon the station. Handle with care.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cfx": [
+     "CauseZombieInfection"
+    ],
+    "rate": 0.5
+   },
    "name": "romerol"
   },
   "RootBeer": {
@@ -52697,6 +53877,11 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "Jitter",
+     "PopupMessage",
+     "Vomit"
+    ],
     "cond": {
      "Heat": 1.0
     },
@@ -52753,6 +53938,13 @@
    "desc": "You thought this was gradient blood at first, but you were mistaken.",
    "file": "Resources/Prototypes/Reagents/biological.yml",
    "group": "Biological",
+   "metab": {
+    "cfx": [
+     "Satiate",
+     "ModifyBloodLevel"
+    ],
+    "rate": 0.5
+   },
    "name": "slime"
   },
   "SnowWhite": {
@@ -52767,6 +53959,12 @@
    "desc": "I wouldn't clean my mouth out with this if I were you.",
    "file": "Resources/Prototypes/Reagents/cleaning.yml",
    "group": "Unsorted",
+   "metab": {
+    "cfx": [
+     "Vomit"
+    ],
+    "rate": 0.5
+   },
    "name": "soap"
   },
   "SodaWater": {
@@ -52796,6 +53994,9 @@
    "file": "Resources/Prototypes/Reagents/chemicals.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "dmg": {
      "Heat": 1.5
     },
@@ -52918,6 +54119,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustReagent"
+    ],
     "dmg": {
      "Poison": -4.0
     },
@@ -52931,6 +54135,10 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "ModifyStatusEffect",
+     "AdjustReagent"
+    ],
     "cond": {
      "Asphyxiation": -2.0,
      "Brute": -0.5,
@@ -52954,6 +54162,9 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "ResetNarcolepsy"
+    ],
     "cond": {
      "Cellular": 1.5,
      "Poison": 1.5
@@ -52976,6 +54187,12 @@
    "desc": "Tasty spacey sugar!",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/food.yml",
    "group": "Foods",
+   "metab": {
+    "cfx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "sugar"
   },
   "SuiDream": {
@@ -53124,6 +54341,11 @@
    "file": "Resources/Prototypes/Reagents/narcotics.yml",
    "group": "Narcotics",
    "metab": {
+    "cfx": [
+     "Emote",
+     "ModifyStatusEffect",
+     "MovementSpeedModifier"
+    ],
     "fx": [
      "PopupMessage",
      "Emote"
@@ -53166,6 +54388,9 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "Vomit"
+    ],
     "cond": {
      "Poison": 0.4
     },
@@ -53226,6 +54451,12 @@
    "desc": "An awful-smelling slurry efficiently refined from discarded matter. It represents a perfect, zero-waste conversion of salvage into Vox sustenance, though it is a violent poison to others.",
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
+   "metab": {
+    "cfx": [
+     "Satiate"
+    ],
+    "rate": 0.5
+   },
    "name": "reprocessed material"
   },
   "ToxinsSpecial": {
@@ -53288,6 +54519,9 @@
    "file": "Resources/Prototypes/Reagents/medicine.yml",
    "group": "Medicine",
    "metab": {
+    "cfx": [
+     "AdjustReagent"
+    ],
     "cond": {
      "Blunt": 7.5,
      "Toxin": -8.0
@@ -53302,6 +54536,11 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Foods",
    "metab": {
+    "cfx": [
+     "PopupMessage",
+     "Vomit",
+     "AdjustReagent"
+    ],
     "cond": {
      "Poison": 1.25
     },
@@ -53368,6 +54607,9 @@
    "file": "Resources/Prototypes/Reagents/toxins.yml",
    "group": "Toxins",
    "metab": {
+    "cfx": [
+     "Jitter"
+    ],
     "dmg": {
      "Asphyxiation": 1.0,
      "Bloodloss": 1.0
@@ -53391,6 +54633,12 @@
    "desc": "Often used to flavor food.",
    "file": "Resources/Prototypes/Reagents/Consumable/Food/ingredients.yml",
    "group": "Foods",
+   "metab": {
+    "cfx": [
+     "Vomit"
+    ],
+    "rate": 0.5
+   },
    "name": "vinegar"
   },
   "Vitamin": {
@@ -53508,6 +54756,9 @@
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Satiate"
+    ],
     "cond": {
      "Poison": 1.0
     },
@@ -53587,6 +54838,9 @@
    "file": "Resources/Prototypes/Reagents/pyrotechnic.yml",
    "group": "Unsorted",
    "metab": {
+    "cfx": [
+     "Satiate"
+    ],
     "cond": {
      "Poison": 1.0
     },
@@ -53629,5 +54883,331 @@
    "name": "Zombie"
   }
  },
- "repoCommit": "786f95099c"
+ "repoCommit": "786f95099c",
+ "toolQ": {
+  "Anchoring": {
+   "from": [
+    {
+     "id": "Wronch",
+     "name": "wronch"
+    },
+    {
+     "id": "Wrench",
+     "name": "wrench"
+    }
+   ],
+   "name": "Anchoring",
+   "spawn": "Wrench",
+   "total": 2
+  },
+  "Brushing": {
+   "from": [
+    {
+     "id": "WireBrush",
+     "name": "wire brush"
+    },
+    {
+     "id": "WireBrushElectrical",
+     "name": "electrical wire brush"
+    }
+   ],
+   "name": "Brushing",
+   "spawn": "WireBrush",
+   "total": 2
+  },
+  "Cutting": {
+   "from": [
+    {
+     "id": "Haycutters",
+     "name": "haycutters"
+    },
+    {
+     "id": "Wirecutter",
+     "name": "wirecutter"
+    }
+   ],
+   "name": "Cutting",
+   "spawn": "Wirecutter",
+   "total": 2
+  },
+  "Honking": {
+   "from": [
+    {
+     "id": "BikeHorn",
+     "name": "bike horn"
+    },
+    {
+     "id": "BananiumHorn",
+     "name": "bananium horn"
+    },
+    {
+     "id": "GoldenBikeHorn",
+     "name": "golden honker"
+    }
+   ],
+   "name": "Honking",
+   "spawn": "BikeHorn",
+   "total": 3
+  },
+  "Prying": {
+   "from": [
+    {
+     "id": "Cowbar",
+     "name": "cowbar"
+    },
+    {
+     "id": "Crowbar",
+     "name": "crowbar"
+    },
+    {
+     "id": "FireAxe",
+     "name": "fireaxe"
+    },
+    {
+     "id": "JawsOfLife",
+     "name": "jaws of life"
+    },
+    {
+     "id": "WeaponTileGun",
+     "name": "tile gun"
+    },
+    {
+     "id": "FireAxeFlaming",
+     "name": "fire axe"
+    },
+    {
+     "id": "SyndicateJawsOfLife",
+     "name": "syndicate jaws of death"
+    }
+   ],
+   "name": "Prying",
+   "spawn": "Crowbar",
+   "total": 7
+  },
+  "Pulsing": {
+   "from": [
+    {
+     "id": "Multitool",
+     "name": "multitool"
+    },
+    {
+     "id": "Mooltitool",
+     "name": "mooltitool"
+    }
+   ],
+   "name": "Pulsing",
+   "spawn": "Multitool",
+   "total": 2
+  },
+  "Rolling": {
+   "from": [
+    {
+     "id": "OxygenTank",
+     "name": "oxygen tank"
+    },
+    {
+     "id": "RollingPin",
+     "name": "rolling pin"
+    },
+    {
+     "id": "BaseBallBat",
+     "name": "baseball bat"
+    },
+    {
+     "id": "FireBombFuel",
+     "name": "fire bomb"
+    },
+    {
+     "id": "EmergencyOxygenTank",
+     "name": "emergency oxygen tank"
+    },
+    {
+     "id": "MaxCap",
+     "name": "air tank"
+    },
+    {
+     "id": "MaxCapSilly",
+     "name": "max cap"
+    },
+    {
+     "id": "DrinkColaCan",
+     "name": "Space Cola can"
+    }
+   ],
+   "name": "Rolling",
+   "spawn": "RollingPin",
+   "total": 67
+  },
+  "Sawing": {
+   "from": [
+    {
+     "id": "Saw",
+     "name": "metal saw"
+    },
+    {
+     "id": "FireAxe",
+     "name": "fireaxe"
+    },
+    {
+     "id": "Chainsaw",
+     "name": "chainsaw"
+    },
+    {
+     "id": "SawImprov",
+     "name": "choppa"
+    },
+    {
+     "id": "SawElectric",
+     "name": "circular saw"
+    },
+    {
+     "id": "SawAdvanced",
+     "name": "advanced circular saw"
+    },
+    {
+     "id": "UnholyHalberd",
+     "name": "unholy halberd"
+    },
+    {
+     "id": "FireAxeFlaming",
+     "name": "fire axe"
+    }
+   ],
+   "name": "Sawing",
+   "spawn": "Saw",
+   "total": 9
+  },
+  "Screwing": {
+   "from": [
+    {
+     "id": "CyberPen",
+     "name": "Cybersun pen"
+    },
+    {
+     "id": "Omnitool",
+     "name": "omnitool"
+    },
+    {
+     "id": "Moodriver",
+     "name": "moodriver"
+    },
+    {
+     "id": "PenCentcom",
+     "name": "CentComm pen"
+    },
+    {
+     "id": "PowerDrill",
+     "name": "power drill"
+    },
+    {
+     "id": "Screwdriver",
+     "name": "screwdriver"
+    }
+   ],
+   "name": "Screwing",
+   "spawn": "Screwdriver",
+   "total": 6
+  },
+  "Shearing": {
+   "from": [
+    {
+     "id": "Haycutters",
+     "name": "haycutters"
+    },
+    {
+     "id": "Wirecutter",
+     "name": "wirecutter"
+    },
+    {
+     "id": "BarberScissors",
+     "name": "barber scissors"
+    },
+    {
+     "id": "HydroponicsToolClippers",
+     "name": "plant clippers"
+    }
+   ],
+   "name": "Shearing",
+   "spawn": "Wirecutter",
+   "total": 4
+  },
+  "Slicing": {
+   "from": [
+    {
+     "id": "Shiv",
+     "name": "shiv"
+    },
+    {
+     "id": "Spear",
+     "name": "spear"
+    },
+    {
+     "id": "PlasmaShiv",
+     "name": "plasma shiv"
+    },
+    {
+     "id": "UraniumShiv",
+     "name": "uranium shiv"
+    },
+    {
+     "id": "ReinforcedShiv",
+     "name": "reinforced shiv"
+    },
+    {
+     "id": "ShardCrystalRandom",
+     "name": "random crystal shard"
+    },
+    {
+     "id": "Saw",
+     "name": "metal saw"
+    },
+    {
+     "id": "Musket",
+     "name": "musket"
+    }
+   ],
+   "name": "Slicing",
+   "spawn": "KitchenKnife",
+   "total": 65
+  },
+  "Welding": {
+   "from": [
+    {
+     "id": "Welder",
+     "name": "welding tool"
+    },
+    {
+     "id": "Cowelder",
+     "name": "cowelding tool"
+    },
+    {
+     "id": "WelderMini",
+     "name": "emergency welding tool"
+    },
+    {
+     "id": "CentCommFlippo",
+     "name": "Gilded CentComm Flippo"
+    },
+    {
+     "id": "RefuelingWelder",
+     "name": "refueling welding tool"
+    },
+    {
+     "id": "WelderIndustrial",
+     "name": "industrial welding tool"
+    },
+    {
+     "id": "WelderExperimental",
+     "name": "experimental welding tool"
+    },
+    {
+     "id": "WelderIndustrialAdvanced",
+     "name": "advanced industrial welding tool"
+    }
+   ],
+   "name": "Welding",
+   "spawn": "Welder",
+   "total": 8
+  }
+ }
 }

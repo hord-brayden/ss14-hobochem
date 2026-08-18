@@ -69,13 +69,124 @@
     grind: "grind", juice: "juice", eat: "eat & puke", drink: "drink",
     pour: "pour out", syringe: "draw with syringe", swallow: "swallow",
   };
+  const EXPANDABLE_METHODS = new Set(["grind", "juice", "eat", "syringe"]);
   function methodChips(methods) {
     return (methods || []).map((m) => {
       const label = METHOD_LABEL[m] || m;
-      if (m === "grind" || m === "juice")
-        return `<a class="chip" href="#/g/KitchenReagentGrinder">${esc(label)}</a>`;
+      if (EXPANDABLE_METHODS.has(m))
+        return `<button class="chip mth" data-method="${esc(m)}" title="how do I ${esc(label)}?">${esc(label)} ▾</button>`;
       return `<span class="chip">${esc(label)}</span>`;
     }).join("");
+  }
+
+  // ---------------- dig-deeper drawer ----------------
+  const drawer = document.getElementById("drawer");
+  const drawerBody = document.getElementById("drawer-body");
+  const scrim = document.getElementById("drawer-scrim");
+  function openDrawer(html) {
+    drawerBody.innerHTML = html;
+    drawer.classList.add("open"); scrim.classList.add("open");
+  }
+  function closeDrawer() { drawer.classList.remove("open"); scrim.classList.remove("open"); }
+  document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+  scrim.addEventListener("click", closeDrawer);
+  window.addEventListener("hashchange", closeDrawer);
+
+  function craftSummary(g) {
+    if (g.craft) return "craft: " + g.craft.map((s) =>
+      `${s.amount > 1 ? s.amount + "× " : ""}${pretty(s.name)}`).join(", ");
+    if (g.lathe) return "print at a lathe";
+    if (g.board) return "machine — build from its board, or steal one";
+    return "find it";
+  }
+  function deviceRow(gid) {
+    const g = G[gid];
+    if (!g) return "";
+    return `<div class="row">${spr(g)}<a href="#/g/${esc(gid)}">${esc(cap(g.name))}</a>
+      ${g.craft ? `<span class="chip ok">Craftable</span>` : g.board ? `<span class="chip grp">machine</span>` : ""}
+      <span class="meta">${esc(craftSummary(g))}</span></div>`;
+  }
+  const vomitInducers = () => Object.entries(D.reagents)
+    .filter(([, r]) => {
+      const mb = r.metab || {};
+      return (mb.fx || []).includes("Vomit") || (mb.cfx || []).includes("Vomit");
+    })
+    .sort((a, b) => (a[0] === "Ipecac" ? -1 : b[0] === "Ipecac" ? 1 : a[1].name.localeCompare(b[1].name)));
+
+  function methodPanel(m) {
+    if (m === "grind" || m === "juice") {
+      const seen = new Set();
+      const devices = Object.keys(G).filter((k) => {
+        if (!G[k].grinder || seen.has(G[k].name)) return false;
+        seen.add(G[k].name);
+        return true;
+      }).sort((a, b) => (G[a].grinder === "handheld" ? 0 : 1) - (G[b].grinder === "handheld" ? 0 : 1)
+          || (G[a].craft ? 0 : 1) - (G[b].craft ? 0 : 1));
+      return `<h4>How to ${esc(m)} something</h4>
+        <div class="meta" style="margin-bottom:8px">Anything with the ${esc(m)} tag goes into one of these. The makeshift ones are wood — check any bookshelf near you.</div>` +
+        devices.map(deviceRow).join("");
+    }
+    if (m === "eat") {
+      const inducers = vomitInducers().slice(0, 7);
+      return `<h4>The eat &amp; puke extraction</h4><ol>
+        <li>Eat the item. All of it. Commit.</li>
+        <li>Induce vomiting: ${inducers.map(([id, r]) => rlink(id)).join(", ")} — all verified emetics in the code. The classic is ipecac (toxin medkits); the hobo classic is a LOT of ${rlink("Ethanol")}.</li>
+        <li>Mop the puddle with a ${ilink("RagItem")} <span class="chip ok">Craftable — 1 cloth</span> and wring it into any container.</li>
+        <li>The prize comes back mixed with ${rlink("Vomit")}, water, and often ${rlink("UncookedAnimalProteins")} — clean it up on the <a href="#/purity">Purity page</a> (meatball pass, rag pass, dilution purge).</li></ol>`;
+    }
+    if (m === "syringe") {
+      return `<h4>Getting a syringe</h4>
+        ${deviceRow("Syringe") || `<div class="row">${ilink("Syringe")}</div>`}
+        <div class="meta" style="margin-top:6px">Print one at a medical lathe, or loot any medkit — even the emergency ones bolted to walls. Draws up to 15u a pull, and it pulls from items too stubborn to pour.</div>`;
+    }
+    return `<h4>${esc(m)}</h4><div class="meta">Just do it. This one has no prerequisites.</div>`;
+  }
+
+  function matPanel(sid) {
+    const mat = (D.mats || {})[sid];
+    const title = mat ? mat.name : pretty(sid);
+    let h = `<h4>Where to get ${esc(title)}</h4>`;
+    if (mat && mat.from.length) {
+      h += `<div class="meta" style="margin-bottom:8px">Smash one of these — best yields first (${mat.total} sources total, top ${Math.min(6, mat.from.length)} shown):</div>` +
+        mat.from.slice(0, 6).map((s) => `<div class="row">${entMap[s.id] || G[s.id] ? spr(lookup(s.id)) : ""}
+          <a href="#/g/${esc(s.id)}">${esc(cap(s.name))}</a><span class="qty">×${s.n}</span></div>`).join("");
+    } else {
+      h += `<div class="meta">No destruction sources found — check lathes, cargo, or the department that hoards it.</div>`;
+    }
+    return h;
+  }
+
+  function toolPanel(q) {
+    const t = (D.toolQ || {})[q];
+    if (!t) return `<h4>${esc(pretty(q))} tool</h4><div class="meta">Any tool with the ${esc(q)} quality.</div>`;
+    return `<h4>Anything with the "${esc(t.name)}" quality works</h4>
+      ${t.spawn ? `<div class="row">${lookup(t.spawn) ? spr(lookup(t.spawn)) : ""}<a href="#/g/${esc(t.spawn)}">${esc(pretty(t.spawn))}</a><span class="chip grp">the classic</span></div>` : ""}
+      <div class="meta" style="margin:6px 0">Hobo-tier options (${t.total} total, craftables first):</div>` +
+      t.from.slice(0, 6).map((s) => `<div class="row">${lookup(s.id) ? spr(lookup(s.id)) : ""}
+        <a href="#/g/${esc(s.id)}">${esc(cap(s.name))}</a>${G[s.id] && G[s.id].craft ? `<span class="chip ok">Craftable</span>` : ""}</div>`).join("");
+  }
+
+  function entPanel(id) {
+    const g = G[id], rec = lookup(id);
+    if (!rec) return `<h4>${esc(pretty(id))}</h4><div class="meta">Scrounge it.</div>`;
+    let h = `<h4>${spr(rec, 26)} How to get: ${esc(cap(rec.name))}</h4>`;
+    const ways = [];
+    if (g && g.craft) ways.push(`<div class="row"><span class="chip ok">Craftable</span><span>${g.craft.map((s) =>
+      s.kind === "material"
+        ? `<span class="qty">${s.amount}×</span> ${esc(pretty(s.name))}<button class="digbtn" data-mat="${esc(s.name)}">+ sources</button>`
+        : s.kind === "tool"
+        ? `${esc(cap(s.name))} tool<button class="digbtn" data-toolq="${esc(s.name)}">+ options</button>`
+        : `${s.amount > 1 ? s.amount + "× " : ""}${esc(cap(s.name))}`
+    ).join(" · ")}</span></div>`);
+    if (g && g.lathe) ways.push(`<div class="row"><span class="chip grp">lathe</span><span class="meta">${Object.entries(g.lathe).map(([m, a]) => `${a} ${esc(pretty(m))}`).join(", ")}</span></div>`);
+    if (g && g.board) ways.push(`<div class="row"><span class="chip grp">machine</span><span class="meta">build from ${esc(pretty(g.board))}, or steal the built one</span></div>`);
+    for (const xid of spawnedBy[id] || [])
+      ways.push(`<div class="row"><span class="chip grp">cook it</span><span>${reactionNodeHTML(xid, id, [], 9)}</span></div>`);
+    for (const cid of (cookByResult[id] || []).slice(0, 2))
+      ways.push(`<div class="row"><span class="chip grp">microwave</span><span>${cookNodeHTML(cid, "")}</span></div>`);
+    h += ways.length ? ways.join("") : `<div class="meta">No recipe — scrounge maints, vendors, and other people's lockers.</div>`;
+    h += `<div class="meta" style="margin-top:8px"><a href="#/g/${esc(id)}">full page →</a></div>`;
+    return h;
   }
   function mixerChip(m) {
     const prov = (mixerProviders[m] || [])[0];
@@ -172,7 +283,7 @@
       nodes.push(`<div class="node">${reactionNodeHTML(rxId, rid, path, depth)}</div>`);
     const ents = dedupe(entsWith[rid] || [], rid);
     ents.slice(0, depth === 0 ? 6 : 3).forEach((e) => {
-      nodes.push(`<div class="node"><span class="lbl">${esc((e.methods || []).map((m) => METHOD_LABEL[m] || m).join(" / ") || "loot")}</span>${ilink(e.id)} <span class="qty">${fmt(e.reagents[rid])}u</span>${e.count > 1 ? ` <span class="chip grp">${e.count} variants</span>` : ""}</div>`);
+      nodes.push(`<div class="node">${methodChips(e.methods && e.methods.length ? e.methods : null) || `<span class="lbl">loot</span>`}${ilink(e.id)} <span class="qty">${fmt(e.reagents[rid])}u</span>${e.count > 1 ? ` <span class="chip grp">${e.count} variants</span>` : ""}<button class="digbtn" data-ent="${esc(e.id)}" title="how do I get one?">+ get</button></div>`);
     });
     if (ents.length > (depth === 0 ? 6 : 3))
       nodes.push(`<div class="node"><span class="lbl">more</span>${ents.length} items total carry this — see ${rlink(rid)}</div>`);
@@ -256,7 +367,7 @@
   function entRow(e, rid) {
     const others = Object.entries(e.reagents).filter(([k]) => k !== rid)
       .map(([k, v]) => `${fmt(v)}u ${rname(k)}`).join(", ");
-    return `<tr><td>${ilink(e.id)}${e.count > 1 ? ` <span class="chip grp">${e.count} variants</span>` : ""} ${methodChips(e.methods)}
+    return `<tr><td>${ilink(e.id)}${e.count > 1 ? ` <span class="chip grp">${e.count} variants</span>` : ""} ${methodChips(e.methods)}<button class="digbtn" data-ent="${esc(e.id)}" title="how do I get one?">+ get</button>
       ${others ? `<div class="meta">also: ${esc(others)}</div>` : ""}</td>
       <td class="q">${fmt(e.reagents[rid])}u</td></tr>`;
   }
@@ -307,7 +418,10 @@
     if (g) {
       const ways = [];
       if (g.craft) ways.push(`<div class="card"><span class="lbl" style="font:700 11px var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:1px">craft by hand</span><ol style="padding-left:22px;margin-top:6px">` +
-        g.craft.map((s) => `<li>${s.amount > 1 ? `<span class="qty">${s.amount}×</span> ` : ""}${esc(s.kind === "material" ? pretty(s.name) : cap(s.name))}${s.kind === "tool" ? " (tool)" : ""}</li>`).join("") +
+        g.craft.map((s) => `<li>${s.amount > 1 ? `<span class="qty">${s.amount}×</span> ` : ""}${esc(s.kind === "material" ? pretty(s.name) : cap(s.name))}${s.kind === "tool" ? " (tool)" : ""}${
+          s.kind === "material" && (D.mats || {})[s.name] ? `<button class="digbtn" data-mat="${esc(s.name)}">+ sources</button>` :
+          s.kind === "tool" && (D.toolQ || {})[s.name] ? `<button class="digbtn" data-toolq="${esc(s.name)}">+ options</button>` : ""
+        }</li>`).join("") +
         `</ol><div class="meta"><a target="_blank" rel="noopener" href="${GH}${esc(g.craftFile)}">${esc(g.craftFile)}</a></div></div>`);
       if (g.lathe) ways.push(`<div class="card">Print at a lathe: ${Object.entries(g.lathe).map(([m, a]) => `<span class="qty">${a}</span> ${esc(pretty(m))}`).join(", ")} <span class="chip grp">100 material = 1 sheet</span></div>`);
       if (g.board) {
@@ -521,10 +635,17 @@
     const featured = new Set([wk % n, (wk + 1) % n, (wk + 2) % n]);
     let h = `<div class="page"><h2 class="title">Uncle Cletus's Weekly Specials</h2>
       <p class="desc">Easy cooks, big payoffs. Three get featured each week — the rest of the menu is below.
-      Every ingredient links to its page so you can chase the whole chain.</p>`;
+      Every ingredient links to its page so you can chase the whole chain.</p>
+      <button class="showmore" id="bom-all" style="margin-bottom:14px">Show every bill of materials ▾</button>`;
+    const bomHTML = (sp) => sp.bom ? `<div class="bom" data-bom="${esc(sp.id)}" style="display:none">
+      <h5>Shopping list</h5><ul>${sp.bom.ingredients.map((x) => `<li>${tokenize(x)}</li>`).join("")}</ul>
+      <h5>Equipment</h5><ul>${sp.bom.equipment.map((x) => `<li>${tokenize(x)}</li>`).join("")}</ul>
+      <div class="meta" style="margin-top:6px">Every link digs deeper — click an item, then keep clicking "+ sources" until you hit something lying at your feet.</div></div>` : "";
     const render = (sp, i) => `<div class="special${featured.has(i) ? " featured" : ""}">
       ${featured.has(i) ? `<span class="ribbon">this week</span>` : ""}
       <h4>${esc(sp.title)}</h4><div class="tagline">${esc(sp.tagline)}</div>
+      ${sp.bom ? `<button class="showmore" data-bomtoggle="${esc(sp.id)}" style="margin:0 0 10px">Full bill of materials ▾</button>` : ""}
+      ${bomHTML(sp)}
       <ol>${sp.steps.map((s) => `<li>${tokenize(s)}</li>`).join("")}</ol>
       ${sp.warning ? `<div class="meta warn">Cletus's disclaimer: ${esc(sp.warning)}</div>` : ""}
       ${sp.picker === "poison" ? poisonPickerHTML() : ""}</div>`;
@@ -535,6 +656,20 @@
     if (sel) sel.addEventListener("change", () => {
       const out = document.getElementById("poison-out");
       out.innerHTML = sel.value ? poisonSourcesHTML(sel.value) : "";
+    });
+    main.querySelectorAll("[data-bomtoggle]").forEach((b) =>
+      b.addEventListener("click", () => {
+        const el = main.querySelector(`[data-bom="${b.dataset.bomtoggle}"]`);
+        const show = el.style.display === "none";
+        el.style.display = show ? "block" : "none";
+        b.textContent = show ? "Hide bill of materials ▴" : "Full bill of materials ▾";
+      }));
+    const bomAll = document.getElementById("bom-all");
+    if (bomAll) bomAll.addEventListener("click", () => {
+      const open = bomAll.textContent.includes("▾");
+      main.querySelectorAll("[data-bom]").forEach((el) => { el.style.display = open ? "block" : "none"; });
+      main.querySelectorAll("[data-bomtoggle]").forEach((b) => { b.textContent = open ? "Hide bill of materials ▴" : "Full bill of materials ▾"; });
+      bomAll.textContent = open ? "Hide every bill of materials ▴" : "Show every bill of materials ▾";
     });
   }
 
@@ -708,6 +843,19 @@
     </div>`;
     main.scrollTop = 0;
   }
+
+  // ---------------- dig-deeper delegation (drawer) ----------------
+  function drawerDelegate(ev) {
+    const t = ev.target.closest("[data-method],[data-mat],[data-toolq],[data-ent]");
+    if (!t) return false;
+    if (t.dataset.method) openDrawer(methodPanel(t.dataset.method));
+    else if (t.dataset.mat) openDrawer(matPanel(t.dataset.mat));
+    else if (t.dataset.toolq) openDrawer(toolPanel(t.dataset.toolq));
+    else if (t.dataset.ent) openDrawer(entPanel(t.dataset.ent));
+    return true;
+  }
+  main.addEventListener("click", (ev) => { drawerDelegate(ev); });
+  drawerBody.addEventListener("click", (ev) => { drawerDelegate(ev); });
 
   // ---------------- tree expansion (event delegation) ----------------
   main.addEventListener("click", (ev) => {

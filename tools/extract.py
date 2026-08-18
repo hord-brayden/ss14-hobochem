@@ -74,7 +74,7 @@ def parse_metabolisms(doc):
     mets = doc.get("metabolisms")
     if not isinstance(mets, dict):
         return None
-    rate, dmg, cond, fx = 0.5, {}, {}, []
+    rate, dmg, cond, fx, cfx = 0.5, {}, {}, [], []
     for group in mets.values():
         if not isinstance(group, dict):
             continue
@@ -90,9 +90,13 @@ def parse_metabolisms(doc):
             if t in ("HealthChange", "EvenHealthChange"):
                 for k, v in flat_damage(eff.get("damage")).items():
                     target[k] = round(target.get(k, 0) + v, 3)
-            elif t and not eff.get("conditions") and t not in fx:
-                fx.append(t)
-    if not (dmg or cond or fx):
+            elif t:
+                if eff.get("conditions"):
+                    if t not in cfx:
+                        cfx.append(t)
+                elif t not in fx:
+                    fx.append(t)
+    if not (dmg or cond or fx or cfx):
         return None
     out = {"rate": rate}
     if dmg:
@@ -101,6 +105,8 @@ def parse_metabolisms(doc):
         out["cond"] = cond
     if fx:
         out["fx"] = fx[:8]
+    if cfx:
+        out["cfx"] = cfx[:8]
     return out
 
 
@@ -242,6 +248,7 @@ def extract(repo, copy_sprites=True):
 
     reagents, reactions, mixer_names, cooks = {}, {}, {}, {}
     raw_entities, graphs, lathe_raw, fills = {}, {}, {}, {}
+    stacks, tool_qualities = {}, {}
 
     for path in sorted(proto_dir.rglob("*.yml")):
         rel = str(path.relative_to(repo)).replace("\\", "/")
@@ -319,6 +326,21 @@ def extract(repo, copy_sprites=True):
             elif t == "weightedRandomFillSolution":
                 fills[str(doc.get("id"))] = doc.get("fills") or []
 
+            elif t == "stack":
+                sname = locs(doc.get("name"), str(doc.get("id")))
+                if "{" in sname:  # Fluent plural selector — fall back to the id
+                    sname = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", str(doc.get("id"))).lower()
+                stacks[str(doc.get("id"))] = {
+                    "name": sname,
+                    "spawn": str(doc.get("spawn", "")),
+                }
+
+            elif t == "tool":
+                tool_qualities[str(doc.get("id"))] = {
+                    "name": locs(doc.get("name"), str(doc.get("id"))),
+                    "spawn": str(doc.get("spawn", "")),
+                }
+
             elif t == "entity":
                 eid = str(doc.get("id"))
                 if not doc.get("id"):
@@ -328,8 +350,8 @@ def extract(repo, copy_sprites=True):
                     parents = [parents]
                 sols, methods = {}, set()
                 blood = icon = mixer_types = board_for = random_fill = None
-                melee = thrown = None
-                board_reqs = {}
+                melee = thrown = grinder = None
+                board_reqs, drops, tools = {}, {}, []
                 for comp in doc.get("components") or []:
                     if not isinstance(comp, dict):
                         continue
@@ -365,6 +387,25 @@ def extract(repo, copy_sprites=True):
                         d = flat_damage(comp["damage"])
                         if d:
                             thrown = d
+                    if ct == "ReagentGrinder":
+                        grinder = "machine"
+                    if ct == "HandheldGrinder":
+                        grinder = "handheld"
+                    if ct == "Tool":
+                        tools = [str(q) for q in (comp.get("qualities") or [])]
+                    if ct == "Destructible":
+                        # what breaks out of this entity (wood from bookshelves, etc.)
+                        for th in comp.get("thresholds") or []:
+                            if not isinstance(th, dict):
+                                continue
+                            for beh in th.get("behaviors") or []:
+                                if isinstance(beh, dict) and beh.get("__type") == "SpawnEntitiesBehavior":
+                                    for proto, cnt in (beh.get("spawn") or {}).items():
+                                        n = cnt.get("max", cnt.get("min", 1)) if isinstance(cnt, dict) else cnt
+                                        try:
+                                            drops[str(proto)] = max(drops.get(str(proto), 0), int(n))
+                                        except (TypeError, ValueError):
+                                            pass
                     if ct == "Icon" and comp.get("sprite"):
                         icon = (str(comp["sprite"]), str(comp.get("state", "icon")), 1)
                     if ct == "Sprite" and icon is None:
@@ -395,6 +436,9 @@ def extract(repo, copy_sprites=True):
                     "randomFill": random_fill,
                     "melee": melee,
                     "thrown": thrown,
+                    "grinder": grinder,
+                    "tools": tools,
+                    "drops": drops,
                     "file": rel,
                 }
 
@@ -463,6 +507,14 @@ def extract(repo, copy_sprites=True):
     entities, gear = [], {}
     spawned_by_reaction = {s for rx in reactions.values() for s in rx.get("spawns", [])}
     boards_by_machine = {}
+    # map material stacks to their spawn-entity root so destruction drops can be
+    # attributed back to a craftable material ("break a bookshelf -> WoodPlank")
+    stack_by_spawnroot = {}
+    for sid, s in stacks.items():
+        if s["spawn"]:
+            stack_by_spawnroot[re.sub(r"\d+$", "", s["spawn"])] = sid
+    mat_sources = {}   # stackId -> [{id, name, n}]
+    tool_providers = {}  # quality -> [{id, name}]
     for eid, e in raw_entities.items():
         if not e["abstract"] and e["boardFor"]:
             chain = chain_of(eid)
@@ -504,10 +556,24 @@ def extract(repo, copy_sprites=True):
         methods = set()
         for a in chain:
             methods |= raw_entities[a]["methods"]
+        grinder = inherit(chain, "grinder")
+
+        drops = inherit(chain, "drops")
+        if drops and not eid.startswith(("Debug", "Admeme")):
+            for proto, n in drops.items():
+                sid = stack_by_spawnroot.get(re.sub(r"\d+$", "", proto))
+                if sid:
+                    mat_sources.setdefault(sid, []).append(
+                        {"id": eid, "name": str(name), "n": n})
+        tools = inherit(chain, "tools")
+        if tools:
+            for q in tools:
+                tool_providers.setdefault(q, []).append({"id": eid, "name": str(name)})
 
         is_gear = (
             mixer_types or e["boardFor"] or eid in boards_by_machine
             or eid in craftable or eid in CURATED_GEAR or eid in spawned_by_reaction
+            or grinder
         )
         has_contents = sols or blood or random_fill
         if not (is_gear or has_contents):
@@ -536,6 +602,8 @@ def extract(repo, copy_sprites=True):
                 g["melee"] = melee
             if thrown:
                 g["thrown"] = thrown
+            if grinder:
+                g["grinder"] = grinder
             if eid in build_steps:
                 g["craft"] = build_steps[eid]["steps"]
                 g["craftFile"] = build_steps[eid]["file"]
@@ -586,6 +654,35 @@ def extract(repo, copy_sprites=True):
     except Exception:
         commit = "unknown"
 
+    # dedupe & cap material sources (top by yield) and tool providers (craftables first)
+    mats_out = {}
+    for sid, lst in mat_sources.items():
+        seen, uniq = set(), []
+        for s in sorted(lst, key=lambda x: -x["n"]):
+            if s["name"] in seen:
+                continue
+            seen.add(s["name"])
+            uniq.append(s)
+        mats_out[sid] = {
+            "name": stacks[sid]["name"],
+            "total": len(uniq),
+            "from": uniq[:14],
+        }
+    tools_out = {}
+    for q, lst in tool_providers.items():
+        seen, uniq = set(), []
+        for s in sorted(lst, key=lambda x: (x["id"] not in gear, len(x["id"]))):
+            if s["name"] in seen:
+                continue
+            seen.add(s["name"])
+            uniq.append(s)
+        tools_out[q] = {
+            "name": tool_qualities.get(q, {}).get("name", q),
+            "spawn": tool_qualities.get(q, {}).get("spawn", ""),
+            "total": len(uniq),
+            "from": uniq[:8],
+        }
+
     return {
         "repoCommit": commit,
         "reagents": dict(sorted(reagents.items())),
@@ -595,6 +692,8 @@ def extract(repo, copy_sprites=True):
         "gear": dict(sorted(gear.items())),
         "fills": fills_out,
         "cooks": dict(sorted(cooks.items())),
+        "mats": dict(sorted(mats_out.items())),
+        "toolQ": dict(sorted(tools_out.items())),
         "_sprites": sprites_copied,
     }
 
