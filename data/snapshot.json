@@ -9150,7 +9150,7 @@
    "methods": [
     "eat"
    ],
-   "name": "red-tie",
+   "name": "red tie",
    "reagents": {
     "Fiber": 15.0
    }
@@ -10719,8 +10719,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_rainbow.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_rainbow.rsi_icon.png",
    "id": "ClothingUniformColorRainbow",
    "methods": [
     "eat"
@@ -10731,8 +10731,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_atmosf.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Engineering_atmosf.rsi_icon.png",
    "id": "ClothingUniformJumpskirtAtmos",
    "methods": [
     "eat"
@@ -10743,8 +10743,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_bartender.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_bartender.rsi_icon.png",
    "id": "ClothingUniformJumpskirtBartender",
    "methods": [
     "eat"
@@ -10755,8 +10755,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_elegantdress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_elegantdress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtBlackElegantDress",
    "methods": [
     "eat"
@@ -10767,8 +10767,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_elegantdress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_elegantdress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtBlueElegantDress",
    "methods": [
     "eat"
@@ -10779,8 +10779,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_turtledress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_turtledress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtBlueTurtleneckDress",
    "methods": [
     "eat"
@@ -10791,8 +10791,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_brigmedic.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_brigmedic.rsi_icon.png",
    "id": "ClothingUniformJumpskirtBrigmedic",
    "methods": [
     "eat"
@@ -10803,8 +10803,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_cmo.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_cmo.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCMO",
    "methods": [
     "eat"
@@ -10815,8 +10815,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_cmo_turtle.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_cmo_turtle.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCMOTurtle",
    "methods": [
     "eat"
@@ -10827,8 +10827,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_capformaldress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/command.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Command_capformaldress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCapFormalDress",
    "methods": [
     "eat"
@@ -10839,8 +10839,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_captain.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/command.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Command_captain.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCaptain",
    "methods": [
     "eat"
@@ -10851,8 +10851,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_cargotech.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Cargo_cargotech.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCargo",
    "methods": [
     "eat"
@@ -10863,8 +10863,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpskirt.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpskirt.png",
    "id": "ClothingUniformJumpskirtCasualBlue",
    "methods": [
     "eat"
@@ -10875,8 +10875,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpskirt.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpskirt.png",
    "id": "ClothingUniformJumpskirtCasualGreen",
    "methods": [
     "eat"
@@ -10887,8 +10887,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpskirt.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpskirt.png",
    "id": "ClothingUniformJumpskirtCasualPurple",
    "methods": [
     "eat"
@@ -10899,8 +10899,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpskirt.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpskirt.png",
    "id": "ClothingUniformJumpskirtCasualRed",
    "methods": [
     "eat"
@@ -10911,8 +10911,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_centcomformaldress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Centcomm_centcomformaldress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCentcomFormalDress",
    "methods": [
     "eat"
@@ -10923,8 +10923,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_chaplain.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_chaplain.rsi_icon.png",
    "id": "ClothingUniformJumpskirtChaplain",
    "methods": [
     "eat"
@@ -10935,8 +10935,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_chef.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_chef.rsi_icon.png",
    "id": "ClothingUniformJumpskirtChef",
    "methods": [
     "eat"
@@ -10947,8 +10947,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_chemistry.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_chemistry.rsi_icon.png",
    "id": "ClothingUniformJumpskirtChemistry",
    "methods": [
     "eat"
@@ -10959,8 +10959,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_ce.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Engineering_ce.rsi_icon.png",
    "id": "ClothingUniformJumpskirtChiefEngineer",
    "methods": [
     "eat"
@@ -10971,8 +10971,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_ce_turtle.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Engineering_ce_turtle.rsi_icon.png",
    "id": "ClothingUniformJumpskirtChiefEngineerTurtle",
    "methods": [
     "eat"
@@ -10983,8 +10983,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_clown.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_clown.rsi_icon.png",
    "id": "ClothingUniformJumpskirtClown",
    "methods": [
     "eat"
@@ -10995,8 +10995,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorBlack",
    "methods": [
     "eat"
@@ -11007,8 +11007,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorBlue",
    "methods": [
     "eat"
@@ -11019,8 +11019,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorBrown",
    "methods": [
     "eat"
@@ -11031,8 +11031,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorDarkBlue",
    "methods": [
     "eat"
@@ -11043,8 +11043,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorDarkGreen",
    "methods": [
     "eat"
@@ -11055,8 +11055,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorGreen",
    "methods": [
     "eat"
@@ -11067,8 +11067,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorGrey",
    "methods": [
     "eat"
@@ -11079,8 +11079,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorLightBrown",
    "methods": [
     "eat"
@@ -11091,8 +11091,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorMaroon",
    "methods": [
     "eat"
@@ -11103,8 +11103,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorOrange",
    "methods": [
     "eat"
@@ -11115,8 +11115,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorPink",
    "methods": [
     "eat"
@@ -11127,8 +11127,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorPurple",
    "methods": [
     "eat"
@@ -11139,8 +11139,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_rainbow.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_rainbow.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorRainbow",
    "methods": [
     "eat"
@@ -11151,8 +11151,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorRed",
    "methods": [
     "eat"
@@ -11163,8 +11163,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorTeal",
    "methods": [
     "eat"
@@ -11175,8 +11175,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorWhite",
    "methods": [
     "eat"
@@ -11187,8 +11187,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtColorYellow",
    "methods": [
     "eat"
@@ -11199,8 +11199,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_commandgeneric.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/command.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Command_commandgeneric.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCommandGeneric",
    "methods": [
     "eat"
@@ -11211,8 +11211,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_curator.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_curator.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCurator",
    "methods": [
     "eat"
@@ -11223,8 +11223,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_stripeddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_stripeddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtCyanStripedDress",
    "methods": [
     "eat"
@@ -11235,8 +11235,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_detective.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_detective.rsi_icon.png",
    "id": "ClothingUniformJumpskirtDetective",
    "methods": [
     "eat"
@@ -11247,8 +11247,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_detective_grey.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_detective_grey.rsi_icon.png",
    "id": "ClothingUniformJumpskirtDetectiveGrey",
    "methods": [
     "eat"
@@ -11259,8 +11259,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_engineering.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Engineering_engineering.rsi_icon.png",
    "id": "ClothingUniformJumpskirtEngineering",
    "methods": [
     "eat"
@@ -11271,8 +11271,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_genetics.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_genetics.rsi_icon.png",
    "id": "ClothingUniformJumpskirtGenetics",
    "methods": [
     "eat"
@@ -11283,8 +11283,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_elegantdress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_elegantdress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtGreenElegantDress",
    "methods": [
     "eat"
@@ -11295,8 +11295,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_stripeddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_stripeddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtGreenStripedDress",
    "methods": [
     "eat"
@@ -11307,8 +11307,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_turtledress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_turtledress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtGreenTurtleneckDress",
    "methods": [
     "eat"
@@ -11319,8 +11319,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hop.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/command.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Command_hop.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHoP",
    "methods": [
     "eat"
@@ -11331,8 +11331,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hos.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_hos.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHoS",
    "methods": [
     "eat"
@@ -11343,8 +11343,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hos_alt.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_hos_alt.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHoSAlt",
    "methods": [
     "eat"
@@ -11355,8 +11355,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hos_parade.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_hos_parade.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHoSParadeMale",
    "methods": [
     "eat"
@@ -11367,8 +11367,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hosformaldress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_hosformaldress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHosFormal",
    "methods": [
     "eat"
@@ -11379,8 +11379,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_hydro.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_hydro.rsi_icon.png",
    "id": "ClothingUniformJumpskirtHydroponics",
    "methods": [
     "eat"
@@ -11391,8 +11391,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_janimaid.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_janimaid.rsi_icon.png",
    "id": "ClothingUniformJumpskirtJanimaid",
    "methods": [
     "eat"
@@ -11403,8 +11403,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_janimaidmini.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_janimaidmini.rsi_icon.png",
    "id": "ClothingUniformJumpskirtJanimaidmini",
    "methods": [
     "eat"
@@ -11415,8 +11415,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_janitor.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_janitor.rsi_icon.png",
    "id": "ClothingUniformJumpskirtJanitor",
    "methods": [
     "eat"
@@ -11427,8 +11427,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_lawyerblack.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_lawyerblack.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLawyerBlack",
    "methods": [
     "eat"
@@ -11439,8 +11439,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_lawyerblue.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_lawyerblue.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLawyerBlue",
    "methods": [
     "eat"
@@ -11451,8 +11451,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_lawyergood.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_lawyergood.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLawyerGood",
    "methods": [
     "eat"
@@ -11463,8 +11463,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_lawyerpurple.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_lawyerpurple.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLawyerPurple",
    "methods": [
     "eat"
@@ -11475,8 +11475,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_lawyerred.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_lawyerred.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLawyerRed",
    "methods": [
     "eat"
@@ -11487,8 +11487,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_librarian.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_librarian.rsi_icon.png",
    "id": "ClothingUniformJumpskirtLibrarian",
    "methods": [
     "eat"
@@ -11499,8 +11499,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_medical.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_medical.rsi_icon.png",
    "id": "ClothingUniformJumpskirtMedicalDoctor",
    "methods": [
     "eat"
@@ -11511,8 +11511,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_mime.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_mime.rsi_icon.png",
    "id": "ClothingUniformJumpskirtMime",
    "methods": [
     "eat"
@@ -11523,8 +11523,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_musician.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_musician.rsi_icon.png",
    "id": "ClothingUniformJumpskirtMusician",
    "methods": [
     "eat"
@@ -11535,8 +11535,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_skirtoflife.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Civilian_skirtoflife.rsi_icon.png",
    "id": "ClothingUniformJumpskirtOfLife",
    "methods": [
     "eat"
@@ -11547,8 +11547,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_olddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Civilian_olddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtOldDress",
    "methods": [
     "eat"
@@ -11559,8 +11559,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_operative_s.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_operative_s.rsi_icon.png",
    "id": "ClothingUniformJumpskirtOperative",
    "methods": [
     "eat"
@@ -11571,8 +11571,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_stripeddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_stripeddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtOrangeStripedDress",
    "methods": [
     "eat"
@@ -11583,8 +11583,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_paramedic.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_paramedic.rsi_icon.png",
    "id": "ClothingUniformJumpskirtParamedic",
    "methods": [
     "eat"
@@ -11595,8 +11595,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_performer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_performer.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPerformer",
    "methods": [
     "eat"
@@ -11607,8 +11607,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_stripeddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_stripeddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPinkStripedDress",
    "methods": [
     "eat"
@@ -11619,8 +11619,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPrisoner",
    "methods": [
     "eat"
@@ -11631,8 +11631,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_psychologist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/service.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Service_psychologist.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPsychologist",
    "methods": [
     "eat"
@@ -11643,8 +11643,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_elegantdress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_elegantdress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPurpleElegantDress",
    "methods": [
     "eat"
@@ -11655,8 +11655,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_turtledress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_turtledress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtPurpleTurtleneckDress",
    "methods": [
     "eat"
@@ -11667,8 +11667,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_qm.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Cargo_qm.rsi_icon.png",
    "id": "ClothingUniformJumpskirtQM",
    "methods": [
     "eat"
@@ -11679,8 +11679,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_qmturtleskirt.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Cargo_qmturtleskirt.rsi_icon.png",
    "id": "ClothingUniformJumpskirtQMTurtleneck",
    "methods": [
     "eat"
@@ -11691,8 +11691,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_elegantdress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_elegantdress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtRedElegantDress",
    "methods": [
     "eat"
@@ -11703,8 +11703,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_stripeddress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_stripeddress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtRedStripedDress",
    "methods": [
     "eat"
@@ -11715,8 +11715,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_turtledress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_turtledress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtRedTurtleneckDress",
    "methods": [
     "eat"
@@ -11727,8 +11727,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_rnd.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/science.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Science_rnd.rsi_icon.png",
    "id": "ClothingUniformJumpskirtResearchDirector",
    "methods": [
     "eat"
@@ -11739,8 +11739,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_roboticist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/science.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Science_roboticist.rsi_icon.png",
    "id": "ClothingUniformJumpskirtRoboticist",
    "methods": [
     "eat"
@@ -11751,8 +11751,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_scientist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/science.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Science_scientist.rsi_icon.png",
    "id": "ClothingUniformJumpskirtScientist",
    "methods": [
     "eat"
@@ -11763,8 +11763,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_security.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_security.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSec",
    "methods": [
     "eat"
@@ -11775,8 +11775,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_security_grey.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_security_grey.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSecGrey",
    "methods": [
     "eat"
@@ -11787,8 +11787,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_senior_engineer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Engineering_senior_engineer.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSeniorEngineer",
    "methods": [
     "eat"
@@ -11799,8 +11799,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_senior_officer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_senior_officer.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSeniorOfficer",
    "methods": [
     "eat"
@@ -11811,8 +11811,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_senior_physician.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_senior_physician.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSeniorPhysician",
    "methods": [
     "eat"
@@ -11823,8 +11823,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_senior_researcher.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/science.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Science_senior_researcher.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSeniorResearcher",
    "methods": [
     "eat"
@@ -11835,8 +11835,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_syndieformaldress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_syndieformaldress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtSyndieFormalDress",
    "methods": [
     "eat"
@@ -11847,8 +11847,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_tacticalmaid.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_tacticalmaid.rsi_icon.png",
    "id": "ClothingUniformJumpskirtTacticalMaid",
    "methods": [
     "eat"
@@ -11859,8 +11859,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_tacticool_s.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_tacticool_s.rsi_icon.png",
    "id": "ClothingUniformJumpskirtTacticool",
    "methods": [
     "eat"
@@ -11871,8 +11871,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_virology.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Medical_virology.rsi_icon.png",
    "id": "ClothingUniformJumpskirtVirology",
    "methods": [
     "eat"
@@ -11883,8 +11883,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_warden.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/security.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Security_warden.rsi_icon.png",
    "id": "ClothingUniformJumpskirtWarden",
    "methods": [
     "eat"
@@ -11895,8 +11895,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_web.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_web.rsi_icon.png",
    "id": "ClothingUniformJumpskirtWeb",
    "methods": [
     "eat"
@@ -11907,8 +11907,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_dresswestern.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_dresswestern.rsi_icon.png",
    "id": "ClothingUniformJumpskirtYellowOldDress",
    "methods": [
     "eat"
@@ -11919,8 +11919,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_dress.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_turtledress.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/color_dress.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_ColorDress_turtledress.rsi_icon.png",
    "id": "ClothingUniformJumpskirtYellowTurtleneckDress",
    "methods": [
     "eat"
@@ -11931,8 +11931,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ancient.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_ancient.rsi_icon.png",
    "id": "ClothingUniformJumpsuitAncient",
    "methods": [
     "eat"
@@ -11943,8 +11943,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_atmos.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_atmos.rsi_icon.png",
    "id": "ClothingUniformJumpsuitAtmos",
    "methods": [
     "eat"
@@ -11955,8 +11955,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_atmos_casual.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_atmos_casual.rsi_icon.png",
    "id": "ClothingUniformJumpsuitAtmosCasual",
    "methods": [
     "eat"
@@ -11967,8 +11967,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_bartender.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_bartender.rsi_icon.png",
    "id": "ClothingUniformJumpsuitBartender",
    "methods": [
     "eat"
@@ -11979,8 +11979,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_bartender_purple.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_bartender_purple.rsi_icon.png",
    "id": "ClothingUniformJumpsuitBartenderPurple",
    "methods": [
     "eat"
@@ -11991,8 +11991,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_brigmedic.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_brigmedic.rsi_icon.png",
    "id": "ClothingUniformJumpsuitBrigmedic",
    "methods": [
     "eat"
@@ -12003,8 +12003,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_cmo.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_cmo.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCMO",
    "methods": [
     "eat"
@@ -12015,8 +12015,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_cmo_turtle.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_cmo_turtle.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCMOTurtle",
    "methods": [
     "eat"
@@ -12027,8 +12027,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_capformal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/command.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Command_capformal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCapFormal",
    "methods": [
     "eat"
@@ -12039,8 +12039,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_captain.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/command.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Command_captain.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCaptain",
    "methods": [
     "eat"
@@ -12051,8 +12051,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_cargotech.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Cargo_cargotech.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCargo",
    "methods": [
     "eat"
@@ -12063,8 +12063,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpsuit.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpsuit.png",
    "id": "ClothingUniformJumpsuitCasualBlue",
    "methods": [
     "eat"
@@ -12075,8 +12075,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpsuit.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpsuit.png",
    "id": "ClothingUniformJumpsuitCasualGreen",
    "methods": [
     "eat"
@@ -12087,8 +12087,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpsuit.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpsuit.png",
    "id": "ClothingUniformJumpsuitCasualPurple",
    "methods": [
     "eat"
@@ -12099,8 +12099,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_casual.rsi_icon-jumpsuit.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_casual.rsi_icon-jumpsuit.png",
    "id": "ClothingUniformJumpsuitCasualRed",
    "methods": [
     "eat"
@@ -12111,8 +12111,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_centcom_agent.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_centcom_agent.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCentcomAgent",
    "methods": [
     "eat"
@@ -12123,8 +12123,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_centcomformal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_centcomformal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCentcomFormal",
    "methods": [
     "eat"
@@ -12135,8 +12135,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_centcom_officer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_centcom_officer.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCentcomOfficer",
    "methods": [
     "eat"
@@ -12147,8 +12147,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_centcom_official.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_centcom_official.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCentcomOfficial",
    "methods": [
     "eat"
@@ -12160,7 +12160,7 @@
   },
   {
    "file": "Resources/Prototypes/Entities/Clothing/Uniforms/specific.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChameleon",
    "methods": [
     "eat"
@@ -12171,8 +12171,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_chaplain.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_chaplain.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChaplain",
    "methods": [
     "eat"
@@ -12183,8 +12183,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_chef.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_chef.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChef",
    "methods": [
     "eat"
@@ -12195,8 +12195,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_chemistry.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_chemistry.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChemistry",
    "methods": [
     "eat"
@@ -12207,8 +12207,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ce.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_ce.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChiefEngineer",
    "methods": [
     "eat"
@@ -12219,8 +12219,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ce_syndie.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_ce_syndie.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChiefEngineerSyndie",
    "methods": [
     "eat"
@@ -12231,8 +12231,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ce_turtle.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_ce_turtle.rsi_icon.png",
    "id": "ClothingUniformJumpsuitChiefEngineerTurtle",
    "methods": [
     "eat"
@@ -12243,8 +12243,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_clown.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_clown.rsi_icon.png",
    "id": "ClothingUniformJumpsuitClown",
    "methods": [
     "eat"
@@ -12255,8 +12255,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_clown_banana.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_clown_banana.rsi_icon.png",
    "id": "ClothingUniformJumpsuitClownBanana",
    "methods": [
     "eat"
@@ -12267,8 +12267,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_cluwne.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_cluwne.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCluwne",
    "methods": [
     "eat"
@@ -12279,8 +12279,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorBlack",
    "methods": [
     "eat"
@@ -12291,8 +12291,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorBlue",
    "methods": [
     "eat"
@@ -12303,8 +12303,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorBrown",
    "methods": [
     "eat"
@@ -12315,8 +12315,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorDarkBlue",
    "methods": [
     "eat"
@@ -12327,8 +12327,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorDarkGreen",
    "methods": [
     "eat"
@@ -12339,8 +12339,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorGreen",
    "methods": [
     "eat"
@@ -12351,8 +12351,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorGrey",
    "methods": [
     "eat"
@@ -12363,8 +12363,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorLightBrown",
    "methods": [
     "eat"
@@ -12375,8 +12375,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorMaroon",
    "methods": [
     "eat"
@@ -12387,8 +12387,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorOrange",
    "methods": [
     "eat"
@@ -12399,8 +12399,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorPink",
    "methods": [
     "eat"
@@ -12411,8 +12411,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorPurple",
    "methods": [
     "eat"
@@ -12423,8 +12423,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorRed",
    "methods": [
     "eat"
@@ -12435,8 +12435,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorTeal",
    "methods": [
     "eat"
@@ -12447,8 +12447,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorWhite",
    "methods": [
     "eat"
@@ -12459,8 +12459,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/color_jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/color.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitColorYellow",
    "methods": [
     "eat"
@@ -12471,8 +12471,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_commandgeneric.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/command.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Command_commandgeneric.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCommandGeneric",
    "methods": [
     "eat"
@@ -12483,8 +12483,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_cossack.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_cossack.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCossack",
    "methods": [
     "eat"
@@ -12495,8 +12495,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_curator.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_curator.rsi_icon.png",
    "id": "ClothingUniformJumpsuitCurator",
    "methods": [
     "eat"
@@ -12507,8 +12507,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_damedaneoutfit.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_damedaneoutfit.rsi_icon.png",
    "id": "ClothingUniformJumpsuitDameDane",
    "methods": [
     "eat"
@@ -12519,8 +12519,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_deathsquad.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_deathsquad.rsi_icon.png",
    "id": "ClothingUniformJumpsuitDeathSquad",
    "methods": [
     "eat"
@@ -12531,8 +12531,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_detective.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_detective.rsi_icon.png",
    "id": "ClothingUniformJumpsuitDetective",
    "methods": [
     "eat"
@@ -12543,8 +12543,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_detective_grey.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_detective_grey.rsi_icon.png",
    "id": "ClothingUniformJumpsuitDetectiveGrey",
    "methods": [
     "eat"
@@ -12555,8 +12555,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_chaplain.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_chaplain.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTChaplain",
    "methods": [
     "eat"
@@ -12567,8 +12567,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_engineer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_engineer.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTEngineer",
    "methods": [
     "eat"
@@ -12579,8 +12579,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_janitor.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_janitor.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTJanitor",
    "methods": [
     "eat"
@@ -12591,8 +12591,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_leader.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_leader.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTLeader",
    "methods": [
     "eat"
@@ -12603,8 +12603,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_medic.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_medic.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTMedic",
    "methods": [
     "eat"
@@ -12615,8 +12615,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ert_security.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/centcomm.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Centcomm_ert_security.rsi_icon.png",
    "id": "ClothingUniformJumpsuitERTSecurity",
    "methods": [
     "eat"
@@ -12627,8 +12627,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_engineering.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_engineering.rsi_icon.png",
    "id": "ClothingUniformJumpsuitEngineering",
    "methods": [
     "eat"
@@ -12639,8 +12639,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_engineering_hazard.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_engineering_hazard.rsi_icon.png",
    "id": "ClothingUniformJumpsuitEngineeringHazard",
    "methods": [
     "eat"
@@ -12651,8 +12651,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_familiar_garbs.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_familiar_garbs.rsi_icon.png",
    "id": "ClothingUniformJumpsuitFamilyGuy",
    "methods": [
     "eat"
@@ -12663,8 +12663,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_flannel.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_flannel.rsi_icon.png",
    "id": "ClothingUniformJumpsuitFlannel",
    "methods": [
     "eat"
@@ -12675,8 +12675,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_genetics.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_genetics.rsi_icon.png",
    "id": "ClothingUniformJumpsuitGenetics",
    "methods": [
     "eat"
@@ -12687,8 +12687,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_gladiator.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_gladiator.rsi_icon.png",
    "id": "ClothingUniformJumpsuitGladiator",
    "methods": [
     "eat"
@@ -12699,8 +12699,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hawaiblack.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_hawaiblack.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHawaiBlack",
    "methods": [
     "eat"
@@ -12711,8 +12711,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hawaiblue.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_hawaiblue.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHawaiBlue",
    "methods": [
     "eat"
@@ -12723,8 +12723,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hawaired.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_hawaired.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHawaiRed",
    "methods": [
     "eat"
@@ -12735,8 +12735,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hawaiyellow.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_hawaiyellow.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHawaiYellow",
    "methods": [
     "eat"
@@ -12747,8 +12747,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hop.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/command.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Command_hop.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoP",
    "methods": [
     "eat"
@@ -12759,8 +12759,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hos.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hos.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoS",
    "methods": [
     "eat"
@@ -12771,8 +12771,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hos_alt.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hos_alt.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoSAlt",
    "methods": [
     "eat"
@@ -12783,8 +12783,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hos_blue.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hos_blue.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoSBlue",
    "methods": [
     "eat"
@@ -12795,8 +12795,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hos_grey.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hos_grey.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoSGrey",
    "methods": [
     "eat"
@@ -12807,8 +12807,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hos_parade.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hos_parade.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHoSParadeMale",
    "methods": [
     "eat"
@@ -12819,8 +12819,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hosformal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_hosformal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHosFormal",
    "methods": [
     "eat"
@@ -12831,8 +12831,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_hydro.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_hydro.rsi_icon.png",
    "id": "ClothingUniformJumpsuitHydroponics",
    "methods": [
     "eat"
@@ -12843,8 +12843,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_punpun.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_punpun.rsi_icon.png",
    "id": "ClothingUniformJumpsuitJacketMonkey",
    "methods": [
     "eat"
@@ -12855,8 +12855,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_janitor.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_janitor.rsi_icon.png",
    "id": "ClothingUniformJumpsuitJanitor",
    "methods": [
     "eat"
@@ -12867,8 +12867,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_jester.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_jester.rsi_icon.png",
    "id": "ClothingUniformJumpsuitJester",
    "methods": [
     "eat"
@@ -12879,8 +12879,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_jester2.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_jester2.rsi_icon.png",
    "id": "ClothingUniformJumpsuitJesterAlt",
    "methods": [
     "eat"
@@ -12891,8 +12891,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_journalist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_journalist.rsi_icon.png",
    "id": "ClothingUniformJumpsuitJournalist",
    "methods": [
     "eat"
@@ -12903,8 +12903,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_kimono.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_kimono.rsi_icon.png",
    "id": "ClothingUniformJumpsuitKimono",
    "methods": [
     "eat"
@@ -12915,8 +12915,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_lawyerblack.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_lawyerblack.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLawyerBlack",
    "methods": [
     "eat"
@@ -12927,8 +12927,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_lawyerblue.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_lawyerblue.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLawyerBlue",
    "methods": [
     "eat"
@@ -12939,8 +12939,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_lawyergood.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_lawyergood.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLawyerGood",
    "methods": [
     "eat"
@@ -12951,8 +12951,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_lawyerpurple.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_lawyerpurple.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLawyerPurple",
    "methods": [
     "eat"
@@ -12963,8 +12963,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_lawyerred.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_lawyerred.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLawyerRed",
    "methods": [
     "eat"
@@ -12975,8 +12975,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_librarian.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_librarian.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLibrarian",
    "methods": [
     "eat"
@@ -12987,8 +12987,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_loungewear.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/civilian.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Civilian_loungewear.rsi_icon.png",
    "id": "ClothingUniformJumpsuitLoungewear",
    "methods": [
     "eat"
@@ -12999,8 +12999,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_medical.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_medical.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMedicalDoctor",
    "methods": [
     "eat"
@@ -13011,8 +13011,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_mercenary.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_mercenary.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMercenary",
    "methods": [
     "eat"
@@ -13023,8 +13023,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_mime.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_mime.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMime",
    "methods": [
     "eat"
@@ -13035,8 +13035,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_monastic_robe_dark.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_monastic_robe_dark.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMonasticRobeDark",
    "methods": [
     "eat"
@@ -13047,8 +13047,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_monastic_robe_light.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_monastic_robe_light.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMonasticRobeLight",
    "methods": [
     "eat"
@@ -13059,8 +13059,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_musician.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_musician.rsi_icon.png",
    "id": "ClothingUniformJumpsuitMusician",
    "methods": [
     "eat"
@@ -13071,8 +13071,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_nanotrasen.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/command.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Command_nanotrasen.rsi_icon.png",
    "id": "ClothingUniformJumpsuitNanotrasen",
    "methods": [
     "eat"
@@ -13083,8 +13083,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_ninja.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_ninja.rsi_icon.png",
    "id": "ClothingUniformJumpsuitNinja",
    "methods": [
     "eat"
@@ -13095,8 +13095,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_operative.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_operative.rsi_icon.png",
    "id": "ClothingUniformJumpsuitOperative",
    "methods": [
     "eat"
@@ -13107,8 +13107,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_paramedic.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_paramedic.rsi_icon.png",
    "id": "ClothingUniformJumpsuitParamedic",
    "methods": [
     "eat"
@@ -13119,8 +13119,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_paramedic_syndie.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_paramedic_syndie.rsi_icon.png",
    "id": "ClothingUniformJumpsuitParamedicSyndie",
    "methods": [
     "eat"
@@ -13131,8 +13131,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_pirate.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_pirate.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPirate",
    "methods": [
     "eat"
@@ -13143,8 +13143,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_color.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Color_color.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPrisoner",
    "methods": [
     "eat"
@@ -13155,8 +13155,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_psychologist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_psychologist.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPsychologist",
    "methods": [
     "eat"
@@ -13167,8 +13167,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_pyjamasyndicateblack.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_pyjamasyndicateblack.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPyjamaSyndicateBlack",
    "methods": [
     "eat"
@@ -13179,8 +13179,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_pyjamasyndicatepink.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_pyjamasyndicatepink.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPyjamaSyndicatePink",
    "methods": [
     "eat"
@@ -13191,8 +13191,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_pyjamasyndicatered.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_pyjamasyndicatered.rsi_icon.png",
    "id": "ClothingUniformJumpsuitPyjamaSyndicateRed",
    "methods": [
     "eat"
@@ -13203,8 +13203,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_qm.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Cargo_qm.rsi_icon.png",
    "id": "ClothingUniformJumpsuitQM",
    "methods": [
     "eat"
@@ -13215,8 +13215,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_qmformal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Cargo_qmformal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitQMFormal",
    "methods": [
     "eat"
@@ -13227,8 +13227,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_qmturtle.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Cargo_qmturtle.rsi_icon.png",
    "id": "ClothingUniformJumpsuitQMTurtleneck",
    "methods": [
     "eat"
@@ -13239,8 +13239,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_recruit_nt.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_recruit_nt.rsi_icon.png",
    "id": "ClothingUniformJumpsuitRecruitNT",
    "methods": [
     "eat"
@@ -13251,8 +13251,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_recruit_syndie.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_recruit_syndie.rsi_icon.png",
    "id": "ClothingUniformJumpsuitRecruitSyndie",
    "methods": [
     "eat"
@@ -13263,8 +13263,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_repairman_nt.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_repairman_nt.rsi_icon.png",
    "id": "ClothingUniformJumpsuitRepairmanNT",
    "methods": [
     "eat"
@@ -13275,8 +13275,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/ship_vs_ship.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_repairman_syndie.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/ship_vs_ship.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_ShipVsShip_repairman_syndie.rsi_icon.png",
    "id": "ClothingUniformJumpsuitRepairmanSyndie",
    "methods": [
     "eat"
@@ -13287,8 +13287,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_reporter.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_reporter.rsi_icon.png",
    "id": "ClothingUniformJumpsuitReporter",
    "methods": [
     "eat"
@@ -13299,8 +13299,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_rnd.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/science.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Science_rnd.rsi_icon.png",
    "id": "ClothingUniformJumpsuitResearchDirector",
    "methods": [
     "eat"
@@ -13311,8 +13311,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_roboticist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/science.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Science_roboticist.rsi_icon.png",
    "id": "ClothingUniformJumpsuitRoboticist",
    "methods": [
     "eat"
@@ -13323,8 +13323,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_safari.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_safari.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSafari",
    "methods": [
     "eat"
@@ -13335,8 +13335,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_salvage.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/cargo.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Cargo_salvage.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSalvageSpecialist",
    "methods": [
     "eat"
@@ -13347,8 +13347,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_scientist.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/science.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Science_scientist.rsi_icon.png",
    "id": "ClothingUniformJumpsuitScientist",
    "methods": [
     "eat"
@@ -13359,8 +13359,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_scientist_formal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/science.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Science_scientist_formal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitScientistFormal",
    "methods": [
     "eat"
@@ -13371,8 +13371,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_security.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_security.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSec",
    "methods": [
     "eat"
@@ -13383,8 +13383,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_security_blue.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_security_blue.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSecBlue",
    "methods": [
     "eat"
@@ -13395,8 +13395,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_security_grey.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_security_grey.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSecGrey",
    "methods": [
     "eat"
@@ -13407,8 +13407,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_senior_engineer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/engineering.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Engineering_senior_engineer.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSeniorEngineer",
    "methods": [
     "eat"
@@ -13419,8 +13419,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_senior_officer.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_senior_officer.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSeniorOfficer",
    "methods": [
     "eat"
@@ -13431,8 +13431,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_senior_physician.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_senior_physician.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSeniorPhysician",
    "methods": [
     "eat"
@@ -13443,8 +13443,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_senior_researcher.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/science.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Science_senior_researcher.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSeniorResearcher",
    "methods": [
     "eat"
@@ -13455,8 +13455,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_syndieformal.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_syndieformal.rsi_icon.png",
    "id": "ClothingUniformJumpsuitSyndieFormal",
    "methods": [
     "eat"
@@ -13467,8 +13467,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_tacticool.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_tacticool.rsi_icon.png",
    "id": "ClothingUniformJumpsuitTacticool",
    "methods": [
     "eat"
@@ -13479,8 +13479,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_tramdriver.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_tramdriver.rsi_icon.png",
    "id": "ClothingUniformJumpsuitTramDriver",
    "methods": [
     "eat"
@@ -13491,8 +13491,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_virology.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/medical.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Medical_virology.rsi_icon.png",
    "id": "ClothingUniformJumpsuitVirology",
    "methods": [
     "eat"
@@ -13503,8 +13503,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_warden.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_warden.rsi_icon.png",
    "id": "ClothingUniformJumpsuitWarden",
    "methods": [
     "eat"
@@ -13515,8 +13515,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_web.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_web.rsi_icon.png",
    "id": "ClothingUniformJumpsuitWeb",
    "methods": [
     "eat"
@@ -13527,8 +13527,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_overalls.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/service.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Service_overalls.rsi_icon.png",
    "id": "ClothingUniformOveralls",
    "methods": [
     "eat"
@@ -13599,8 +13599,8 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_security_trooper.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/security.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Security_security_trooper.rsi_icon.png",
    "id": "ClothingUniformSecurityTrooper",
    "methods": [
     "eat"
@@ -16216,20 +16216,6 @@
   },
   {
    "file": "Resources/Prototypes/Entities/Objects/Consumable/Drinks/drinks_metamorphic.yml",
-   "icon": "Objects_Consumable_Drinks_neurotoxinglass.rsi_icon.png",
-   "id": "DrinkNeurotoxinGlass",
-   "methods": [
-    "eat",
-    "pour",
-    "syringe"
-   ],
-   "name": "metamorphic glass",
-   "reagents": {
-    "Neurotoxin": 30.0
-   }
-  },
-  {
-   "file": "Resources/Prototypes/Entities/Objects/Consumable/Drinks/drinks_metamorphic.yml",
    "icon": "Objects_Consumable_Drinks_nothing.rsi_icon.png",
    "id": "DrinkNothing",
    "methods": [
@@ -17525,7 +17511,7 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/projectiles.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Energy/stun.yml",
    "icon": "Objects_Weapons_Guns_Projectiles_projectiles2.rsi_crossbowbolt.png",
    "id": "EnergyCrossbowBolt",
    "methods": [],
@@ -27448,7 +27434,7 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/meteors.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/meteors.yml",
    "icon": "Objects_Misc_meteor.rsi_clown_pixel.png",
    "id": "MeteorClown",
    "methods": [],
@@ -27458,7 +27444,7 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/meteors.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/meteors.yml",
    "icon": "Objects_Misc_meteor.rsi_cow_pixel.png",
    "id": "MeteorCow",
    "methods": [],
@@ -27468,7 +27454,7 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/meteors.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/meteors.yml",
    "icon": "Objects_Misc_meteor.rsi_potato.png",
    "id": "MeteorPotato",
    "methods": [],
@@ -27478,7 +27464,7 @@
    }
   },
   {
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/meteors.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/meteors.yml",
    "icon": "Objects_Misc_meteor.rsi_human_pixel.png",
    "id": "MeteorUrist",
    "methods": [],
@@ -33719,6 +33705,7 @@
    "icon": "Structures_Furniture_sink.rsi_sink_stem.png",
    "id": "Sink",
    "methods": [
+    "eat",
     "pour"
    ],
    "name": "sink",
@@ -33731,6 +33718,7 @@
    "icon": "Structures_Furniture_sink.rsi_sink.png",
    "id": "SinkStemlessWater",
    "methods": [
+    "eat",
     "pour"
    ],
    "name": "sink",
@@ -33743,6 +33731,7 @@
    "icon": "Structures_Furniture_sink.rsi_sink_wide.png",
    "id": "SinkWide",
    "methods": [
+    "eat",
     "pour"
    ],
    "name": "wide sink",
@@ -35263,7 +35252,7 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
    "desc": "The greyshirt's preferred projectile.",
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/arrows.yml",
    "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
    "id": "ArrowImprovised",
    "name": "glass shard arrow",
@@ -35291,7 +35280,7 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
    "desc": "The salvager's preferred arrow. Kill your enemies with the teeth of their families.",
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/arrows.yml",
    "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
    "id": "ArrowImprovisedCarp",
    "name": "carp tooth arrow",
@@ -35319,7 +35308,7 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
    "desc": "The greyshirt's preferred projectile. Now with extra lethality!",
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/arrows.yml",
    "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
    "id": "ArrowImprovisedPlasma",
    "name": "plasma glass shard arrow",
@@ -35347,7 +35336,7 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Construction/Graphs/weapons/improvised_arrow.yml",
    "desc": "The greyshirt's preferred projectile. Now with added radiation!",
-   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/arrows.yml",
+   "file": "Resources/Prototypes/Entities/Objects/Weapons/Guns/Projectiles/Misc/arrows.yml",
    "icon": "Objects_Weapons_Guns_Projectiles_arrows.rsi_tail.png",
    "id": "ArrowImprovisedUranium",
    "name": "uranium glass shard arrow",
@@ -35475,8 +35464,7 @@
    "icon": "Objects_Weapons_Melee_baseball_bat.rsi_icon.png",
    "id": "BaseBallBat",
    "melee": {
-    "Blunt": 10.0,
-    "Structural": 5.0
+    "Blunt": 10.0
    },
    "name": "baseball bat"
   },
@@ -35903,7 +35891,7 @@
      "amount": 1,
      "defaultPrototype": "Beaker"
     },
-    "Steel": 5
+    "Plastic": 5
    },
    "desc": "A machine printed circuit board for a booze dispenser.",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -36115,7 +36103,7 @@
      "defaultPrototype": "Beaker"
     },
     "Manipulator": 1,
-    "Steel": 3
+    "Plastic": 3
    },
    "desc": "A machine printed circuit board for a chem dispenser.",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -36618,8 +36606,8 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Crafting/Graphs/web.yml",
    "desc": "Makes it clear that you are one with the webs.",
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpskirts.yml",
-   "icon": "Clothing_Uniforms_Jumpskirt_web.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpskirts/special.yml",
+   "icon": "Clothing_Uniforms_Jumpskirts_Special_web.rsi_icon.png",
    "id": "ClothingUniformJumpskirtWeb",
    "methods": [
     "eat"
@@ -36639,8 +36627,8 @@
    ],
    "craftFile": "Resources/Prototypes/Recipes/Crafting/Graphs/web.yml",
    "desc": "Makes it clear that you are one with the webs.",
-   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/jumpsuits.yml",
-   "icon": "Clothing_Uniforms_Jumpsuit_web.rsi_icon.png",
+   "file": "Resources/Prototypes/Entities/Clothing/Uniforms/Jumpsuits/special.yml",
+   "icon": "Clothing_Uniforms_Jumpsuits_Special_web.rsi_icon.png",
    "id": "ClothingUniformJumpsuitWeb",
    "methods": [
     "eat"
@@ -36771,7 +36759,7 @@
     {
      "amount": 5,
      "kind": "material",
-     "name": "Steel"
+     "name": "Plasteel"
     },
     {
      "amount": 2,
@@ -37061,7 +37049,8 @@
    "boardReqs": {
     "CableHV": 5,
     "Glass": 2,
-    "Manipulator": 2
+    "Manipulator": 2,
+    "Plasteel": 2
    },
    "desc": "",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -38171,7 +38160,7 @@
     {
      "amount": 4,
      "kind": "material",
-     "name": "Steel"
+     "name": "Plasteel"
     },
     {
      "amount": 2,
@@ -38196,7 +38185,7 @@
     {
      "amount": 4,
      "kind": "material",
-     "name": "Steel"
+     "name": "Plasteel"
     },
     {
      "amount": 2,
@@ -38377,7 +38366,7 @@
    "boardFor": "CargoMailTeleporter",
    "boardReqs": {
     "Manipulator": 2,
-    "Steel": 5
+    "Plasteel": 5
    },
    "desc": "A machine printed circuit board for a mail teleporter.",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -39346,7 +39335,7 @@
    "boardReqs": {
     "Cable": 10,
     "Manipulator": 4,
-    "Steel": 5
+    "Plasteel": 5
    },
    "desc": "A machine printed circuit board for a energy cage recharger.",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -40183,7 +40172,7 @@
      "amount": 1,
      "defaultPrototype": "Beaker"
     },
-    "Steel": 5
+    "Plastic": 5
    },
    "desc": "A machine printed circuit board for a soda dispenser.",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -40317,7 +40306,7 @@
     "CableHV": 8,
     "Glass": 5,
     "Manipulator": 7,
-    "Steel": 10,
+    "Plasteel": 10,
     "Uranium": 2
    },
    "desc": "A machine printed circuit board for a station anchor.",
@@ -40705,7 +40694,7 @@
    "boardFor": "Thruster",
    "boardReqs": {
     "Manipulator": 4,
-    "Steel": 5
+    "Plasteel": 5
    },
    "desc": "",
    "file": "Resources/Prototypes/Entities/Objects/Devices/Circuitboards/Machine/production.yml",
@@ -41065,6 +41054,17 @@
   }
  },
  "mats": {
+  "Bananium": {
+   "from": [
+    {
+     "id": "AltarBananium",
+     "n": 3,
+     "name": "honkmother altar"
+    }
+   ],
+   "name": "bananium",
+   "total": 1
+  },
   "BananiumOre": {
    "from": [
     {
@@ -41090,13 +41090,38 @@
   "Brass": {
    "from": [
     {
+     "id": "ChurchOrganInstrument",
+     "n": 4,
+     "name": "church organ"
+    },
+    {
+     "id": "TubaInstrument",
+     "n": 4,
+     "name": "tuba"
+    },
+    {
+     "id": "ChurchBell",
+     "n": 2,
+     "name": "church bell"
+    },
+    {
+     "id": "BoxingBell",
+     "n": 2,
+     "name": "boxing bell"
+    },
+    {
      "id": "TableBrass",
      "n": 1,
      "name": "brass table"
+    },
+    {
+     "id": "ChairBrass",
+     "n": 1,
+     "name": "brass chair"
     }
    ],
    "name": "brass",
-   "total": 1
+   "total": 6
   },
   "Cable": {
    "from": [
@@ -41106,13 +41131,23 @@
      "name": "desk buzzer"
     },
     {
+     "id": "MachineFrame",
+     "n": 1,
+     "name": "machine frame"
+    },
+    {
      "id": "CableApcExtension",
      "n": 1,
      "name": "LV power cable"
+    },
+    {
+     "id": "StationMapBroken",
+     "n": 1,
+     "name": "station map"
     }
    ],
    "name": "cable",
-   "total": 2
+   "total": 4
   },
   "CableDet": {
    "from": [
@@ -41165,23 +41200,33 @@
      "name": "cardboard table"
     },
     {
-     "id": "CardStool",
+     "id": "StealthBox",
      "n": 2,
-     "name": "cardboard stool"
+     "name": "cardboard box"
     },
     {
-     "id": "Cardwall",
+     "id": "GhostBox",
      "n": 2,
-     "name": "cardboard wall"
+     "name": "ghost box"
     },
     {
      "id": "CarpetCard",
      "n": 1,
      "name": "cardboard \"carpet\""
+    },
+    {
+     "id": "CardStool",
+     "n": 1,
+     "name": "cardboard stool"
+    },
+    {
+     "id": "Cardwall",
+     "n": 1,
+     "name": "cardboard wall"
     }
    ],
    "name": "cardboard",
-   "total": 6
+   "total": 8
   },
   "Cloth": {
    "from": [
@@ -41257,7 +41302,7 @@
     }
    ],
    "name": "cloth",
-   "total": 19
+   "total": 20
   },
   "Coal": {
    "from": [
@@ -41273,16 +41318,26 @@
   "FloorCarpetBlack": {
    "from": [
     {
+     "id": "TableFancyBlack",
+     "n": 1,
+     "name": "fancy table"
+    },
+    {
      "id": "CarpetBlack",
      "n": 1,
      "name": "carpet"
     }
    ],
    "name": "black carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetBlue": {
    "from": [
+    {
+     "id": "TableFancyBlue",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetBlue",
      "n": 1,
@@ -41290,10 +41345,15 @@
     }
    ],
    "name": "blue carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetCyan": {
    "from": [
+    {
+     "id": "TableFancyCyan",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetCyan",
      "n": 1,
@@ -41301,10 +41361,15 @@
     }
    ],
    "name": "cyan carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetGreen": {
    "from": [
+    {
+     "id": "TableFancyGreen",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetGreen",
      "n": 1,
@@ -41312,10 +41377,15 @@
     }
    ],
    "name": "green carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetOrange": {
    "from": [
+    {
+     "id": "TableFancyOrange",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetOrange",
      "n": 1,
@@ -41323,10 +41393,15 @@
     }
    ],
    "name": "orange carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetPink": {
    "from": [
+    {
+     "id": "TableFancyPink",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetPink",
      "n": 1,
@@ -41334,10 +41409,15 @@
     }
    ],
    "name": "pink carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetPurple": {
    "from": [
+    {
+     "id": "TableFancyPurple",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetPurple",
      "n": 1,
@@ -41345,10 +41425,15 @@
     }
    ],
    "name": "purple carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetRed": {
    "from": [
+    {
+     "id": "TableFancyRed",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "Carpet",
      "n": 1,
@@ -41356,10 +41441,15 @@
     }
    ],
    "name": "red carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetSkyBlue": {
    "from": [
+    {
+     "id": "TableFancySkyBlue",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetSBlue",
      "n": 1,
@@ -41367,10 +41457,15 @@
     }
    ],
    "name": "skyblue carpet tile",
-   "total": 1
+   "total": 2
   },
   "FloorCarpetWhite": {
    "from": [
+    {
+     "id": "TableFancyWhite",
+     "n": 1,
+     "name": "fancy table"
+    },
     {
      "id": "CarpetWhite",
      "n": 1,
@@ -41378,7 +41473,7 @@
     }
    ],
    "name": "white carpet tile",
-   "total": 1
+   "total": 2
   },
   "Glass": {
    "from": [
@@ -41432,10 +41527,15 @@
      "id": "DrinkGoldenCup",
      "n": 1,
      "name": "golden cup"
+    },
+    {
+     "id": "WallGold",
+     "n": 1,
+     "name": "gold wall"
     }
    ],
    "name": "gold",
-   "total": 3
+   "total": 4
   },
   "GoldOre": {
    "from": [
@@ -41447,6 +41547,27 @@
    ],
    "name": "gold ore",
    "total": 1
+  },
+  "MeatSheets": {
+   "from": [
+    {
+     "id": "FleshBlocker",
+     "n": 1,
+     "name": "flesh clump"
+    },
+    {
+     "id": "ChairMeat",
+     "n": 1,
+     "name": "meat chair"
+    },
+    {
+     "id": "WallMeat",
+     "n": 1,
+     "name": "meat wall"
+    }
+   ],
+   "name": "meat sheets",
+   "total": 3
   },
   "MetalRod": {
    "from": [
@@ -41469,6 +41590,21 @@
      "id": "ShowcaseRobotMarauder",
      "n": 10,
      "name": "marauder showcase"
+    },
+    {
+     "id": "VibraphoneInstrument",
+     "n": 4,
+     "name": "vibraphone"
+    },
+    {
+     "id": "TomDrumsInstrument",
+     "n": 4,
+     "name": "tom drums"
+    },
+    {
+     "id": "BigDrumsInstrument",
+     "n": 4,
+     "name": "drum kit"
     },
     {
      "id": "ShelfRMetal",
@@ -41496,11 +41632,6 @@
      "name": "chain link fence gate"
     },
     {
-     "id": "RailingCorner",
-     "n": 2,
-     "name": "railing"
-    },
-    {
      "id": "PlastitaniumWindow",
      "n": 2,
      "name": "plastitanium window"
@@ -41509,20 +41640,10 @@
      "id": "ReinforcedPlasmaWindow",
      "n": 2,
      "name": "reinforced plasma window"
-    },
-    {
-     "id": "ReinforcedUraniumWindow",
-     "n": 2,
-     "name": "reinforced uranium window"
-    },
-    {
-     "id": "UraniumReinforcedWindowDirectional",
-     "n": 2,
-     "name": "directional reinforced uranium window"
     }
    ],
    "name": "metal rod",
-   "total": 30
+   "total": 37
   },
   "Paper": {
    "from": [
@@ -41541,16 +41662,26 @@
      "id": "PlasmaDoor",
      "n": 5,
      "name": "plasma door"
+    },
+    {
+     "id": "ResearchAndDevelopmentServer",
+     "n": 3,
+     "name": "R&D server"
+    },
+    {
+     "id": "WallPlasma",
+     "n": 1,
+     "name": "plasma wall"
     }
    ],
    "name": "plasma",
-   "total": 1
+   "total": 3
   },
   "PlasmaGlass": {
    "from": [
     {
      "id": "WindoorAssemblyPlasma",
-     "n": 3,
+     "n": 2,
      "name": "plasma windoor assembly"
     }
    ],
@@ -41560,24 +41691,24 @@
   "Plasteel": {
    "from": [
     {
+     "id": "DeployableBarrier",
+     "n": 5,
+     "name": "deployable barrier"
+    },
+    {
+     "id": "BaseResearchAndDevelopmentPointSource",
+     "n": 5,
+     "name": "base R&D point source"
+    },
+    {
      "id": "PlayerStationAiAssembly",
      "n": 4,
      "name": "AI core assembly"
     },
     {
-     "id": "WindoorAssemblySecure",
+     "id": "AmeController",
      "n": 3,
-     "name": "secure windoor assembly"
-    },
-    {
-     "id": "WindoorAssemblySecurePlasma",
-     "n": 3,
-     "name": "secure plasma windoor assembly"
-    },
-    {
-     "id": "WindoorAssemblySecureUranium",
-     "n": 3,
-     "name": "secure uranium windoor assembly"
+     "name": "AME controller"
     },
     {
      "id": "ShelfRMetal",
@@ -41585,24 +41716,24 @@
      "name": "sturdy metal shelf"
     },
     {
+     "id": "SuitStorageEVA",
+     "n": 2,
+     "name": "suit storage unit"
+    },
+    {
      "id": "PlayerStationAiEmpty",
      "n": 2,
      "name": "AI core"
     },
     {
-     "id": "WindoorSecure",
+     "id": "HighSecCentralCommandLocked",
      "n": 2,
-     "name": "secure windoor"
+     "name": "high security door"
     },
     {
-     "id": "WindoorSecurePlasma",
+     "id": "AmeShielding",
      "n": 2,
-     "name": "secure plasma windoor"
-    },
-    {
-     "id": "WindoorSecureUranium",
-     "n": 2,
-     "name": "secure uranium windoor"
+     "name": "AME shielding"
     },
     {
      "id": "GasCanisterBrokenBase",
@@ -41620,18 +41751,18 @@
      "name": "chemical shelf"
     },
     {
+     "id": "ReinforcedGirder",
+     "n": 2,
+     "name": "reinforced girder"
+    },
+    {
      "id": "TableReinforced",
      "n": 1,
      "name": "reinforced table"
-    },
-    {
-     "id": "ReinforcedGirder",
-     "n": 1,
-     "name": "reinforced girder"
     }
    ],
    "name": "plasteel",
-   "total": 14
+   "total": 18
   },
   "Plastic": {
    "from": [
@@ -41641,9 +41772,44 @@
      "name": "sturdy glass shelf"
     },
     {
+     "id": "PlasticFlapsClear",
+     "n": 3,
+     "name": "plastic flaps"
+    },
+    {
+     "id": "PlasticFlapsAirtightClear",
+     "n": 3,
+     "name": "airtight plastic flaps"
+    },
+    {
      "id": "CrateNPCHamster",
      "n": 2,
      "name": "hamster cage"
+    },
+    {
+     "id": "FoodCartHot",
+     "n": 2,
+     "name": "hot food cart"
+    },
+    {
+     "id": "FoodCartCold",
+     "n": 2,
+     "name": "cold food cart"
+    },
+    {
+     "id": "MailCart",
+     "n": 2,
+     "name": "mail cart"
+    },
+    {
+     "id": "MopBucket",
+     "n": 2,
+     "name": "mop bucket"
+    },
+    {
+     "id": "JanitorialTrolley",
+     "n": 2,
+     "name": "janitorial trolley"
     },
     {
      "id": "ShelfChemistry",
@@ -41664,32 +41830,15 @@
      "id": "BorgBucket",
      "n": 1,
      "name": "internal tank"
+    },
+    {
+     "id": "ChairFolding",
+     "n": 1,
+     "name": "folding chair"
     }
    ],
    "name": "plastic",
-   "total": 6
-  },
-  "ReinforcedPlasmaGlass": {
-   "from": [
-    {
-     "id": "WindoorAssemblySecurePlasma",
-     "n": 3,
-     "name": "secure plasma windoor assembly"
-    }
-   ],
-   "name": "reinforced plasma glass",
-   "total": 1
-  },
-  "ReinforcedUraniumGlass": {
-   "from": [
-    {
-     "id": "WindoorAssemblySecureUranium",
-     "n": 3,
-     "name": "secure uranium windoor assembly"
-    }
-   ],
-   "name": "reinforced uranium glass",
-   "total": 1
+   "total": 18
   },
   "Silver": {
    "from": [
@@ -41697,10 +41846,15 @@
      "id": "SilverDoor",
      "n": 5,
      "name": "silver door"
+    },
+    {
+     "id": "WallSilver",
+     "n": 1,
+     "name": "silver wall"
     }
    ],
    "name": "silver",
-   "total": 1
+   "total": 2
   },
   "SilverOre": {
    "from": [
@@ -41727,9 +41881,9 @@
   "Steel": {
    "from": [
     {
-     "id": "DeployableBarrier",
-     "n": 5,
-     "name": "deployable barrier"
+     "id": "KitchenSpike",
+     "n": 6,
+     "name": "meat spike"
     },
     {
      "id": "TargetHuman",
@@ -41752,34 +41906,9 @@
      "name": "ballistic turret"
     },
     {
-     "id": "AltarNanotrasen",
-     "n": 5,
-     "name": "nanotrasen altar"
-    },
-    {
      "id": "AltarChaos",
      "n": 5,
      "name": "chaos altar"
-    },
-    {
-     "id": "AltarDruid",
-     "n": 5,
-     "name": "druid altar"
-    },
-    {
-     "id": "AltarToolbox",
-     "n": 5,
-     "name": "toolbox altar"
-    },
-    {
-     "id": "AltarSpaceChristian",
-     "n": 5,
-     "name": "space-Christian altar"
-    },
-    {
-     "id": "AltarSatana",
-     "n": 5,
-     "name": "satanic altar"
     },
     {
      "id": "AltarTechnology",
@@ -41795,6 +41924,31 @@
      "id": "AltarFangs",
      "n": 5,
      "name": "fanged altar"
+    },
+    {
+     "id": "Emitter",
+     "n": 5,
+     "name": "emitter"
+    },
+    {
+     "id": "GeneratorRTGDamaged",
+     "n": 5,
+     "name": "damaged RTG"
+    },
+    {
+     "id": "BarrelChemEmpty",
+     "n": 5,
+     "name": "chemical barrel"
+    },
+    {
+     "id": "BaseBarrelChemRadioactiveEmpty",
+     "n": 5,
+     "name": "radioactive barrel"
+    },
+    {
+     "id": "WeaponTurretSyndicateBroken",
+     "n": 4,
+     "name": "ballistic turret (broken)"
     }
    ],
    "name": "steel",
@@ -41827,16 +41981,21 @@
      "id": "GeneratorRTGDamaged",
      "n": 5,
      "name": "damaged RTG"
+    },
+    {
+     "id": "WallUranium",
+     "n": 1,
+     "name": "uranium wall"
     }
    ],
    "name": "uranium",
-   "total": 1
+   "total": 2
   },
   "UraniumGlass": {
    "from": [
     {
      "id": "WindoorAssemblyUranium",
-     "n": 3,
+     "n": 2,
      "name": "uranium windoor assembly"
     }
    ],
@@ -41867,6 +42026,11 @@
      "name": "web door"
     },
     {
+     "id": "TableWeb",
+     "n": 2,
+     "name": "web table"
+    },
+    {
      "id": "WebShield",
      "n": 1,
      "name": "web shield"
@@ -41893,7 +42057,7 @@
     }
    ],
    "name": "web silk",
-   "total": 7
+   "total": 8
   },
   "WoodPlank": {
    "from": [
@@ -41911,6 +42075,31 @@
      "id": "WoodDoor",
      "n": 5,
      "name": "wooden door"
+    },
+    {
+     "id": "AltarNanotrasen",
+     "n": 5,
+     "name": "nanotrasen altar"
+    },
+    {
+     "id": "AltarDruid",
+     "n": 5,
+     "name": "druid altar"
+    },
+    {
+     "id": "AltarToolbox",
+     "n": 5,
+     "name": "toolbox altar"
+    },
+    {
+     "id": "AltarSpaceChristian",
+     "n": 5,
+     "name": "space-Christian altar"
+    },
+    {
+     "id": "AltarSatana",
+     "n": 5,
+     "name": "satanic altar"
     },
     {
      "id": "AltarConvertFestival",
@@ -41941,35 +42130,10 @@
      "id": "AltarConvertOrange",
      "n": 5,
      "name": "orange altar"
-    },
-    {
-     "id": "AltarConvertRed",
-     "n": 5,
-     "name": "red altar"
-    },
-    {
-     "id": "AltarConvertWhite",
-     "n": 5,
-     "name": "white altar"
-    },
-    {
-     "id": "AltarConvertYellow",
-     "n": 5,
-     "name": "yellow altar"
-    },
-    {
-     "id": "DogBed",
-     "n": 5,
-     "name": "dog bed"
-    },
-    {
-     "id": "GlassBoxFrame",
-     "n": 5,
-     "name": "glass box frame"
     }
    ],
    "name": "wood plank",
-   "total": 62
+   "total": 74
   }
  },
  "mixerNames": {
@@ -53076,22 +53240,6 @@
    },
    "name": "napalm"
   },
-  "Neurotoxin": {
-   "color": "#2E2E61",
-   "desc": "A strong neurotoxin that puts the subject into a death-like state.",
-   "file": "Resources/Prototypes/Reagents/Consumable/Drink/alcohol.yml",
-   "group": "Unsorted",
-   "metab": {
-    "dmg": {
-     "Poison": 1.0
-    },
-    "fx": [
-     "Satiate"
-    ],
-    "rate": 0.5
-   },
-   "name": "neurotoxin"
-  },
   "Nicotine": {
    "color": "#C0C0C0",
    "desc": "Dangerous and highly addictive, but that's what the propaganda says.",
@@ -54883,7 +55031,7 @@
    "name": "Zombie"
   }
  },
- "repoCommit": "786f95099c",
+ "repoCommit": "e925a86dcd",
  "toolQ": {
   "Anchoring": {
    "from": [
